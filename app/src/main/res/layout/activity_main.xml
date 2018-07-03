@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="269dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="15.16"
+            android:background="#00ff66" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="83dp"
+            android:background="#ffffff"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.87" >
+
+            <Button
+                android:id="@+id/btshoucang"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#00ff66"
+                android:text="收藏"
+                android:textColor="#000033"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="始发站"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="终点站"
+            android:textSize="20sp" />
+    </LinearLayout>
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff" >
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal" >
+<RelativeLayout
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+        </RelativeLayout>
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:text="火车票"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:text="飞机票"
+            android:textSize="20sp" />
+<RelativeLayout
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        ></RelativeLayout>
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

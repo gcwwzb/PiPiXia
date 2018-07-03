@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".PlaneActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#00ff66"
+            android:text="返回"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#00ff66"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back" >
+
+            <TextView
+                android:id="@+id/sctitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#ffffff" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/station"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:text="火车票"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/plane"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:text="飞机票"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff" >
+    </RelativeLayout>
+
+    <com.yangfan.texiao.SwipeDismissListView
+        android:id="@+id/listsqlite1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </com.yangfan.texiao.SwipeDismissListView>
+
+    <com.yangfan.texiao.SwipeDismissListView
+        android:id="@+id/listsqlite2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </com.yangfan.texiao.SwipeDismissListView>
+
+</LinearLayout>
