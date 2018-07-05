@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff">
-    >
     <!--   private String startcity; //出发城市
        private String endcity; //到达城市
        private String startstation; //出发车站
@@ -13,6 +12,164 @@
        private String price; //票价
        private String bustype; //车型
        private String distance; //距离  -->
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:focusable="false"
+        android:text="车型：" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:text="距离：" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView21"
+        android:focusable="false"
+        android:text="出发城市：" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView25"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_marginBottom="-1dp"
+        android:focusable="false"
+        android:text="出发车站：" />
+
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_below="@+id/textView23"
+        android:focusable="false"
+        android:text="到达城市：" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:focusable="false"
+        android:text="到达车站：" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView25"
+        android:focusable="false"
+        android:text="出发时间：" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:focusable="false"
+        android:text="票价：" />
+
+
+    <TextView
+        android:id="@+id/bustype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView23"
+        android:layout_alignLeft="@+id/startcity"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="#ff00ff" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView24"
+        android:layout_toRightOf="@+id/textView22"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/startcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/endcity"
+        android:layout_toRightOf="@+id/textView25"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/startstation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView26"
+        android:layout_toRightOf="@+id/textView24"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="#ff0000" />
+
+
+    <TextView
+        android:id="@+id/endcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startcity"
+        android:layout_below="@+id/textView23"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/endstation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_toRightOf="@+id/textView26"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView25"
+        android:layout_toRightOf="@+id/textView27"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView26"
+        android:layout_toRightOf="@+id/textView26"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="#ff0000" />
 
 
 </RelativeLayout>

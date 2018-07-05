@@ -85,10 +85,10 @@ public class PlaneActivity extends Activity {
 						"Company",
 						"AirlineCode", "StartDrome",
 						"ArriveDrome", "StartTime", "ArriveTime",
-						"Mode","Week"}, new int[] { R.id.textView1,
-						R.id.textView3, R.id.textView6,
-						R.id.textView7, R.id.textView10,
-						R.id.textView11, R.id.textView15,R.id.textView13 });
+						"Mode","Week"}, new int[] { R.id.textView21,
+						R.id.textView23, R.id.textView6,
+						R.id.textView24, R.id.textView26,
+						R.id.textView11, R.id.textView27,R.id.textView22});
 				listsqliteplane.setAdapter(null);
 				listsqlitestation.setVisibility(View.GONE);
 				listsqliteplane.setVisibility(View.VISIBLE);
@@ -141,10 +141,10 @@ public class PlaneActivity extends Activity {
 						listqliteplane, R.layout.itemplane, new String[] { "Company",
 						"AirlineCode", "StartDrome",
 						"ArriveDrome", "StartTime", "ArriveTime",
-						"Mode","Week"}, new int[] { R.id.textView1,
-						R.id. textView3, R.id.textView6,
-						R.id.textView7, R.id.textView10,
-						R.id.textView11, R.id.textView15,R.id.textView13 });
+						"Mode","Week"}, new int[] { R.id.textView21,
+						R.id.textView23, R.id.textView6,
+						R.id.textView24, R.id.textView26,
+						R.id.textView11, R.id.textView27,R.id.textView22});
 				listsqliteplane.setAdapter(adapters);
 				TextViews("收藏了"+listqliteplane.size()+"个班次飞机");
 			}
@@ -170,17 +170,3 @@ public class PlaneActivity extends Activity {
 		super.onDestroy();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
