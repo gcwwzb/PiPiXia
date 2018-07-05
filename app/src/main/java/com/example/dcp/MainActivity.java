@@ -24,7 +24,6 @@ import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.preference.DialogPreference;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -46,8 +45,9 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.yangfan.Entiy.Plane;
-import com.yangfan.Entiy.Station;
+import com.yangfan.Entity.Plane;
+import com.yangfan.Entity.Station;
+import com.yangfan.Entity.Bus;
 import com.yangfan.Util.DatabaseHelper;
 import com.yangfan.Util.Dialogs;
 import com.yangfan.Util.NetConnectionUtil;
@@ -63,11 +63,15 @@ public class MainActivity extends Activity {
 	private final static int NULLS =4; //查询到火车,加载列表
 	private final static int TRAIN = 5; //查询到火车,加载列表
 	private final static int PLANE =6; //查询到飞机,加载列表
+	private final static int BUS =9; //查询到大巴,加载列表
 	private final static int NULL = 7; //没有查询到火车车次返回值
 	private final static int NULLPLANE = 8; //没有查询到飞机航班返回值
+	private final static int NULLBUS = 10;  //没有查询到大巴班次返回值
+
 	private Dialogs dialogs;			//网络连接异常弹出的窗口
 	private SimpleAdapter adapter;		//火车列表适配器
 	private SimpleAdapter adapters;		//飞机列表适配器
+	private SimpleAdapter adapterBus;	//大巴列表适配器
 	private Handler handler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
 			switch (msg.what) {
@@ -83,14 +87,14 @@ public class MainActivity extends Activity {
 					dialog.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
 					// 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
 					dialog.setTitle("提示");
-					dialog.setMessage("没有直达航班,请查询附近城市");
+					dialog.setMessage("没有直达航班,请查询附近城市,或选择火车飞机综合换乘方案");
 					dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定",
 							new DialogInterface.OnClickListener() {
 								@Override
 								public void onClick(DialogInterface dialog, int which) {
 									listview2.setVisibility(View.GONE);
 									listview1.setVisibility(View.GONE);
-									TitleTextView("没有直达航班,请查询附近城市");
+									TitleTextView("没有直达航班,请查询附近城市,或选择列车飞机综合换乘方案");
 									return;
 								}
 							});
@@ -110,11 +114,31 @@ public class MainActivity extends Activity {
 								public void onClick(DialogInterface dialog, int which) {
 									listview2.setVisibility(View.GONE);
 									listview1.setVisibility(View.GONE);
-									TitleTextView("没有直达列车，请查询附近城市");
+									TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
 									return;
 								}
 							});
 					dialoga.show();
+					break;
+				case NULLBUS:
+					dialogs.dialog.dismiss();
+					ProgressDialog dialogBus = new ProgressDialog(MainActivity.this);
+					dialogBus.setCancelable(true);// 设置是否可以通过点击Back键取消
+					dialogBus.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
+					// 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
+					dialogBus.setTitle("提示");
+					dialogBus.setMessage("没有直达班车，请查询附近城市");
+					dialogBus.setButton(DialogInterface.BUTTON_POSITIVE, "确定",
+							new DialogInterface.OnClickListener() {
+								@Override
+								public void onClick(DialogInterface dialog, int which) {
+									listview2.setVisibility(View.GONE);
+									listview1.setVisibility(View.GONE);
+									TitleTextView("没有直达班车，请查询附近城市");
+									return;
+								}
+							});
+					dialogBus.show();
 					break;
 				case TRAIN:	//显示火车
 					listview1.setVisibility(View.VISIBLE);
@@ -149,6 +173,23 @@ public class MainActivity extends Activity {
 					listview2 .setAdapter(adapters);
 					TitleTextView("查询到有"+listviews.size()+"班次飞机");
 					break;
+				case BUS:  //显示班车
+					listview1.setVisibility(View.VISIBLE);
+					listview2.setVisibility(View.GONE);
+					adapter = new SimpleAdapter(MainActivity.this,
+							listviews, R.layout.items, new String[] { "TrainCode",
+							"FirstStation", "LastStation", "StartStation",
+							"StartTime","ArriveStation", "ArriveTime", "KM",
+							"UseDate"}, new int[] { R.id.TrainCode,
+							R.id. LastStation, R.id.FirstStation,R.id.textViews5,
+							R.id.StartTime, R.id.textViews6,R.id.ArriveTime,
+							R.id.KM, R.id.UseDate });
+					dialogs.dialog.dismiss();
+					/*特效源码！！*/
+					listview1.setLayoutAnimation(getListAnim());
+					listview1.setAdapter(adapter);
+					TitleTextView("查询到有"+listviews.size()+"趟次列车");
+					break;
 			}
 		};
 	};
@@ -162,19 +203,28 @@ public class MainActivity extends Activity {
 	String getPart5 = "&lastCity=";
 	String getPart6 = "&theDate=";
 	String getPart7 = "&UserID=";
+    /**大巴的网址*/
+    String hostOfBus = "http://api.jisuapi.com";
+    //http://api.jisuapi.com/bus/city2c?appkey=575f26104b13e249&start=杭州&end=上海
+    String getPart8 = "http://api.jisuapi.com/bus/city2c?appkey=575f26104b13e249";
+    String getPart9 = "&start=";
+    String getPart10 = "&end=";
 	/**-------------------------------*/
 	private String date;  //飞机查询需要的日期
 	private String startName;//edit  出发城市
 	private String arriveName;	//目的地城市
 	private String xmlUrl;	//火车的网址
 	private String xmlUrlplane;	//飞机的网址
+    private String xmlUrlbus;	//大巴的网址
 	List<Map<String, Object>> listviews;  //为了适用SimpleAdapter的集合
 	private List<Station> list;		//火车对应的集合
 	private List<Plane> listplane;	//飞机的对应集合
+    private List<Plane> listbus;	//大巴的对应集合
 	private EditText et1;
 	private EditText et2;
 	public static Button bt1;		//火车查询
 	public static Button bt2;		//飞机查询
+    public static Button bt4;		//大巴查询
 	public static Button bt3;		//跳转收藏页面
 	private int mYear;    //依然是时间方面移植来的
 	private int mMonth;
@@ -183,6 +233,7 @@ public class MainActivity extends Activity {
 	private int mMinute;
 	private ListView listview1;		//火车显示列表
 	private ListView listview2;		//飞机显示列表
+    private ListView listview3;		//大巴显示列表
 	private ConnectivityManager cwjManager;
 	private TextView tv;
 	@Override
@@ -210,7 +261,9 @@ public class MainActivity extends Activity {
 		tv = (TextView) findViewById(R.id.title);
 		listview1= (ListView) findViewById(R.id.listView1);//火车
 		listview2= (ListView) findViewById(R.id.listView2);//飞机
-		listview1.setOnItemClickListener(new OnItemClickListener() {
+        listview3= (ListView) findViewById(R.id.listView3);//大巴
+
+        listview1.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int position,
@@ -245,7 +298,8 @@ public class MainActivity extends Activity {
 
 			}
 		});
-		listview2.setOnItemClickListener(new OnItemClickListener() {
+
+        listview2.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
@@ -278,6 +332,44 @@ public class MainActivity extends Activity {
 
 			}
 		});
+
+        listview3.setOnItemClickListener(new OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int busposition,
+                                    long arg3) {
+                //maps 或者选中item在listviews里面的下标所对应的值,然后取出里面的值
+                Map<String, Object> maps=listviews.get(busposition);
+                Bus bus = new Bus();
+                bus.bustype=(String) maps.get("bustype");
+                //数据库里面查询这个值是不是存在,存在了就不保存了.不存在的保存下来.
+                DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
+                SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
+                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=?;",
+                        new String[]{bus.bustype.toString()});
+                if(css.getCount()<=0) {
+                    bus.FirstStation=(String) maps.get("FirstStation");
+                    bus.LastStation=(String) maps.get("LastStation");
+                    bus.StartStation=(String) maps.get("StartStation");
+                    bus.StartTime=(String) maps.get("StartTime");
+                    bus.ArriveStation=(String) maps.get("ArriveStation");
+                    bus.ArriveTime=(String) maps.get("ArriveTime");
+                    bus.distance=(String) maps.get("KM");
+                    bus.UseDate=(String) maps.get("UseDate");
+                    insert(station);
+                    //Toast.makeText(MainActivity.this,station.TrainCode+" 列车加入收藏列表", 1).show();
+                    Toast.makeText(MainActivity.this,station.TrainCode+" 列车加入收藏列表", Toast.LENGTH_LONG).show();
+                    /*-------------------------------------------------------*/
+                }else {
+                    //Toast.makeText(MainActivity.this, "该车次已经添加过了", 1).show();
+                    Toast.makeText(MainActivity.this, "该车次已经添加过了", Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+            }
+        });
+
+
 		et1 = (EditText) findViewById(R.id.editText1);
 		et2 = (EditText) findViewById(R.id.editText2);
 		bt1 = (Button) findViewById(R.id.bt1);//火车

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.xmlpull.v1.XmlPullParser;
 
-import com.yangfan.Entiy.Station;
+import com.yangfan.Entity.Station;
 
 import android.util.Xml;
 

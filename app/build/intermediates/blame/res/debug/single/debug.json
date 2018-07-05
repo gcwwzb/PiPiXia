@@ -54,5 +54,9 @@
     {
         "merged": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\menu_plane.xml.flat",
         "source": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\src\\main\\res\\menu\\plane.xml"
+    },
+    {
+        "merged": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_itembus.xml.flat",
+        "source": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\src\\main\\res\\layout\\itembus.xml"
     }
 ]

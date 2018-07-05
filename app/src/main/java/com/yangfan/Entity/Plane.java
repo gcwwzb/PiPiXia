@@ -1,4 +1,4 @@
-package com.yangfan.Entiy;
+package com.yangfan.Entity;
 
 public class Plane {
 

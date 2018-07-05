@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    >
+    <!--   private String startcity; //出发城市
+       private String endcity; //到达城市
+       private String startstation; //出发车站
+       private String endstation; //到达车站
+       private String starttime; //出发时间
+       private String price; //票价
+       private String bustype; //车型
+       private String distance; //距离  -->
+
+
+</RelativeLayout>

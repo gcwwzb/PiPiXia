@@ -1,4 +1,4 @@
-package com.yangfan.Entiy;
+package com.yangfan.Entity;
 
 public class Station {
 	public  String TrainCode;//车次
@@ -83,3 +83,11 @@ public class Station {
 	}
 
 }
+	/*private String startcity;  //出发城市
+	private String endcity;  //到达城市
+	private String startstation;  //出发车站
+	private String endstation;   //到达车站
+	private String starttime;   //出发时间
+	private String price;   //票价
+	private String bustype;  //车型
+	private String distance;   //距离*/

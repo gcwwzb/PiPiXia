@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.xmlpull.v1.XmlPullParser;
 
-import com.yangfan.Entiy.Plane;
+import com.yangfan.Entity.Plane;
 
 import android.util.Xml;
 
