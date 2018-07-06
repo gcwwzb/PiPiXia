@@ -96,8 +96,7 @@ public class MainActivity extends Activity {
             switch (msg.what) {
                 case NULLS:
                     TitleTextView("");
-                    Toast.makeText(
-                            MainActivity.this, "网络连接中断请检查网络", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "网络连接中断请检查网络", Toast.LENGTH_SHORT).show();
                     break;
                 case NULLPLANE:
                     dialogs.dialog.dismiss();
@@ -107,17 +106,16 @@ public class MainActivity extends Activity {
                     // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
                     dialog.setTitle("提示");
                     dialog.setMessage("没有直达航班,请查询附近城市,或选择火车飞机综合换乘方案");
-                    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    listview2.setVisibility(View.GONE);
-                                    listview1.setVisibility(View.GONE);
-                                    listview3.setVisibility(View.GONE);
-                                    TitleTextView("没有直达航班,请查询附近城市,或选择列车飞机综合换乘方案");
-                                    return;
-                                }
-                            });
+                    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            listview2.setVisibility(View.GONE);
+                            listview1.setVisibility(View.GONE);
+                            listview3.setVisibility(View.GONE);
+                            TitleTextView("没有直达航班,请查询附近城市,或选择列车飞机综合换乘方案");
+                            return;
+                        }
+                    });
                     dialog.show();
                     break;
                 case NULL:
@@ -128,17 +126,16 @@ public class MainActivity extends Activity {
                     // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
                     dialoga.setTitle("提示");
                     dialoga.setMessage("没有直达列车，请查询附近城市");
-                    dialoga.setButton(DialogInterface.BUTTON_POSITIVE, "确定",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    listview2.setVisibility(View.GONE);
-                                    listview1.setVisibility(View.GONE);
-                                    listview3.setVisibility(View.GONE);
-                                    TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
-                                    return;
-                                }
-                            });
+                    dialoga.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            listview2.setVisibility(View.GONE);
+                            listview1.setVisibility(View.GONE);
+                            listview3.setVisibility(View.GONE);
+                            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
+                            return;
+                        }
+                    });
                     dialoga.show();
                     break;
                 case NULLBUS:
@@ -149,31 +146,23 @@ public class MainActivity extends Activity {
                     // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
                     dialogBus.setTitle("提示");
                     dialogBus.setMessage("没有直达班车，请查询附近城市");
-                    dialogBus.setButton(DialogInterface.BUTTON_POSITIVE, "确定",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    listview2.setVisibility(View.GONE);
-                                    listview1.setVisibility(View.GONE);
-                                    listview3.setVisibility(View.GONE);
-                                    TitleTextView("没有直达班车，请查询附近城市");
-                                    return;
-                                }
-                            });
+                    dialogBus.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            listview2.setVisibility(View.GONE);
+                            listview1.setVisibility(View.GONE);
+                            listview3.setVisibility(View.GONE);
+                            TitleTextView("没有直达班车，请查询附近城市");
+                            return;
+                        }
+                    });
                     dialogBus.show();
                     break;
                 case TRAIN:    //显示火车
                     listview1.setVisibility(View.VISIBLE);
                     listview2.setVisibility(View.GONE);
                     listview3.setVisibility(View.GONE);
-                    adapter = new SimpleAdapter(MainActivity.this,
-                            listviews, R.layout.items, new String[]{"TrainCode",
-                            "FirstStation", "LastStation", "StartStation",
-                            "StartTime", "ArriveStation", "ArriveTime", "KM",
-                            "UseDate"}, new int[]{R.id.TrainCode,
-                            R.id.LastStation, R.id.FirstStation, R.id.textViews5,
-                            R.id.StartTime, R.id.textViews6, R.id.ArriveTime,
-                            R.id.KM, R.id.UseDate});
+                    adapter = new SimpleAdapter(MainActivity.this, listviews, R.layout.items, new String[]{"TrainCode", "FirstStation", "LastStation", "StartStation", "StartTime", "ArriveStation", "ArriveTime", "KM", "UseDate"}, new int[]{R.id.TrainCode, R.id.LastStation, R.id.FirstStation, R.id.textViews5, R.id.StartTime, R.id.textViews6, R.id.ArriveTime, R.id.KM, R.id.UseDate});
                     dialogs.dialog.dismiss();
                     /*特效源码！！*/
                     listview1.setLayoutAnimation(getListAnim());
@@ -184,14 +173,7 @@ public class MainActivity extends Activity {
                     listview1.setVisibility(View.GONE);
                     listview2.setVisibility(View.VISIBLE);
                     listview3.setVisibility(View.GONE);
-                    adapters = new SimpleAdapter(MainActivity.this,
-                            listviews, R.layout.itemplane, new String[]{"Company",
-                            "AirlineCode", "StartDrome",
-                            "ArriveDrome", "StartTime", "ArriveTime",
-                            "Mode", "Week"}, new int[]{R.id.textView21,
-                            R.id.textView23, R.id.textView6,
-                            R.id.textView24, R.id.textView26,
-                            R.id.textView11, R.id.textView27, R.id.textView22});
+                    adapters = new SimpleAdapter(MainActivity.this, listviews, R.layout.itemplane, new String[]{"Company", "AirlineCode", "StartDrome", "ArriveDrome", "StartTime", "ArriveTime", "Mode", "Week"}, new int[]{R.id.textView21, R.id.textView23, R.id.textView6, R.id.textView24, R.id.textView26, R.id.textView11, R.id.textView27, R.id.textView22});
                     dialogs.dialog.dismiss();
                     listview2.setLayoutAnimation(getListAnim());
                     listview2.setAdapter(adapters);
@@ -201,13 +183,7 @@ public class MainActivity extends Activity {
                     listview1.setVisibility(View.GONE);
                     listview2.setVisibility(View.GONE);
                     listview3.setVisibility(View.VISIBLE);
-                    adapterBus = new SimpleAdapter(MainActivity.this,
-                            listviews, R.layout.itembus, new String[]{"bustype",
-                            "startcity", "endcity", "startstation", "endstation", "distance",
-                            "starttime", "price",}, new int[]{R.id.textView21,
-                            R.id.textView23, R.id.textView25, R.id.textView24,
-                            R.id.textView26, R.id.textView22, R.id.textView27,
-                            R.id.textView28});
+                    adapterBus = new SimpleAdapter(MainActivity.this, listviews, R.layout.itembus, new String[]{"bustype", "startcity", "endcity", "startstation", "endstation", "distance", "starttime", "price",}, new int[]{R.id.textView21, R.id.textView23, R.id.textView25, R.id.textView24, R.id.textView26, R.id.textView22, R.id.textView27, R.id.textView28});
                     dialogs.dialog.dismiss();
                     /*特效源码！！*/
                     listview3.setLayoutAnimation(getListAnim());
@@ -300,8 +276,7 @@ public class MainActivity extends Activity {
         listview1.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int position,
-                                    long arg3) {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
                 //maps 或者选中item在listviews里面的下标所对应的值,然后取出里面的值
                 Map<String, Object> maps = listviews.get(position);
                 Station station = new Station();
@@ -309,8 +284,7 @@ public class MainActivity extends Activity {
                 //数据库里面查询这个值是不是存在,存在了就不保存了.不存在的保存下来.
                 DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-                Cursor c = sqliteDatabase.rawQuery("select * from station where TrainCode=?;",
-                        new String[]{station.TrainCode.toString()});
+                Cursor c = sqliteDatabase.rawQuery("select * from station where TrainCode=?;", new String[]{station.TrainCode.toString()});
                 if (c.getCount() <= 0) {
                     station.FirstStation = (String) maps.get("FirstStation");
                     station.LastStation = (String) maps.get("LastStation");
@@ -336,8 +310,7 @@ public class MainActivity extends Activity {
         listview2.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-                                    long arg3) {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
                 /*--------------------和火车的一样参考上面的-----------------------*/
                 Map<String, Object> maps = listviews.get(arg2);
                 Plane plane = new Plane();
@@ -345,8 +318,7 @@ public class MainActivity extends Activity {
                 plane.AirlineCode = (String) maps.get("AirlineCode");
                 DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-                Cursor cs = sqliteDatabase.rawQuery("select * from plane where AirlineCode=?;",
-                        new String[]{plane.AirlineCode.toString()});
+                Cursor cs = sqliteDatabase.rawQuery("select * from plane where AirlineCode=?;", new String[]{plane.AirlineCode.toString()});
                 if (cs.getCount() <= 0) {
                     plane.StartDrome = (String) maps.get("StartDrome");
                     plane.ArriveDrome = (String) maps.get("ArriveDrome");
@@ -369,8 +341,7 @@ public class MainActivity extends Activity {
         listview3.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int busPosition,
-                                    long arg3) {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int busPosition, long arg3) {
                 /*--------------------和火车的一样参考上面的-----------------------*/
                 //maps 或者选中item在listviews里面的下标所对应的值,然后取出里面的值
                 Map<String, Object> maps = listviews.get(busPosition);
@@ -379,8 +350,7 @@ public class MainActivity extends Activity {
                 //数据库里面查询这个值是不是存在,存在了就不保存了.不存在的保存下来.
                 DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=?;",
-                        new String[]{bus.getBustype().toString()});
+                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=?;", new String[]{bus.getBustype().toString()});
                 if (css.getCount() <= 0) {
                     bus.setDistance((String) maps.get("distance"));
                     bus.setStartcity((String) maps.get("startcity"));
@@ -419,12 +389,10 @@ public class MainActivity extends Activity {
                 startName = et1.getText().toString();
                 arriveName = et2.getText().toString();
                 if ("".equals(startName)) {
-                    Toast.makeText(MainActivity.this, "出发地址不能为空",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "出发地址不能为空", Toast.LENGTH_SHORT).show();
                     return;
                 } else if ("".equals(arriveName)) {
-                    Toast.makeText(MainActivity.this, "到达地址不能为空",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "到达地址不能为空", Toast.LENGTH_SHORT).show();
                     return;
                 } else if (!"".equals(startName) && !"".equals(arriveName)) {
                     /*------------------前两句是把输入法取消掉.不然占屏幕空间太多---------------------*/
@@ -437,8 +405,7 @@ public class MainActivity extends Activity {
                         xmlUrl = host + getPart1 + startName + getPart2 + arriveName + getPart3;
                         new Thread(new MyThread()).start();//启动线程.下载内容
                     } else {
-                        Toast.makeText(MainActivity.this, "网络有问题",
-                                Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "网络有问题", Toast.LENGTH_SHORT).show();
                         return;
                     }
                 }
@@ -458,12 +425,10 @@ public class MainActivity extends Activity {
                 arriveName = et2.getText().toString();
                 /*-----------判断输入框内容--------------*/
                 if ("".equals(startName)) {
-                    Toast.makeText(MainActivity.this, "出发地址不能为空",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "出发地址不能为空", Toast.LENGTH_SHORT).show();
                     return;
                 } else if ("".equals(arriveName)) {
-                    Toast.makeText(MainActivity.this, "到达地址不能为空",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "到达地址不能为空", Toast.LENGTH_SHORT).show();
                     return;
                 } else if (!"".equals(startName) && !"".equals(arriveName)) {
                     /*------输入框不为空的情况下,该方面的返回值判断当前网络是不是可以连接-------*/
@@ -475,8 +440,7 @@ public class MainActivity extends Activity {
                         }
                         MainActivity.this.dateandtimeHandler.sendMessage(msg);
                     } else {
-                        Toast.makeText(MainActivity.this, "网络有问题",
-                                Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "网络有问题", Toast.LENGTH_SHORT).show();
                         return;
                     }
                 }
@@ -494,12 +458,10 @@ public class MainActivity extends Activity {
                 startName = et1.getText().toString();
                 arriveName = et2.getText().toString();
                 if ("".equals(startName)) {
-                    Toast.makeText(MainActivity.this, "出发地址不能为空",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "出发地址不能为空", Toast.LENGTH_SHORT).show();
                     return;
                 } else if ("".equals(arriveName)) {
-                    Toast.makeText(MainActivity.this, "到达地址不能为空",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "到达地址不能为空", Toast.LENGTH_SHORT).show();
                     return;
                 } else if (!"".equals(startName) && !"".equals(arriveName)) {
                     /*------------------前两句是把输入法取消掉.不然占屏幕空间太多---------------------*/
@@ -511,8 +473,7 @@ public class MainActivity extends Activity {
                         /*网址*/
                         new Thread(new BusThread()).start();//启动线程.下载内容
                     } else {
-                        Toast.makeText(MainActivity.this, "网络有问题",
-                                Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "网络有问题", Toast.LENGTH_SHORT).show();
                         return;
                     }
                 }
@@ -651,73 +612,42 @@ public class MainActivity extends Activity {
 
         @Override
         public void run() {
-//            try {
-//                Urlbus = hostOfBus + "?appkey=" + APPKEY + "&start=" + URLEncoder.encode(startName, "utf-8") + "&end="
-//                        + URLEncoder.encode(arriveName, "utf-8");
-//                //Urlbus = hostOfBus + "?appkey=" + APPKEY + "&start=" + startName + "&end=" + arriveName;
-//                System.out.println(Urlbus);
-//                results = HttpUtil.sendGet(Urlbus, "utf-8");
-//                System.out.println(results);
-//
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
 
+            JSONObject jsonObject;
             try {
 //                Urlbus = hostOfBus + "?appkey=" + APPKEY + "&start=" + URLEncoder.encode(startName, "utf-8") + "&end="
 //                        + URLEncoder.encode(arriveName, "utf-8");
                 Urlbus = hostOfBus + "?appkey=" + APPKEY + "&start=" + startName + "&end=" + arriveName;
-                System.out.println("这是Urlbus的内容-----"+Urlbus);
+
+                /**---------------------下面几个输出是测试-------------------------------------*/
+                System.out.println("这是Urlbus的内容-----" + Urlbus);
                 String results = HttpUtil.sendGet(Urlbus, "utf-8");
-                System.out.println("这是最后要解析的数据-----"+results);
-                //JSONObject json = JSONObject.fromObject(results);
+                System.out.println("这是最后要解析的数据-----" + results);
+                /**---------------------------------------------------------------------------*/
 
                 /******************* 解析 ***********************/
-                //JSONArray jsonArray = null;
-                // 初始化list数组对象
-                //ArrayList<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
-
-                //JSONArray jsonArray = new JSONArray(results);
-                JSONObject jsonObject = new JSONObject(results);
-                System.out.println("这是jsonObject-----"+jsonObject.toString());
-               // System.out.println("这是jsonArray-----"+jsonArray);
-
-//                if (jsonArray.getInt(0) != 0) {
-//                    System.out.println(jsonArray.getString(1));
-//                } else {
-                String startcity = jsonObject.getString("startcity");
-                System.out.println("startcity--------------"+startcity);
-
-
-                if (jsonObject.getString("status") != "0") {
+                jsonObject = new JSONObject(results);
+                System.out.println("这是jsonObject-----" + jsonObject.toString());
+                /**---------------------------------------------------------------------------*/
+                System.out.println(jsonObject.getString("status"));
+                if (jsonObject.getInt("status") != 0) {
                     System.out.println(jsonObject.getString("msg"));
                 } else {
+                    JSONArray jsonArray = jsonObject.getJSONArray("result");
                     //JSONArray resultArr = jsonArray.optJSONArray("results");
-                    for (int i = 2; i < jsonObject.length(); i++){
-                    //for (int i = 2; i < jsonArray.length(); i++) {
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        //for (int i = 2; i < jsonArray.length(); i++) {
                         //JSONObject obj = (JSONObject) resultArr.opt(i);
-                        //JSONObject obj = jsonArray.getJSONObject(i);
-                       // String startcity = jsonObject.getString("startcity");
-                        String endcity = jsonObject.getString("endcity");
-                        String startstation = jsonObject.getString("startstation");
-                        String endstation = jsonObject.getString("endstation");
-                        String starttime = jsonObject.getString("starttime");
-                        String price = jsonObject.getString("price");
-                        String bustype = jsonObject.getString("bustype");
-                        String distance = jsonObject.getString("distance");
-                        System.out.println(startcity + " " + endcity + " " + startstation + " " + endstation + " "
-                                + starttime + " " + price + " " + bustype + " " + distance);
-//                     for(JSONObject jsonObject1 : jsonObject){
-//                        String startcity = jsonObject.getString("startcity");
-//                        String endcity = jsonObject.getString("endcity");
-//                        String startstation = jsonObject.getString("startstation");
-//                        String endstation = jsonObject.getString("endstation");
-//                        String starttime = jsonObject.getString("starttime");
-//                        String price = jsonObject.getString("price");
-//                        String bustype = jsonObject.getString("bustype");
-//                        String distance = jsonObject.getString("distance");
-//                        System.out.println(startcity + " " + endcity + " " + startstation + " " + endstation + " "
-//                                + starttime + " " + price + " " + bustype + " " + distance);
+                        JSONObject obj = jsonArray.getJSONObject(i);
+                        String startcity = obj.getString("startcity");
+                        String endcity = obj.getString("endcity");
+                        String startstation = obj.getString("startstation");
+                        String endstation = obj.getString("endstation");
+                        String starttime = obj.getString("starttime");
+                        String price = obj.getString("price");
+                        String bustype = obj.getString("bustype");
+                        String distance = obj.getString("distance");
+                        System.out.println(startcity + " " + endcity + " " + startstation + " " + endstation + " " + starttime + " " + price + " " + bustype + " " + distance);
 
                         HashMap<String, Object> map = new HashMap<String, Object>();
                         map.put("startcity", startcity);
@@ -761,13 +691,10 @@ public class MainActivity extends Activity {
         animation.setDuration(300);
         set.addAnimation(animation);
 
-        animation = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0.0f,
-                Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF,
-                -1.0f, Animation.RELATIVE_TO_SELF, 0.0f);
+        animation = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, -1.0f, Animation.RELATIVE_TO_SELF, 0.0f);
         animation.setDuration(500);
         set.addAnimation(animation);
-        LayoutAnimationController controller = new LayoutAnimationController(
-                set, 0.5f);
+        LayoutAnimationController controller = new LayoutAnimationController(set, 0.5f);
         return controller;
         /*-----------------------------------------*/
     }
@@ -782,16 +709,13 @@ public class MainActivity extends Activity {
     }
 
     private void updateDateDisplay() {
-        date = new StringBuilder().append(mYear).append("-")
-                .append((mMonth + 1) < 10 ? "0" + (mMonth + 1) : (mMonth + 1)).append("-")
-                .append((mDay < 10) ? "0" + mDay : mDay) + "";
+        date = new StringBuilder().append(mYear).append("-").append((mMonth + 1) < 10 ? "0" + (mMonth + 1) : (mMonth + 1)).append("-").append((mDay < 10) ? "0" + mDay : mDay) + "";
 
     }
 
     private DatePickerDialog.OnDateSetListener mDateSetListener = new DatePickerDialog.OnDateSetListener() {
 
-        public void onDateSet(DatePicker view, int year, int monthOfYear,
-                              int dayOfMonth) {
+        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
             mYear = year;
             mMonth = monthOfYear;
             mDay = dayOfMonth;

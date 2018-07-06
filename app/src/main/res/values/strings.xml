@@ -5,5 +5,7 @@
 <string name="action_settings">这是什么</string>
 <string name="hello_world">Hello world!</string>
 <string name="title_activity_plane">PlaneActivity</string>
-<color name="green">#00ff66</color>
+    <!--
+<color name="green">#00ff66</color>    -->
+<color name="lightblue">#ADD8E6</color><!--亮蓝色 -->
 </resources>

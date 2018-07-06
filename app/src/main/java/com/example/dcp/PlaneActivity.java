@@ -29,7 +29,7 @@ public class PlaneActivity extends Activity {
     private SimpleAdapter adapterbus;
 	private String TrainCode;
 	private String AirlineCode;
-    private String BusCode;
+    private String starttime;
 	private SwipeDismissListView listsqlitestation;//自定义的listview 复制来的.
 	//特效是滑动删除,当然也可以不删除.动作自己定义
 	private SwipeDismissListView listsqliteplane;
@@ -85,7 +85,7 @@ public class PlaneActivity extends Activity {
 				TextViews("收藏了"+listqlite.size()+"个趟次火车");
 			}
 		});
-		//飞机的.和火车一样的写法
+		//飞机的和火车一样的写法
 		planes.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -113,10 +113,10 @@ public class PlaneActivity extends Activity {
                         listqlitebus, R.layout.itembus, new String[] {
                         "bustype", "distance", "starcity",
                         "starstation", "endcity", "endstation",
-                        "starttime","price"}, new int[] { R.id.textView21,
-                        R.id.textView22, R.id.textView23,
-                        R.id.textView24, R.id.textView25,
-                        R.id.textView26, R.id.textView27,R.id.textView28});
+                        "starttime","price"}, new int[] { R.id.bustype,
+                        R.id.distance, R.id.startcity,
+                        R.id.startstation, R.id.endcity,
+                        R.id.endstation, R.id.starttime,R.id.price});
                 listsqlitebus.setAdapter(null);
                 listsqliteplane.setVisibility(View.GONE);
                 listsqlitebus.setVisibility(View.VISIBLE);
@@ -143,7 +143,7 @@ public class PlaneActivity extends Activity {
 						"FirstStation", "LastStation", "StartStation",
 						"StartTime","ArriveStation", "ArriveTime", "KM",
 						"UseDate"}, new int[] { R.id.TrainCode,
-						R.id. LastStation, R.id.FirstStation,R.id.textViews5,
+						R.id.LastStation, R.id.FirstStation,R.id.textViews5,
 						R.id.StartTime, R.id.textViews6,R.id.ArriveTime,
 						R.id.KM, R.id.UseDate });
 				listsqlitestation.setAdapter(adapter);
@@ -183,22 +183,23 @@ public class PlaneActivity extends Activity {
             @Override
             public void onDismiss(int dismissPosition) {
                 Map<String, Object> strbus = listqlitebus.get(dismissPosition);
-                BusCode = strbus.get("BusCode").toString();
+                starttime = strbus.get("starttime").toString();
                 listqlitebus.remove(strbus);
                 DatabaseHelper dbHelper = new DatabaseHelper(PlaneActivity.this);
                 // 得到一个可写的SQLiteDatabase对象
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-                String whereClause = "BusCode=?";//删除的条件
-                String[] whereArgs = {BusCode};//删除的条件参数
+                String whereClause = "starttime=?";//删除的条件
+                String[] whereArgs = {starttime};//删除的条件参数
                 sqliteDatabase.delete("bus",whereClause,whereArgs);//执行删除
                 adapterbus = new SimpleAdapter(PlaneActivity.this,
                         listqlitebus, R.layout.itembus, new String[] {
-                        "bustype", "distance", "starcity",
+                        "bustype", "distance", "startcity",
                         "starstation", "endcity", "endstation",
                         "starttime","price"}, new int[] {
-                        R.id.textView21, R.id.textView22, R.id.textView23,
-                        R.id.textView24, R.id.textView25, R.id.textView26,
-                        R.id.textView27,R.id.textView28});
+                        R.id.bustype,
+                        R.id.distance, R.id.startcity,
+                        R.id.startstation, R.id.endcity,
+                        R.id.endstation, R.id.starttime,R.id.price});
                 listsqlitebus.setAdapter(adapterbus);
                 TextViews("收藏了"+listqlitebus.size()+"个班次大巴");
 

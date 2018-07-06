@@ -4,7 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 
 public class Dialogs {
-	private String s="数据疯狂加载中！骚等骚等";
+	private String s="数据疯狂加载中！皮皮侠请稍等！";
 	public static ProgressDialog dialog;
 	public Dialogs(Context context){
 		dialog = new ProgressDialog(context);

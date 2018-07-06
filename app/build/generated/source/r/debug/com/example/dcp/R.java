@@ -9,7 +9,7 @@ package com.example.dcp;
 
 public final class R {
   public static final class color {
-    public static final int green=0x7f010000;
+    public static final int lightblue=0x7f010000;
   }
   public static final class dimen {
     public static final int activity_horizontal_margin=0x7f020000;
