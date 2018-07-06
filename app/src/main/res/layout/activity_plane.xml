@@ -89,6 +89,22 @@
             android:layout_height="fill_parent"
             android:background="#ffffff" >
         </RelativeLayout>
+
+        <Button
+            android:id="@+id/bus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:text="大巴"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+        </RelativeLayout>
+
     </LinearLayout>
 
     <RelativeLayout
@@ -110,5 +126,13 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent" >
     </com.yangfan.texiao.SwipeDismissListView>
+
+    <com.yangfan.texiao.SwipeDismissListView
+        android:id="@+id/listsqlite3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </com.yangfan.texiao.SwipeDismissListView>
+
 
 </LinearLayout>

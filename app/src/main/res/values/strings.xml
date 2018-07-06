@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">车票快查</string>
-    <string name="action_settings">这是什么</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_plane">PlaneActivity</string>
-	<color name="green">#00ff66</color>
+<string name="app_name">皮皮侠</string>
+<string name="action_settings">这是什么</string>
+<string name="hello_world">Hello world!</string>
+<string name="title_activity_plane">PlaneActivity</string>
+<color name="green">#00ff66</color>
 </resources>

@@ -304,9 +304,6 @@ public class SwipeDismissListView extends ListView {
 
 	/**
 	 * 删除的回调接口
-	 *
-	 * @author xiaanming
-	 *
 	 */
 	public interface OnDismissCallback {
 		public void onDismiss(int dismissPosition);
