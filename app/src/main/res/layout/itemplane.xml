@@ -36,8 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
-        android:focusable="false"
         android:layout_toRightOf="@+id/textView25"
+        android:focusable="false"
         android:text="TextView"
         android:textColor="#ff00ff" />
 
@@ -96,6 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView9"
+        android:layout_marginTop="0dp"
         android:layout_toRightOf="@+id/textView9"
         android:focusable="false"
         android:text="TextView"
@@ -133,6 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView24"
         android:layout_below="@+id/textView24"
+        android:layout_marginTop="0dp"
         android:focusable="false"
         android:text="TextView"
         android:textColor="#ff0000" />

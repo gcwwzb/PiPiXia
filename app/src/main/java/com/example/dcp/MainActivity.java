@@ -1,8 +1,6 @@
 package com.example.dcp;
 
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -26,7 +24,6 @@ import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.JsonReader;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -59,18 +56,8 @@ import com.yangfan.Util.HttpUtil;
 import com.yangfan.Xmlpull.Xmlpullplane;
 import com.yangfan.Xmlpull.xmlpull;
 
-//import net.sf.json.JSONArray;
-//import net.sf.json.JSONObject;
-
-
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.net.URLEncoder;
-
-
-//import api.util.HttpUtil;
 
 
 public class MainActivity extends Activity {
@@ -98,66 +85,152 @@ public class MainActivity extends Activity {
                     TitleTextView("");
                     Toast.makeText(MainActivity.this, "网络连接中断请检查网络", Toast.LENGTH_SHORT).show();
                     break;
+//                case NULLPLANE:
+//                    dialogs.dialog.dismiss();
+//                    ProgressDialog dialog = new ProgressDialog(MainActivity.this);
+//                    dialog.setCancelable(true);// 设置是否可以通过点击Back键取消
+//                    dialog.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
+//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
+//                    dialog.setTitle("提示");
+//                    dialog.setMessage("没有直达航班,请查询附近城市,或选择火车飞机综合换乘方案");
+//                    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            listview2.setVisibility(View.GONE);
+//                            listview1.setVisibility(View.GONE);
+//                            listview3.setVisibility(View.GONE);
+//                            TitleTextView("没有直达航班,请查询附近城市,或选择列车飞机综合换乘方案");
+//                            return;
+//                        }
+//                    });
+//                    dialog.show();
+//                    break;
+
+
                 case NULLPLANE:
                     dialogs.dialog.dismiss();
-                    ProgressDialog dialog = new ProgressDialog(MainActivity.this);
-                    dialog.setCancelable(true);// 设置是否可以通过点击Back键取消
-                    dialog.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
-                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-                    dialog.setTitle("提示");
-                    dialog.setMessage("没有直达航班,请查询附近城市,或选择火车飞机综合换乘方案");
-                    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            listview2.setVisibility(View.GONE);
-                            listview1.setVisibility(View.GONE);
-                            listview3.setVisibility(View.GONE);
-                            TitleTextView("没有直达航班,请查询附近城市,或选择列车飞机综合换乘方案");
-                            return;
-                        }
-                    });
-                    dialog.show();
+
+                    AlertDialog.Builder alertdialogbuilder_plane = new AlertDialog.Builder(MainActivity.this);
+                    alertdialogbuilder_plane.setTitle("提示");
+                    alertdialogbuilder_plane.setMessage("没有直达航班，请查询附近城市");
+                    alertdialogbuilder_plane.setPositiveButton("确定", click_noplane_ok);
+                    AlertDialog alertdialog_plane = alertdialogbuilder_plane.create();
+                    alertdialog_plane.show();
+//                    ProgressDialog dialog = new ProgressDialog(MainActivity.this);
+//                    dialog.setCancelable(true);// 设置是否可以通过点击Back键取消
+//                    dialog.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
+//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
+//                    dialog.setTitle("提示");
+//                    dialog.setMessage("没有直达航班,请查询附近城市,或选择火车飞机综合换乘方案");
+//                    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            listview2.setVisibility(View.GONE);
+//                            listview1.setVisibility(View.GONE);
+//                            listview3.setVisibility(View.GONE);
+//                            TitleTextView("没有直达航班,请查询附近城市,或选择列车飞机综合换乘方案");
+//                            return;
+//                        }
+//                    });
+//                    dialog.show();
                     break;
+
+//                case NULL:
+//                    dialogs.dialog.dismiss();
+//                    ProgressDialog dialoga = new ProgressDialog(MainActivity.this);
+//                    dialoga.setCancelable(true);// 设置是否可以通过点击Back键取消
+//                    dialoga.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
+//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
+//                    dialoga.setTitle("提示");
+//                    dialoga.setMessage("没有直达列车，请查询附近城市");
+//                    dialoga.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            listview2.setVisibility(View.GONE);
+//                            listview1.setVisibility(View.GONE);
+//                            listview3.setVisibility(View.GONE);
+//                            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
+//                            return;
+//                        }
+//                    });
+//                    dialoga.show();
+//                    break;
                 case NULL:
                     dialogs.dialog.dismiss();
-                    ProgressDialog dialoga = new ProgressDialog(MainActivity.this);
-                    dialoga.setCancelable(true);// 设置是否可以通过点击Back键取消
-                    dialoga.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
-                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-                    dialoga.setTitle("提示");
-                    dialoga.setMessage("没有直达列车，请查询附近城市");
-                    dialoga.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            listview2.setVisibility(View.GONE);
-                            listview1.setVisibility(View.GONE);
-                            listview3.setVisibility(View.GONE);
-                            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
-                            return;
-                        }
-                    });
-                    dialoga.show();
+
+                    AlertDialog.Builder alertdialogbuilder_train=new AlertDialog.Builder(MainActivity.this);
+                    alertdialogbuilder_train.setTitle("提示");
+                    alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
+                    alertdialogbuilder_train.setPositiveButton("确定", click_notrain_ok);
+                    AlertDialog alertdialog_train=alertdialogbuilder_train.create();
+                    alertdialog_train.show();
+//                    ProgressDialog dialoga = new ProgressDialog(MainActivity.this);
+//                    dialoga.setCancelable(true);// 设置是否可以通过点击Back键取消
+//                    dialoga.setCanceledOnTouchOutside(false);//点击屏幕，dialog不消失；点击物理返回键dialog消失
+//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
+//                    dialoga.setTitle("提示");
+//                    dialoga.setMessage("没有直达列车，请查询附近城市");
+//                    dialoga.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            listview2.setVisibility(View.GONE);
+//                            listview1.setVisibility(View.GONE);
+//                            listview3.setVisibility(View.GONE);
+//                            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
+//                            return;
+//                        }
+//                    });
+//                    dialoga.show();
                     break;
+
+//                case NULLBUS:
+//                    dialogs.dialog.dismiss();
+//                    ProgressDialog dialogBus = new ProgressDialog(MainActivity.this);
+//                    dialogBus.setCancelable(true);// 设置是否可以通过点击Back键取消
+//                    dialogBus.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
+//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
+//                    dialogBus.setTitle("提示");
+//                    dialogBus.setMessage("没有直达班车，请查询附近城市,或选择其他出行方案");
+//                    dialogBus.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            listview2.setVisibility(View.GONE);
+//                            listview1.setVisibility(View.GONE);
+//                            listview3.setVisibility(View.GONE);
+//                            TitleTextView("没有直达班车，请查询附近城市,或选择其他出行方案");
+//                            return;
+//                        }
+//                    });
+//                    dialogBus.show();
+//                    break;
                 case NULLBUS:
                     dialogs.dialog.dismiss();
-                    ProgressDialog dialogBus = new ProgressDialog(MainActivity.this);
-                    dialogBus.setCancelable(true);// 设置是否可以通过点击Back键取消
-                    dialogBus.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
-                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-                    dialogBus.setTitle("提示");
-                    dialogBus.setMessage("没有直达班车，请查询附近城市");
-                    dialogBus.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            listview2.setVisibility(View.GONE);
-                            listview1.setVisibility(View.GONE);
-                            listview3.setVisibility(View.GONE);
-                            TitleTextView("没有直达班车，请查询附近城市");
-                            return;
-                        }
-                    });
-                    dialogBus.show();
+
+                    AlertDialog.Builder alertdialogbuilder_bus=new AlertDialog.Builder(MainActivity.this);
+                    alertdialogbuilder_bus.setTitle("提示");
+                    alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
+                    alertdialogbuilder_bus.setPositiveButton("确定", click_nobus_ok);
+                    AlertDialog alertdialog_bus=alertdialogbuilder_bus.create();
+                    alertdialog_bus.show();
+//                    ProgressDialog dialogBus = new ProgressDialog(MainActivity.this);
+//                    dialogBus.setCancelable(true);// 设置是否可以通过点击Back键取消
+//                    dialogBus.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
+//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
+//                    dialogBus.setTitle("提示");
+//                    dialogBus.setMessage("没有直达班车，请查询附近城市");
+//                    dialogBus.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            listview2.setVisibility(View.GONE);
+//                            listview1.setVisibility(View.GONE);
+//                            listview3.setVisibility(View.GONE);
+//                            TitleTextView("没有直达班车，请查询附近城市");
+//                            return;
+//                        }
+//                    });
+//                    dialogBus.show();
                     break;
+
                 case TRAIN:    //显示火车
                     listview1.setVisibility(View.VISIBLE);
                     listview2.setVisibility(View.GONE);
@@ -183,7 +256,7 @@ public class MainActivity extends Activity {
                     listview1.setVisibility(View.GONE);
                     listview2.setVisibility(View.GONE);
                     listview3.setVisibility(View.VISIBLE);
-                    adapterBus = new SimpleAdapter(MainActivity.this, listviews, R.layout.itembus, new String[]{"bustype", "startcity", "endcity", "startstation", "endstation", "distance", "starttime", "price",}, new int[]{R.id.textView21, R.id.textView23, R.id.textView25, R.id.textView24, R.id.textView26, R.id.textView22, R.id.textView27, R.id.textView28});
+                    adapterBus = new SimpleAdapter(MainActivity.this, listviews, R.layout.itembus, new String[]{"bustype", "startcity", "endcity", "startstation", "endstation", "distance", "starttime", "price",}, new int[]{R.id.bustype, R.id.startcity, R.id.endcity, R.id.startstation, R.id.endstation, R.id.distance, R.id.starttime, R.id.price});
                     dialogs.dialog.dismiss();
                     /*特效源码！！*/
                     listview3.setLayoutAnimation(getListAnim());
@@ -212,17 +285,17 @@ public class MainActivity extends Activity {
     /**
      * 大巴的网址
      */
-    String APPKEY = "575f26104b13e249";// 你的appkey
     String hostOfBus = "http://api.jisuapi.com/bus/city2c";
+    String APPKEY = "575f26104b13e249";// 你的appkey
 
     /**
-     * -------------------------------
+     * -----------------------------------------------
      */
     private String date;  //飞机查询需要的日期
-    private String startName;//edit  出发城市
-    private String arriveName;    //目的地城市
+    private String startName;//edittext1  出发城市
+    private String arriveName; //edittext2 目的地城市
     private String xmlUrl;    //火车的网址
-    private String xmlUrlplane;    //飞机的网址
+    private String xmlUrlplane;   //飞机的网址
     private String Urlbus;    //大巴的网址
 
     List<Map<String, Object>> listviews;  //为了适用SimpleAdapter的集合
@@ -359,9 +432,9 @@ public class MainActivity extends Activity {
                     bus.setEndstation((String) maps.get("endstation"));
                     bus.setStarttime((String) maps.get("starttime"));
                     bus.setPrice((String) maps.get("price"));
-                    insertbus(bus);
+                    insertBus(bus);
                     //Toast.makeText(MainActivity.this,station.TrainCode+" 列车加入收藏列表", 1).show();
-                    Toast.makeText(MainActivity.this, bus.getBustype() + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, bus.getStarttime() + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
                     /*-------------------------------------------------------*/
                 } else {
                     //Toast.makeText(MainActivity.this, "该车次已经添加过了", 1).show();
@@ -414,6 +487,7 @@ public class MainActivity extends Activity {
 
 
         bt2.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 /*------------------前两句是把打字法取消掉.不然占屏幕空间太多---------------------*/
@@ -447,12 +521,10 @@ public class MainActivity extends Activity {
             }
         });
 
-        bt4.setOnClickListener(new OnClickListener() {   // 大巴
+        bt4.setOnClickListener(new View.OnClickListener() {   // 大巴
 
             @Override
             public void onClick(View viewBus) {
-                InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                imm.hideSoftInputFromWindow(bt4.getApplicationWindowToken(), 0);
                 listviews = null;//每次点击都要刷新下列表不然的话就会重叠显示
                 listviews = new ArrayList<Map<String, Object>>();
                 startName = et1.getText().toString();
@@ -465,8 +537,8 @@ public class MainActivity extends Activity {
                     return;
                 } else if (!"".equals(startName) && !"".equals(arriveName)) {
                     /*------------------前两句是把输入法取消掉.不然占屏幕空间太多---------------------*/
-                    //InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                    //imm.hideSoftInputFromWindow(bt4.getApplicationWindowToken(), 0);
+                    InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(bt4.getApplicationWindowToken(), 0);
                     /*------输入框不为空的情况下,该方面的返回值判断当前网络是不是可以连接-------*/
                     if (NetWorkStatus() == true) {
                         dialogs.dialog.show();//加载中显示的一个提示框加载完成后自己要用代码取消掉
@@ -490,13 +562,10 @@ public class MainActivity extends Activity {
                 querys();
                 querysplane();
                 querysbus();
-                //startActivity(new Intent(MainActivity.this, PlaneActivity.class));
                 startActivity(new Intent(MainActivity.this, PlaneActivity.class));
                 MainActivity.this.finish();
             }
         });
-
-
     }
 
     class MyThread implements Runnable {
@@ -531,8 +600,8 @@ public class MainActivity extends Activity {
                     map.put("UseDate", UseDate);
                     map.put("KM", KM);
                     listviews.add(map);
-                    if ("".equals(TrainCode)) {
-                        //判断车次是不是存在.在这次我用的是车次的判断,""的就是没有车次
+                    if ("----".equals(TrainCode)) {
+                        //判断车次是不是存在.在这次我用的是车次的判断,"----"的就是没有车次
                         //返回的what和有车次的肯定不一样.
                         Message msg = new Message();
                         msg.what = NULL;
@@ -543,14 +612,13 @@ public class MainActivity extends Activity {
                 Message msg = new Message();
                 msg.what = TRAIN;
                 handler.sendMessage(msg);
-
             } catch (Exception e) {
                 Dialogs.dialog.dismiss();
                 Log.i("网络错误", "执行了网络错误1");
                 Message msg = new Message();
                 msg.what = NULLS;
                 handler.sendMessage(msg);
-                return;
+                //return;
             }
         }
     }
@@ -601,13 +669,13 @@ public class MainActivity extends Activity {
                 Message msg = new Message();
                 msg.what = NULLS;
                 handler.sendMessage(msg);
-                return;
+                //return;
             }
         }
     }
 
-    /*-----------大巴的线程-----------和火车的一样不再解释了----------------------------*/
-    //唯一一点不一样的是大巴选的是班次的判断.班次内容是没有航班的时候返回what改变
+    /*-----------大巴的线程-----------和火车的一样不再解释了----其实最麻烦----解析json数据--------------------*/
+    //唯一一点不一样的是大巴选的是发车时间的判断，发车时间是没有班次的时候返回0
     class BusThread implements Runnable {
 
         @Override
@@ -615,29 +683,27 @@ public class MainActivity extends Activity {
 
             JSONObject jsonObject;
             try {
-//                Urlbus = hostOfBus + "?appkey=" + APPKEY + "&start=" + URLEncoder.encode(startName, "utf-8") + "&end="
-//                        + URLEncoder.encode(arriveName, "utf-8");
                 Urlbus = hostOfBus + "?appkey=" + APPKEY + "&start=" + startName + "&end=" + arriveName;
 
-                /**---------------------下面几个输出是测试-------------------------------------*/
-                System.out.println("这是Urlbus的内容-----" + Urlbus);
+                /**---------------------下面几个输出是测试----Urlbus------results------status---------------------*/
+                //System.out.println("这是Urlbus的内容-----" + Urlbus);
                 String results = HttpUtil.sendGet(Urlbus, "utf-8");
-                System.out.println("这是最后要解析的数据-----" + results);
-                /**---------------------------------------------------------------------------*/
+                //System.out.println("这是最后要解析的数据-----" + results);
 
-                /******************* 解析 ***********************/
+                /**---------------------------- 解析 ------------------------*/
                 jsonObject = new JSONObject(results);
-                System.out.println("这是jsonObject-----" + jsonObject.toString());
+                //System.out.println("这是jsonObject-----" + jsonObject.toString());
                 /**---------------------------------------------------------------------------*/
-                System.out.println(jsonObject.getString("status"));
+                System.out.println("这是第一个元素status-----" + jsonObject.getString("status"));
                 if (jsonObject.getInt("status") != 0) {
                     System.out.println(jsonObject.getString("msg"));
+                    //下面这三句是在查找不到的时候弹出提示框查询失败。。。
+                    Message msg = new Message();
+                    msg.what = NULLBUS;
+                    handler.sendMessage(msg);
                 } else {
                     JSONArray jsonArray = jsonObject.getJSONArray("result");
-                    //JSONArray resultArr = jsonArray.optJSONArray("results");
                     for (int i = 0; i < jsonArray.length(); i++) {
-                        //for (int i = 2; i < jsonArray.length(); i++) {
-                        //JSONObject obj = (JSONObject) resultArr.opt(i);
                         JSONObject obj = jsonArray.getJSONObject(i);
                         String startcity = obj.getString("startcity");
                         String endcity = obj.getString("endcity");
@@ -681,16 +747,16 @@ public class MainActivity extends Activity {
                 //return;
             }
         }
-
     }
 
-    /*特效源码---------listview加载的效果*/
+    /**
+     * -----------特效源码---------listview加载的效果----------------
+     */
     public static LayoutAnimationController getListAnim() {
         AnimationSet set = new AnimationSet(true);
         Animation animation = new AlphaAnimation(0.0f, 1.0f);
         animation.setDuration(300);
         set.addAnimation(animation);
-
         animation = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, -1.0f, Animation.RELATIVE_TO_SELF, 0.0f);
         animation.setDuration(500);
         set.addAnimation(animation);
@@ -699,7 +765,9 @@ public class MainActivity extends Activity {
         /*-----------------------------------------*/
     }
 
-    /*-------以下为时间选择方面的我不懂,移植来的---------*/
+    /**
+     * --------------------以下为时间选择方面的我不懂,移植来的--------------------
+     */
     private void setDateTime() {
         final Calendar c = Calendar.getInstance();
         mYear = c.get(Calendar.YEAR);
@@ -761,22 +829,24 @@ public class MainActivity extends Activity {
             }
         }
     };
-    /*------------------------以上为时间选取----------------------------*/
+    /**------------------------------以上为时间选取-------------------------------------*/
 
 
-    /*------------------------单击item的时候保存这个item所携带的内容到数据库--------------------------*/
+    /**
+     * ------------------------单击item的时候保存这个item所携带的内容到数据库--------------------------
+     */
     public void insert(Station station) {
         ContentValues values = new ContentValues();
         // 向该对象中插入键值对，其中键是列名，值是希望插入到这一列的值，值必须和数据库当中的数据类型一致
-        values.put("TrainCode", station.TrainCode.toString());
-        values.put("FirstStation", station.FirstStation.toString());
-        values.put("LastStation", station.LastStation.toString());
-        values.put("StartStation", station.StartStation.toString());
-        values.put("StartTime", station.StartTime.toString());
-        values.put("ArriveStation", station.ArriveStation.toString());
-        values.put("ArriveTime", station.ArriveTime.toString());
-        values.put("KM", station.KM.toString());
-        values.put("UseDate", station.UseDate.toString());
+        values.put("TrainCode", station.getTrainCode().toString());
+        values.put("FirstStation", station.getFirstStation().toString());
+        values.put("LastStation", station.getLastStation().toString());
+        values.put("StartStation", station.getStartStation().toString());
+        values.put("StartTime", station.getStartTime().toString());
+        values.put("ArriveStation", station.getArriveStation().toString());
+        values.put("ArriveTime", station.getArriveTime().toString());
+        values.put("KM", station.getKM().toString());
+        values.put("UseDate", station.getUseDate().toString());
         // 创建DatabaseHelper对象
         // 得到一个可写的SQLiteDatabase对象
         DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
@@ -788,18 +858,20 @@ public class MainActivity extends Activity {
         // 第三个参数：ContentValues对象
     }
 
-    /*-----------------上面的是火车的,这个是飞机的-------------------*/
-    public void inserts(Plane Plane) {
+    /**
+     * -----------------上面的是火车的,这个是飞机的-------------------
+     */
+    public void inserts(Plane plane) {
         ContentValues values = new ContentValues();
         // 向该对象中插入键值对，其中键是列名，值是希望插入到这一列的值，值必须和数据库当中的数据类型一致
-        values.put("Company", Plane.Company.toString());
-        values.put("AirlineCode", Plane.AirlineCode.toString());
-        values.put("StartDrome", Plane.StartDrome.toString());
-        values.put("ArriveDrome", Plane.ArriveDrome.toString());
-        values.put("StartTime", Plane.StartTime.toString());
-        values.put("ArriveTime", Plane.ArriveTime.toString());
-        values.put("Mode", Plane.Mode.toString());
-        values.put("Week", Plane.Week.toString());
+        values.put("Company", plane.getCompany().toString());
+        values.put("AirlineCode", plane.getAirlineCode().toString());
+        values.put("StartDrome", plane.getStartDrome().toString());
+        values.put("ArriveDrome", plane.getArriveDrome().toString());
+        values.put("StartTime", plane.getStartTime().toString());
+        values.put("ArriveTime", plane.getArriveTime().toString());
+        values.put("Mode", plane.getMode().toString());
+        values.put("Week", plane.getWeek().toString());
         // 创建DatabaseHelper对象
         // 得到一个可写的SQLiteDatabase对象
         DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
@@ -807,18 +879,20 @@ public class MainActivity extends Activity {
         sqliteDatabase.insert("plane", null, values);
     }
 
-    /*-----------------上面的是飞机的,这个是大巴的-------------------*/
-    public void insertbus(ResultBean bus) {
+    /**
+     * -----------------上面的是飞机的,这个是大巴的-------------------
+     */
+    public void insertBus(ResultBean result) {
         ContentValues values = new ContentValues();
         // 向该对象中插入键值对，其中键是列名，值是希望插入到这一列的值，值必须和数据库当中的数据类型一致
-        values.put("bustype", bus.getBustype().toString());
-        values.put("distance", bus.getDistance().toString());
-        values.put("startcity", bus.getStartcity().toString());
-        values.put("startstation", bus.getStartstation().toString());
-        values.put("endcity", bus.getEndcity().toString());
-        values.put("endstation", bus.getEndstation().toString());
-        values.put("starttime", bus.getStarttime().toString());
-        values.put("price", bus.getPrice().toString());
+        values.put("bustype", result.getBustype().toString());
+        values.put("distance", result.getDistance().toString());
+        values.put("startcity", result.getStartcity().toString());
+        values.put("startstation", result.getStartstation().toString());
+        values.put("endcity", result.getEndcity().toString());
+        values.put("endstation", result.getEndstation().toString());
+        values.put("starttime", result.getStarttime().toString());
+        values.put("price", result.getPrice().toString());
         // 创建DatabaseHelper对象
         // 得到一个可写的SQLiteDatabase对象
         DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
@@ -826,7 +900,9 @@ public class MainActivity extends Activity {
         sqliteDatabase.insert("bus", null, values);
     }
 
-    /*------------------------读取保存的火车item在数据库里的所有内容---------------------------*/
+    /**
+     * ------------------------读取保存的火车item在数据库里的所有内容---------------------------
+     */
     public void querys() {
         // 得到一个可写的SQLiteDatabase对象
         DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
@@ -854,7 +930,7 @@ public class MainActivity extends Activity {
                 map.put("KM", KM);
                 map.put("UseDate", UseDate);
                 PlaneActivity.listqlite.add(map);
-                Log.i("listsqlite", map.toString());
+                Log.i("listsqlitestation", map.toString());
                 c.moveToNext();
             }
         }
@@ -887,6 +963,7 @@ public class MainActivity extends Activity {
                 map.put("Mode", Mode);
                 map.put("Week", Week);
                 PlaneActivity.listqliteplane.add(map);
+                Log.i("listsqliteplane", map.toString());
                 c.moveToNext();
             }
         }
@@ -900,7 +977,6 @@ public class MainActivity extends Activity {
         SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
         //Cursor c = sqliteDatabase.query("bus", null, null, null, null, null, null);
         Cursor c = sqliteDatabase.query("bus", null, null, null, null, null, null);
-
         if (c.moveToFirst()) {//判断游标是否为空
             for (int i = 0; i < c.getCount(); i++) {
                 Map<String, Object> map = new HashMap<String, Object>();
@@ -989,13 +1065,50 @@ public class MainActivity extends Activity {
 
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-
                     return;
                 }
             });
             builder.create().show();
-
         }
         return super.onKeyDown(keyCode, event);
     }
+
+
+    private DialogInterface.OnClickListener click_notrain_ok =new DialogInterface.OnClickListener()
+    {
+        @Override
+        public void onClick(DialogInterface arg0,int arg1)
+        {
+            listview2.setVisibility(View.GONE);
+            listview1.setVisibility(View.GONE);
+            listview3.setVisibility(View.GONE);
+            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
+            return;
+        }
+    };
+    private DialogInterface.OnClickListener click_noplane_ok =new DialogInterface.OnClickListener()
+    {
+        @Override
+        public void onClick(DialogInterface arg0,int arg1)
+        {
+            listview2.setVisibility(View.GONE);
+            listview1.setVisibility(View.GONE);
+            listview3.setVisibility(View.GONE);
+            TitleTextView("没有直达航班，请查询附近城市,或选择列车飞机综合换乘方案");
+            return;
+        }
+    };
+    private DialogInterface.OnClickListener click_nobus_ok =new DialogInterface.OnClickListener()
+    {
+        @Override
+        public void onClick(DialogInterface arg0,int arg1)
+        {
+            listview2.setVisibility(View.GONE);
+            listview1.setVisibility(View.GONE);
+            listview3.setVisibility(View.GONE);
+            TitleTextView("没有直达班车，请查询附近城市,或选择列车飞机综合换乘方案");
+            return;
+        }
+    };
+
 }

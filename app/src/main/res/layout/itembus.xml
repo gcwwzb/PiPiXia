@@ -96,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/textView22"
+        android:layout_toRightOf="@+id/textView22"
         android:focusable="false"
         android:text="TextView"
         android:textColor="#ff0000" />

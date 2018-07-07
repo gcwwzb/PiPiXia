@@ -27,7 +27,7 @@ import javax.net.ssl.HttpsURLConnection;
 
 /***
  * Http
- * @author wxw
+ * @author gcww
  *
  */
 public class HttpUtil {

@@ -30,8 +30,8 @@ public class PlaneActivity extends Activity {
 	private String TrainCode;
 	private String AirlineCode;
     private String starttime;
-	private SwipeDismissListView listsqlitestation;//自定义的listview 复制来的.
-	//特效是滑动删除,当然也可以不删除.动作自己定义
+	private SwipeDismissListView listsqlitestation;//自定义的listview 复制来的
+	//特效是滑动删除,当然也可以不删除。动作自己定义
 	private SwipeDismissListView listsqliteplane;
     private SwipeDismissListView listsqlitebus;
 	private Button back;
@@ -81,6 +81,7 @@ public class PlaneActivity extends Activity {
 				listsqlitestation.setAdapter(null);
 				listsqlitestation.setVisibility(View.VISIBLE);
 				listsqliteplane.setVisibility(View.GONE);
+				listsqlitebus.setVisibility(View.GONE);
 				listsqlitestation.setAdapter(adapter);
 				TextViews("收藏了"+listqlite.size()+"个趟次火车");
 			}
@@ -101,6 +102,7 @@ public class PlaneActivity extends Activity {
 				listsqliteplane.setAdapter(null);
 				listsqlitestation.setVisibility(View.GONE);
 				listsqliteplane.setVisibility(View.VISIBLE);
+                listsqlitebus.setVisibility(View.GONE);
 				listsqliteplane.setAdapter(adapters);
 				TextViews("收藏了"+listqliteplane.size()+"个班次飞机");
 			}
@@ -113,11 +115,13 @@ public class PlaneActivity extends Activity {
                         listqlitebus, R.layout.itembus, new String[] {
                         "bustype", "distance", "starcity",
                         "starstation", "endcity", "endstation",
-                        "starttime","price"}, new int[] { R.id.bustype,
-                        R.id.distance, R.id.startcity,
-                        R.id.startstation, R.id.endcity,
-                        R.id.endstation, R.id.starttime,R.id.price});
+                        "starttime","price"}, new int[] {
+                        R.id.bustype, R.id.distance,
+                        R.id.startcity, R.id.startstation,
+                        R.id.endcity, R.id.endstation,
+                        R.id.starttime,R.id.price});
                 listsqlitebus.setAdapter(null);
+                listsqlitestation.setVisibility(View.GONE);
                 listsqliteplane.setVisibility(View.GONE);
                 listsqlitebus.setVisibility(View.VISIBLE);
                 listsqlitebus.setAdapter(adapterbus);
@@ -218,8 +222,7 @@ public class PlaneActivity extends Activity {
 		return super.onKeyDown(keyCode, event);
 	}
 	//切记!一点要在这里写listview的clear方法.赋值为null是不可取的报错.
-	//关于找个方法的问题.请了解activity的生命周期就知道了.每次退出当前activity系统会调用找个方法
-
+	//关于这个个方法的问题.请了解activity的生命周期就知道了.每次退出当前activity系统会调用这个方法
 	@Override
 	protected void onDestroy() {
 		listqlite.clear();
