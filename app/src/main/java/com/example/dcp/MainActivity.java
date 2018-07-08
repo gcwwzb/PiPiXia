@@ -61,7 +61,6 @@ import org.json.JSONObject;
 
 
 public class MainActivity extends Activity {
-    /** nzhegescssssssssssssssssssssssssssssss */
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
@@ -86,150 +85,35 @@ public class MainActivity extends Activity {
                     TitleTextView("");
                     Toast.makeText(MainActivity.this, "网络连接中断请检查网络", Toast.LENGTH_SHORT).show();
                     break;
-//                case NULLPLANE:
-//                    dialogs.dialog.dismiss();
-//                    ProgressDialog dialog = new ProgressDialog(MainActivity.this);
-//                    dialog.setCancelable(true);// 设置是否可以通过点击Back键取消
-//                    dialog.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
-//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-//                    dialog.setTitle("提示");
-//                    dialog.setMessage("没有直达航班,请查询附近城市,或选择火车飞机综合换乘方案");
-//                    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            listview2.setVisibility(View.GONE);
-//                            listview1.setVisibility(View.GONE);
-//                            listview3.setVisibility(View.GONE);
-//                            TitleTextView("没有直达航班,请查询附近城市,或选择列车飞机综合换乘方案");
-//                            return;
-//                        }
-//                    });
-//                    dialog.show();
-//                    break;
-
 
                 case NULLPLANE:
                     dialogs.dialog.dismiss();
-
                     AlertDialog.Builder alertdialogbuilder_plane = new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_plane.setTitle("提示");
                     alertdialogbuilder_plane.setMessage("没有直达航班，请查询附近城市");
-                    alertdialogbuilder_plane.setPositiveButton("确定", click_noplane_ok);
+                    alertdialogbuilder_plane.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_plane = alertdialogbuilder_plane.create();
                     alertdialog_plane.show();
-//                    ProgressDialog dialog = new ProgressDialog(MainActivity.this);
-//                    dialog.setCancelable(true);// 设置是否可以通过点击Back键取消
-//                    dialog.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
-//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-//                    dialog.setTitle("提示");
-//                    dialog.setMessage("没有直达航班,请查询附近城市,或选择火车飞机综合换乘方案");
-//                    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            listview2.setVisibility(View.GONE);
-//                            listview1.setVisibility(View.GONE);
-//                            listview3.setVisibility(View.GONE);
-//                            TitleTextView("没有直达航班,请查询附近城市,或选择列车飞机综合换乘方案");
-//                            return;
-//                        }
-//                    });
-//                    dialog.show();
                     break;
 
-//                case NULL:
-//                    dialogs.dialog.dismiss();
-//                    ProgressDialog dialoga = new ProgressDialog(MainActivity.this);
-//                    dialoga.setCancelable(true);// 设置是否可以通过点击Back键取消
-//                    dialoga.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
-//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-//                    dialoga.setTitle("提示");
-//                    dialoga.setMessage("没有直达列车，请查询附近城市");
-//                    dialoga.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            listview2.setVisibility(View.GONE);
-//                            listview1.setVisibility(View.GONE);
-//                            listview3.setVisibility(View.GONE);
-//                            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
-//                            return;
-//                        }
-//                    });
-//                    dialoga.show();
-//                    break;
                 case NULL:
                     dialogs.dialog.dismiss();
-
                     AlertDialog.Builder alertdialogbuilder_train=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_train.setTitle("提示");
                     alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
-                    alertdialogbuilder_train.setPositiveButton("确定", click_notrain_ok);
+                    alertdialogbuilder_train.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_train=alertdialogbuilder_train.create();
                     alertdialog_train.show();
-//                    ProgressDialog dialoga = new ProgressDialog(MainActivity.this);
-//                    dialoga.setCancelable(true);// 设置是否可以通过点击Back键取消
-//                    dialoga.setCanceledOnTouchOutside(false);//点击屏幕，dialog不消失；点击物理返回键dialog消失
-//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-//                    dialoga.setTitle("提示");
-//                    dialoga.setMessage("没有直达列车，请查询附近城市");
-//                    dialoga.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            listview2.setVisibility(View.GONE);
-//                            listview1.setVisibility(View.GONE);
-//                            listview3.setVisibility(View.GONE);
-//                            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
-//                            return;
-//                        }
-//                    });
-//                    dialoga.show();
                     break;
 
-//                case NULLBUS:
-//                    dialogs.dialog.dismiss();
-//                    ProgressDialog dialogBus = new ProgressDialog(MainActivity.this);
-//                    dialogBus.setCancelable(true);// 设置是否可以通过点击Back键取消
-//                    dialogBus.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
-//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-//                    dialogBus.setTitle("提示");
-//                    dialogBus.setMessage("没有直达班车，请查询附近城市,或选择其他出行方案");
-//                    dialogBus.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            listview2.setVisibility(View.GONE);
-//                            listview1.setVisibility(View.GONE);
-//                            listview3.setVisibility(View.GONE);
-//                            TitleTextView("没有直达班车，请查询附近城市,或选择其他出行方案");
-//                            return;
-//                        }
-//                    });
-//                    dialogBus.show();
-//                    break;
                 case NULLBUS:
                     dialogs.dialog.dismiss();
-
                     AlertDialog.Builder alertdialogbuilder_bus=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_bus.setTitle("提示");
                     alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
-                    alertdialogbuilder_bus.setPositiveButton("确定", click_nobus_ok);
+                    alertdialogbuilder_bus.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_bus=alertdialogbuilder_bus.create();
                     alertdialog_bus.show();
-//                    ProgressDialog dialogBus = new ProgressDialog(MainActivity.this);
-//                    dialogBus.setCancelable(true);// 设置是否可以通过点击Back键取消
-//                    dialogBus.setCanceledOnTouchOutside(false);// 设置在点击Dialog外是否取消Dialog进度条
-//                    // 设置提示的title的图标，默认是没有的，如果没有设置title的话只设置Icon是不会显示图标的
-//                    dialogBus.setTitle("提示");
-//                    dialogBus.setMessage("没有直达班车，请查询附近城市");
-//                    dialogBus.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            listview2.setVisibility(View.GONE);
-//                            listview1.setVisibility(View.GONE);
-//                            listview3.setVisibility(View.GONE);
-//                            TitleTextView("没有直达班车，请查询附近城市");
-//                            return;
-//                        }
-//                    });
-//                    dialogBus.show();
                     break;
 
                 case TRAIN:    //显示火车
@@ -241,8 +125,9 @@ public class MainActivity extends Activity {
                     /*特效源码！！*/
                     listview1.setLayoutAnimation(getListAnim());
                     listview1.setAdapter(adapter);
-                    TitleTextView("查询到有" + listviews.size() + "趟次列车");
+                    ToastUtil.showToast(MainActivity.this, "查询到有" + listviews.size() + "趟次列车");
                     break;
+
                 case PLANE:    //显示飞机
                     listview1.setVisibility(View.GONE);
                     listview2.setVisibility(View.VISIBLE);
@@ -251,8 +136,9 @@ public class MainActivity extends Activity {
                     dialogs.dialog.dismiss();
                     listview2.setLayoutAnimation(getListAnim());
                     listview2.setAdapter(adapters);
-                    TitleTextView("查询到有" + listviews.size() + "班次飞机");
+                    ToastUtil.showToast(MainActivity.this, "查询到有" + listviews.size() + "班次飞机");
                     break;
+
                 case BUS:  //显示班车
                     listview1.setVisibility(View.GONE);
                     listview2.setVisibility(View.GONE);
@@ -262,7 +148,8 @@ public class MainActivity extends Activity {
                     /*特效源码！！*/
                     listview3.setLayoutAnimation(getListAnim());
                     listview3.setAdapter(adapterBus);
-                    TitleTextView("查询到有" + listviews.size() + "趟大巴");
+                  //  TitleTextView("查询到有" + listviews.size() + "趟大巴");
+                    ToastUtil.showToast(MainActivity.this, "查询到有" + listviews.size() + "趟大巴");
                     break;
             }
         }
@@ -1070,42 +957,34 @@ public class MainActivity extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
+    /**
+     * 提醒没有直达路线之后在弹出框上点击确定之后的效果
+     */
+    private DialogInterface.OnClickListener click_noway_ok =new DialogInterface.OnClickListener()
+    {
+        @Override
+        public void onClick(DialogInterface arg0,int arg1)
+        {
+            listview2.setVisibility(View.GONE);
+            listview1.setVisibility(View.GONE);
+            listview3.setVisibility(View.GONE);
+            return;
+        }
+    };
+    /**
+     * 显示共查询到多少条可走路线
+     */
+    public static class ToastUtil {
+        private static Toast toast;
+        public static void showToast(Context context, String content) {
+            if (toast == null) {
+                toast = Toast.makeText(context, content, Toast.LENGTH_SHORT);
+            } else {
+                toast.setText(content);
+            }
+            toast.show();
+        }
+    }
 
-    private DialogInterface.OnClickListener click_notrain_ok =new DialogInterface.OnClickListener()
-    {
-        @Override
-        public void onClick(DialogInterface arg0,int arg1)
-        {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
-            return;
-        }
-    };
-    private DialogInterface.OnClickListener click_noplane_ok =new DialogInterface.OnClickListener()
-    {
-        @Override
-        public void onClick(DialogInterface arg0,int arg1)
-        {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            TitleTextView("没有直达航班，请查询附近城市,或选择列车飞机综合换乘方案");
-            return;
-        }
-    };
-    private DialogInterface.OnClickListener click_nobus_ok =new DialogInterface.OnClickListener()
-    {
-        @Override
-        public void onClick(DialogInterface arg0,int arg1)
-        {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            TitleTextView("没有直达班车，请查询附近城市,或选择列车飞机综合换乘方案");
-            return;
-        }
-    };
 
 }
