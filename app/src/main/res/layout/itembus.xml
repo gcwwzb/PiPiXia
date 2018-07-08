@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
         android:focusable="false"
-        android:text="车型：" />
+        android:text="座驾种类：" />
 
     <TextView
         android:id="@+id/textView22"
@@ -22,7 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:focusable="false"
-        android:text="距离：" />
+        android:text="所需时间：" />
 
     <TextView
         android:id="@+id/textView23"
