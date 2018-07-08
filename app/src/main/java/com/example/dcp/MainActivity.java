@@ -608,11 +608,13 @@ public class MainActivity extends Activity {
                         msg.what = NULL;
                         handler.sendMessage(msg);
                         break;
+                    }else{
+                        Message msg = new Message();
+                        msg.what = TRAIN;
+                        handler.sendMessage(msg);
                     }
                 }
-                Message msg = new Message();
-                msg.what = TRAIN;
-                handler.sendMessage(msg);
+
             } catch (Exception e) {
                 Dialogs.dialog.dismiss();
                 Log.i("网络错误", "执行了网络错误1");
@@ -653,17 +655,19 @@ public class MainActivity extends Activity {
                     map.put("Mode", Mode);
                     map.put("Week", Week);
                     listviews.add(map);
+
                     if ("没有航班".equals(Company.toString())) {
                         Message mes = new Message();
                         mes.what = NULLPLANE;
                         handler.sendMessage(mes);
                         Log.i("aaa", "查询到没有此路线的直达航班");
-                        break;
+                    } else {
+                        Message msg = new Message();
+                        msg.what = PLANE;
+                        handler.sendMessage(msg);
                     }
                 }
-                Message msg = new Message();
-                msg.what = PLANE;
-                handler.sendMessage(msg);
+
             } catch (Exception e) {
                 Dialogs.dialog.dismiss();
                 Log.i("网络错误", "执行了网络错误1");
@@ -693,7 +697,7 @@ public class MainActivity extends Activity {
 
                 /**---------------------------- 解析 ------------------------*/
                 jsonObject = new JSONObject(results);
-                //System.out.println("这是jsonObject-----" + jsonObject.toString());
+                System.out.println("这是jsonObject-----" + jsonObject.toString());
                 /**---------------------------------------------------------------------------*/
                 System.out.println("这是第一个元素status-----" + jsonObject.getString("status"));
                 if (jsonObject.getInt("status") != 0) {
@@ -726,14 +730,6 @@ public class MainActivity extends Activity {
                         map.put("bustype", bustype);
                         map.put("distance", distance);
                         listviews.add(map);
-                        if ("".equals(starttime)) {
-                            //判断车次是不是存在.在这次我用的是发车时间的判断,""的就是没有车次
-                            //返回的what和有车次的肯定不一样.
-                            Message msg = new Message();
-                            msg.what = NULLBUS;
-                            handler.sendMessage(msg);
-                            break;
-                        }
                         Message msg = new Message();
                         msg.what = BUS;
                         handler.sendMessage(msg);
