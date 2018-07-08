@@ -61,6 +61,10 @@ import org.json.JSONObject;
 
 
 public class MainActivity extends Activity {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
@@ -98,21 +102,39 @@ public class MainActivity extends Activity {
 
                 case NULL:
                     dialogs.dialog.dismiss();
+<<<<<<< HEAD
                     AlertDialog.Builder alertdialogbuilder_train=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_train.setTitle("提示");
                     alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
                     alertdialogbuilder_train.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_train=alertdialogbuilder_train.create();
+=======
+
+                    AlertDialog.Builder alertdialogbuilder_train = new AlertDialog.Builder(MainActivity.this);
+                    alertdialogbuilder_train.setTitle("提示");
+                    alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
+                    alertdialogbuilder_train.setPositiveButton("确定", click_notrain_ok);
+                    AlertDialog alertdialog_train = alertdialogbuilder_train.create();
+>>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
                     alertdialog_train.show();
                     break;
 
                 case NULLBUS:
                     dialogs.dialog.dismiss();
+<<<<<<< HEAD
                     AlertDialog.Builder alertdialogbuilder_bus=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_bus.setTitle("提示");
                     alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
                     alertdialogbuilder_bus.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_bus=alertdialogbuilder_bus.create();
+=======
+
+                    AlertDialog.Builder alertdialogbuilder_bus = new AlertDialog.Builder(MainActivity.this);
+                    alertdialogbuilder_bus.setTitle("提示");
+                    alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
+                    alertdialogbuilder_bus.setPositiveButton("确定", click_nobus_ok);
+                    AlertDialog alertdialog_bus = alertdialogbuilder_bus.create();
+>>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
                     alertdialog_bus.show();
                     break;
 
@@ -189,7 +211,7 @@ public class MainActivity extends Activity {
     List<Map<String, Object>> listviews;  //为了适用SimpleAdapter的集合
     private List<Station> list;        //火车对应的集合
     private List<Plane> listplane;    //飞机的对应集合
-    private List<Bus> listbus;    //大巴的对应集合
+    //private List<Bus> listbus;    //大巴的对应集合
     private EditText et1;
     private EditText et2;
     public static Button bt1;        //火车查询
@@ -289,12 +311,9 @@ public class MainActivity extends Activity {
                     plane.Week = (String) maps.get("Week");
                     Log.i("aaa", plane.toString());
                     inserts(plane);
-                    //Toast.makeText(MainActivity.this,plane.AirlineCode+" 航班加入收藏列表", 1).show();
                     Toast.makeText(MainActivity.this, plane.AirlineCode + " 航班加入收藏列表", Toast.LENGTH_LONG).show();
                 } else {
-                    //Toast.makeText(MainActivity.this, "该班次已经添加过了", 1).show();
                     Toast.makeText(MainActivity.this, "该班次已经添加过了", Toast.LENGTH_LONG).show();
-                    return;
                 }
             }
         });
@@ -307,27 +326,25 @@ public class MainActivity extends Activity {
                 //maps 或者选中item在listviews里面的下标所对应的值,然后取出里面的值
                 Map<String, Object> maps = listviews.get(busPosition);
                 ResultBean bus = new ResultBean();
+                bus.setStarttime((String) maps.get("starttime"));
                 bus.setBustype((String) maps.get("bustype"));
                 //数据库里面查询这个值是不是存在,存在了就不保存了.不存在的保存下来.
                 DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=?;", new String[]{bus.getBustype().toString()});
+                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=? and starttime=?;", new String[]{bus.getBustype(),bus.getStarttime()});
                 if (css.getCount() <= 0) {
                     bus.setDistance((String) maps.get("distance"));
                     bus.setStartcity((String) maps.get("startcity"));
                     bus.setStartstation((String) maps.get("startstation"));
                     bus.setEndcity((String) maps.get("endcity"));
                     bus.setEndstation((String) maps.get("endstation"));
-                    bus.setStarttime((String) maps.get("starttime"));
+                   // bus.setStarttime((String) maps.get("starttime"));
                     bus.setPrice((String) maps.get("price"));
                     insertBus(bus);
-                    //Toast.makeText(MainActivity.this,station.TrainCode+" 列车加入收藏列表", 1).show();
-                    Toast.makeText(MainActivity.this, bus.getStarttime() + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, bus.getBustype() + bus.getStarttime()  + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
                     /*-------------------------------------------------------*/
                 } else {
-                    //Toast.makeText(MainActivity.this, "该车次已经添加过了", 1).show();
-                    Toast.makeText(MainActivity.this, "该车次已经添加过了", Toast.LENGTH_LONG).show();
-                    return;
+                    Toast.makeText(MainActivity.this, "该车次已经添加过了", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -495,7 +512,7 @@ public class MainActivity extends Activity {
                         msg.what = NULL;
                         handler.sendMessage(msg);
                         break;
-                    }else{
+                    } else {
                         Message msg = new Message();
                         msg.what = TRAIN;
                         handler.sendMessage(msg);
@@ -597,6 +614,7 @@ public class MainActivity extends Activity {
                     JSONArray jsonArray = jsonObject.getJSONArray("result");
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject obj = jsonArray.getJSONObject(i);
+                        String distance = obj.getString("distance");
                         String startcity = obj.getString("startcity");
                         String endcity = obj.getString("endcity");
                         String startstation = obj.getString("startstation");
@@ -604,10 +622,9 @@ public class MainActivity extends Activity {
                         String starttime = obj.getString("starttime");
                         String price = obj.getString("price");
                         String bustype = obj.getString("bustype");
-                        String distance = obj.getString("distance");
-                        System.out.println(startcity + " " + endcity + " " + startstation + " " + endstation + " " + starttime + " " + price + " " + bustype + " " + distance);
 
                         HashMap<String, Object> map = new HashMap<String, Object>();
+                        map.put("distance", distance);
                         map.put("startcity", startcity);
                         map.put("endcity", endcity);
                         map.put("startstation", startstation);
@@ -615,7 +632,7 @@ public class MainActivity extends Activity {
                         map.put("starttime", starttime);
                         map.put("price", price);
                         map.put("bustype", bustype);
-                        map.put("distance", distance);
+
                         listviews.add(map);
                         Message msg = new Message();
                         msg.what = BUS;
@@ -628,7 +645,6 @@ public class MainActivity extends Activity {
                 Message msg = new Message();
                 msg.what = NULLS;
                 handler.sendMessage(msg);
-                //return;
             }
         }
     }
@@ -859,7 +875,6 @@ public class MainActivity extends Activity {
         // 得到一个可写的SQLiteDatabase对象
         DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
         SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-        //Cursor c = sqliteDatabase.query("bus", null, null, null, null, null, null);
         Cursor c = sqliteDatabase.query("bus", null, null, null, null, null, null);
         if (c.moveToFirst()) {//判断游标是否为空
             for (int i = 0; i < c.getCount(); i++) {
@@ -957,20 +972,35 @@ public class MainActivity extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
+<<<<<<< HEAD
     /**
      * 提醒没有直达路线之后在弹出框上点击确定之后的效果
      */
     private DialogInterface.OnClickListener click_noway_ok =new DialogInterface.OnClickListener()
     {
+=======
+
+    private DialogInterface.OnClickListener click_notrain_ok = new DialogInterface.OnClickListener() {
         @Override
-        public void onClick(DialogInterface arg0,int arg1)
-        {
+        public void onClick(DialogInterface arg0, int arg1) {
+            listview2.setVisibility(View.GONE);
+            listview1.setVisibility(View.GONE);
+            listview3.setVisibility(View.GONE);
+            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
+            return;
+        }
+    };
+    private DialogInterface.OnClickListener click_noplane_ok = new DialogInterface.OnClickListener() {
+>>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
+        @Override
+        public void onClick(DialogInterface arg0, int arg1) {
             listview2.setVisibility(View.GONE);
             listview1.setVisibility(View.GONE);
             listview3.setVisibility(View.GONE);
             return;
         }
     };
+<<<<<<< HEAD
     /**
      * 显示共查询到多少条可走路线
      */
@@ -983,6 +1013,16 @@ public class MainActivity extends Activity {
                 toast.setText(content);
             }
             toast.show();
+=======
+    private DialogInterface.OnClickListener click_nobus_ok = new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface arg0, int arg1) {
+            listview2.setVisibility(View.GONE);
+            listview1.setVisibility(View.GONE);
+            listview3.setVisibility(View.GONE);
+            TitleTextView("没有直达班车，请查询附近城市,或选择列车飞机综合换乘方案");
+            return;
+>>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
         }
     }
 
