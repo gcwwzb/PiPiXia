@@ -61,6 +61,7 @@ import org.json.JSONObject;
 
 
 public class MainActivity extends Activity {
+    /** nzhegescssssssssssssssssssssssssssssss */
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
