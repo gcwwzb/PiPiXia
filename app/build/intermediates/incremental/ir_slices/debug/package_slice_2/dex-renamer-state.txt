@@ -1,4 +1,4 @@
-#Sat Jul 07 23:31:13 CST 2018
-base.0=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+#Tue Jul 10 22:03:03 CST 2018
+base.0=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\53
 path.0=classes.dex
 renamed.0=classes.dex

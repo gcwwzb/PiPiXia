@@ -1,4 +1,4 @@
-#Sat Jul 07 23:31:13 CST 2018
+#Tue Jul 10 22:10:23 CST 2018
 path.3=classes.dex
 path.2=classes.dex
 path.1=classes.dex
@@ -7,7 +7,7 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.2=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-base.1=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-base.0=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.3=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\63
+base.2=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\65
+base.1=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\62
+base.0=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\64

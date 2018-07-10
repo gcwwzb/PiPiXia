@@ -1,10 +1,10 @@
 #Internal package file, do not edit.
-#Sat Jul 07 23:31:13 CST 2018
-1.base=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+#Tue Jul 10 22:10:23 CST 2018
+1.base=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\65
 2.path=classes.dex
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+2.base=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\62
 3.set=DEX
 2.set=DEX
 1.baseType=DIRECTORY
@@ -12,8 +12,8 @@
 count=4
 1.set=DEX
 0.path=classes.dex
-3.base=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+3.base=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\64
 0.set=DEX
-0.base=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+0.base=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\63
 2.baseType=DIRECTORY
 1.path=classes.dex

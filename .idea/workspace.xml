@@ -6,16 +6,24 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="dcp" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MoreInfo" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="2b2431a5-b784-4430-928e-da8d80e26feb" name="Default" comment="day0707  截至中午 Version 1.5 bus所有都改好了 只是bus收藏有一点点问题  先留在这里了">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-=======
-    <list default="true" id="2b2431a5-b784-4430-928e-da8d80e26feb" name="Default" comment="">
+    <list default="true" id="8e4dcec2-7369-46cd-aa7c-110ee17ff2b7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___E__Android_example_PiPiXia_app_libs_nineoldandroids_2_4_0_jar_unspecified_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dcp/Introduce.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dcp/MoreInfo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dcp/aboutus.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/aboutus.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/intro1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/intro2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/intro3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/introduce.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/listitem.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/more_info.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/special.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/classAnalysis.bin" />
@@ -27,9 +35,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___E__workspace_Android_workspace_PiPiXia_app_libs_nineoldandroids_2_4_0_jar_unspecified_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__PiPiXia_app_libs_nineoldandroids_2_4_0_jar_unspecified_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_19_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_19_1_0_jar.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
@@ -45,24 +55,127 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-v14.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-v14.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$1.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$10.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$11.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$12.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$13.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$13.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$14.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$14.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$15.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$15.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$16.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$17.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$8.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$9.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$BusThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$BusThread.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$MyThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$MyThread.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$PlaneThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity$PlaneThread.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/MainActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/PlaneActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$layout.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$menu.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/dcp/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$10.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$11.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$12.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$13.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$13.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$14.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$14.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$15.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$15.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$16.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$17.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$8.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$9.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$BusThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$BusThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$MyThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$MyThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$PlaneThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity$PlaneThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/MainActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/PlaneActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$layout.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$menu.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/dcp/R$style.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EEg6h7IVgV5eOoyK2Vq9aJKjIXk=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/7V_5J9jCbe3L_e1BFToJJkCityw=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/DTvXIoi2qO7IyHMzKeH5TftEoF8=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/anCy52UEGy1Vc84RIf0lj+y5UuU=" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/EEg6h7IVgV5eOoyK2Vq9aJKjIXk=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/7V_5J9jCbe3L_e1BFToJJkCityw=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/DTvXIoi2qO7IyHMzKeH5TftEoF8=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/anCy52UEGy1Vc84RIf0lj+y5UuU=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_dep/debug/dependencies/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_dep/debug/dependencies/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_dep/debug/package_dependencies/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_dep/debug/package_dependencies/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_0/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_1/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_1/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_2/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_2/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_3/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_3/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_4/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_5/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_5/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_6/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_6/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_7/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_7/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_8/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_8/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_0/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_1/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_2/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_2/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_3/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_3/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_4/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_4/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_5/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_5/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_6/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_6/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_7/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_7/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_8/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_8/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_9/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/slice_9/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/KbQSut8l2e0thRKO4hiX_ZhzZac=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/O9UJjH4tMqbKSL_FEqCtUknIGIg=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/zip-cache/O9UJjH4tMqbKSL_FEqCtUknIGIg=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-apk/debug/app-debug.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest-checker/debug/manifest.crc" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest-checker/debug/manifest.crc" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest-checker/debug/manifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest-checker/debug/manifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_add_passenger_normal.9.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_add_passenger_normal.9.png.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_add_passenger_pressed.9.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_add_passenger_pressed.9.png.flat" />
@@ -74,6 +187,7 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_plane.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_plane.xml.flat" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_itembus.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_itembus.xml.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_itemplane.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_itemplane.xml.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_items.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_items.xml.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu_main.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu_main.xml.flat" />
@@ -82,15 +196,244 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/dep/dependencies.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/dep/dependencies.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_0.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_0.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_1.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_1.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_2.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_2.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_3.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_3.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_4.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_4.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_5.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_5.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_6.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_6.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_7.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_7.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_8.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_8.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_9.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_9.apk" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0.jar" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/1.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/1.jar" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10/com/android/tools/ir/dummy/slice_0.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10/com/yangfan/Entity/Bus$ResultBean.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10/com/yangfan/Entity/Bus.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10/com/yangfan/Entity/Plane.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10/com/yangfan/Entity/Station.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11/com/android/tools/ir/dummy/slice_1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11/com/yangfan/Util/Applications.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11/com/yangfan/Util/DatabaseHelper.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11/com/yangfan/Util/Dialogs.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11/com/yangfan/Util/HttpUtil.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11/com/yangfan/Util/NetConnectionUtil.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11/com/yangfan/Xmlpull/Xmlpullplane.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11/com/yangfan/Xmlpull/xmlpull.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/12/com/android/tools/ir/dummy/slice_2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/13/com/android/tools/ir/dummy/slice_3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/android/tools/ir/dummy/slice_4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/BuildConfig.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$10.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$11.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$12.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$13.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$14.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$15.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$16.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$17.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$7.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$8.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$9.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$BusThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$MyThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity$PlaneThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/MainActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/PlaneActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/PlaneActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/PlaneActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/PlaneActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/PlaneActivity$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/PlaneActivity$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/PlaneActivity$7.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/PlaneActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R$menu.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14/com/example/dcp/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/15/com/android/tools/ir/dummy/slice_5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/16/com/android/tools/ir/dummy/slice_6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/17/com/android/tools/ir/dummy/slice_7.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/18/com/android/tools/ir/dummy/slice_8.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/19/com/android/tools/ir/dummy/slice_9.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/19/com/yangfan/Sqlite/MySQLiteOpenHelper.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/19/com/yangfan/texiao/SwipeDismissListView$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/19/com/yangfan/texiao/SwipeDismissListView$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/19/com/yangfan/texiao/SwipeDismissListView$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/19/com/yangfan/texiao/SwipeDismissListView$OnDismissCallback.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/19/com/yangfan/texiao/SwipeDismissListView.dex" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/2.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/2.jar" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/3.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/3.jar" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/BuildConfig.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$10.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$11.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$12.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$13.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$14.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$15.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$16.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$17.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$7.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$8.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$9.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$BusThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$MyThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity$PlaneThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/MainActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/PlaneActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/PlaneActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/PlaneActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/PlaneActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/PlaneActivity$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/PlaneActivity$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/PlaneActivity$7.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/PlaneActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R$menu.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/example/dcp/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Entity/Bus$ResultBean.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Entity/Bus.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Entity/Plane.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Entity/Station.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Sqlite/MySQLiteOpenHelper.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Util/Applications.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Util/DatabaseHelper.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Util/Dialogs.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Util/HttpUtil.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Util/NetConnectionUtil.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Xmlpull/Xmlpullplane.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/Xmlpull/xmlpull.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/texiao/SwipeDismissListView$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/texiao/SwipeDismissListView$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/texiao/SwipeDismissListView$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/texiao/SwipeDismissListView$OnDismissCallback.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4/com/yangfan/texiao/SwipeDismissListView.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/7.jar" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/10/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/11/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/12/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/13/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/14/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/2/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/3/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/4/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/5/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/6/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/7/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/8/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/9/classes.dex" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$10.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$11.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$12.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$13.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$13.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$14.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$14.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$15.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$15.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$16.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$17.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$8.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$9.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$BusThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$BusThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$MyThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$MyThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$PlaneThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity$PlaneThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/MainActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/PlaneActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$layout.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$menu.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/dcp/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/yangfan/Util/Applications.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/yangfan/Util/Applications.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/yangfan/texiao/SwipeDismissListView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/yangfan/texiao/SwipeDismissListView.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/1/com/yangfan/Util/Applications.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/1/com/yangfan/Util/Applications.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/buildId.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/buildId.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$10.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$11.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$12.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$13.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$13.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$14.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$14.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$15.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$15.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$16.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$17.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$8.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$9.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$BusThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$BusThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$MyThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$MyThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$PlaneThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity$PlaneThread.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/MainActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/PlaneActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$layout.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$menu.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/4/com/example/dcp/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/9/com/yangfan/texiao/SwipeDismissListView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/9/com/yangfan/texiao/SwipeDismissListView.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dcp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dcp/MainActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values-sw600dp/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-sw600dp/dimens.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values-sw720dp-land/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-sw720dp-land/dimens.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" />
@@ -99,9 +442,7 @@
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
       <change beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
       <change beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
     </list>
-    <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,200 +458,97 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="PiPiXia" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
+        <projects_view />
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plane.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/plane.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="442">
-              <caret line="68" column="48" lean-forward="true" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+            <state relative-caret-position="723">
+              <caret line="351" column="65" lean-forward="true" selection-start-line="351" selection-start-column="65" selection-end-line="351" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2914#14309#0" expanded="true" />
-                <element signature="e#14308#14309#0" expanded="true" />
-                <element signature="e#17300#19268#0" expanded="true" />
-                <element signature="e#19267#19268#0" expanded="true" />
-                <element signature="e#19313#21088#0" expanded="true" />
-                <element signature="e#21087#21088#0" expanded="true" />
-                <element signature="e#21133#23074#0" expanded="true" />
-                <element signature="e#23073#23074#0" expanded="true" />
-                <element signature="e#23433#25063#0" expanded="true" />
-                <element signature="e#25062#25063#0" expanded="true" />
-                <element signature="e#25099#26847#0" expanded="true" />
-                <element signature="e#26846#26847#0" expanded="true" />
-                <element signature="e#26882#28432#0" expanded="true" />
-                <element signature="e#28431#28432#0" expanded="true" />
-                <element signature="e#28467#28946#0" expanded="true" />
-                <element signature="e#28945#28946#0" expanded="true" />
-                <element signature="e#29463#29479#0" expanded="true" />
-                <element signature="e#31957#31973#0" expanded="true" />
-                <element signature="e#36159#36175#0" expanded="true" />
-                <element signature="method#setDateTime#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#updateDateDisplay#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#38910#39440#0" expanded="true" />
-                <element signature="e#39439#39440#0" expanded="true" />
-                <element signature="method#onCreateDialog#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onPrepareDialog#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#40093#40485#0" expanded="true" />
-                <element signature="e#40484#40485#0" expanded="true" />
-                <element signature="e#44452#44468#0" expanded="true" />
-                <element signature="e#46352#46368#0" expanded="true" />
-                <element signature="e#48169#48185#0" expanded="true" />
-                <element signature="method#NetWorkStatus#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#49951#50577#0" expanded="true" />
-                <element signature="e#50576#50577#0" expanded="true" />
-                <element signature="e#50624#50860#0" expanded="true" />
-                <element signature="e#50859#50860#0" expanded="true" />
-                <element signature="method#onKeyDown#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#51334#51554#0" expanded="true" />
-                <element signature="e#51553#51554#0" expanded="true" />
-                <element signature="e#51601#51800#0" expanded="true" />
-                <element signature="e#51799#51800#0" expanded="true" />
-                <element signature="e#51968#52337#0" expanded="true" />
-                <element signature="e#52336#52337#0" expanded="true" />
-                <element signature="e#52401#52770#0" expanded="true" />
-                <element signature="e#52769#52770#0" expanded="true" />
-                <element signature="e#52832#53201#0" expanded="true" />
-                <element signature="e#53200#53201#0" expanded="true" />
-=======
-            <state relative-caret-position="42">
-              <caret line="379" column="13" lean-forward="false" selection-start-line="379" selection-start-column="13" selection-end-line="379" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2864#14259#0" expanded="true" />
-                <element signature="e#14258#14259#0" expanded="true" />
-                <element signature="e#17250#19218#0" expanded="true" />
-                <element signature="e#19263#21038#0" expanded="true" />
-                <element signature="e#21037#21038#0" expanded="true" />
-                <element signature="e#21083#23024#0" expanded="true" />
-                <element signature="e#23023#23024#0" expanded="true" />
-                <element signature="e#23383#25013#0" expanded="true" />
-                <element signature="e#25012#25013#0" expanded="true" />
-                <element signature="e#25049#26797#0" expanded="true" />
-                <element signature="e#26796#26797#0" expanded="true" />
-                <element signature="e#26832#28382#0" expanded="true" />
-                <element signature="e#28381#28382#0" expanded="true" />
-                <element signature="e#28417#28896#0" expanded="true" />
-                <element signature="e#28895#28896#0" expanded="true" />
-                <element signature="e#29413#29429#0" expanded="true" />
-                <element signature="e#31959#31975#0" expanded="true" />
-                <element signature="e#36183#36199#0" expanded="true" />
-                <element signature="e#38548#39078#0" expanded="true" />
-                <element signature="e#39077#39078#0" expanded="true" />
-                <element signature="e#39731#40123#0" expanded="true" />
-                <element signature="e#40122#40123#0" expanded="true" />
-                <element signature="e#44090#44106#0" expanded="true" />
-                <element signature="e#45990#46006#0" expanded="true" />
-                <element signature="e#47807#47823#0" expanded="true" />
-                <element signature="e#49589#50215#0" expanded="true" />
-                <element signature="e#50214#50215#0" expanded="true" />
-                <element signature="e#50262#50498#0" expanded="true" />
-                <element signature="e#50497#50498#0" expanded="true" />
-                <element signature="e#50623#50624#0" expanded="true" />
-                <element signature="e#50652#50653#0" expanded="true" />
-                <element signature="e#50972#51192#0" expanded="true" />
-                <element signature="e#51191#51192#0" expanded="true" />
-                <element signature="e#51239#51438#0" expanded="true" />
-                <element signature="e#51437#51438#0" expanded="true" />
-                <element signature="e#51606#51975#0" expanded="true" />
-                <element signature="e#51974#51975#0" expanded="true" />
-                <element signature="e#52039#52408#0" expanded="true" />
-                <element signature="e#52407#52408#0" expanded="true" />
-                <element signature="e#52470#52839#0" expanded="true" />
-                <element signature="e#52838#52839#0" expanded="true" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
+                <marker date="1531232637783" expanded="false" signature="16934:16940" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Plane.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Plane.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="142">
-=======
-            <state relative-caret-position="210">
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Station.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Station.java">
+      <file leaf-file-name="introduce.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/introduce.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="142">
-=======
-            <state relative-caret-position="147">
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="120">
+              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intro1.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro1.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intro2.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro2.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Introduce.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/Introduce.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intro3.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro3.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-30">
+              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -322,18 +560,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\YiY\.gradle\wrapper\dists\gradle-4.4.1-all\2kpyt0ea6hyxavvt21uml23gd\gradle-4.4.1" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\木子\.gradle\wrapper\dists\gradle-4.4.1-all\2kpyt0ea6hyxavvt21uml23gd\gradle-4.4.1" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -2347,63 +2584,32 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Entiy/Plane.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Sqlite/MySQLiteOpenHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/NetConnectionUtil.java" />
-        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Entiy/Station.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Entiy/Bus.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_plane.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/DatabaseHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/jsonHttpUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/androidTestDebug/aidl/com/example/dcp/MainActivityTest.groovy" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/special.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/aboutus.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/listitem.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/texiao/SwipeDismissListView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/Dialogs.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/itembus.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/dcp/PlaneActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/itemplane.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Bus.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Plane.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Station.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/dcp/aboutus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/dcp/MoreInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/more_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/intro2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/intro1.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/intro3.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/introduce.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/dcp/Introduce.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/dcp/MainActivity.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="181" />
-    <option name="y" value="-20" />
-    <option name="width" value="1305" />
-    <option name="height" value="780" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Internationalization issues</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>LossyEncoding</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-4" />
+    <option name="y" value="4" />
+    <option name="width" value="1002" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -2417,263 +2623,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="MaiWei" type="1abcf292:AndroidViewProjectNode" />
+              <item name="PiPiXia" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="MaiWei" type="1abcf292:AndroidViewProjectNode" />
+              <item name="PiPiXia" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="PiPiXia" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dcp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="yangfan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="yangfan" type="462c0819:PsiDirectoryNode" />
-              <item name="Sqlite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="yangfan" type="462c0819:PsiDirectoryNode" />
-              <item name="texiao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="yangfan" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="yangfan" type="462c0819:PsiDirectoryNode" />
-              <item name="Xmlpull" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable-hdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable-mdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable-xhdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable-xxhdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values-sw600dp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values-sw720dp-land" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values-v11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PiPiXia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PiPiXia" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values-v14" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="android.sdk.path" value="E:/develop/Android/android-sdk" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
-    <property name="android.project.structure.proportion" value="0.15" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="device.picker.selection" value="33c03221" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="android.profiler.active" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/androidTestDebug/aidl" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
-    <property name="SearchEverywhereHistoryKey" value="R&#9;PSI&#9;JAVA://com.example.dcp.R" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.dcp" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\Android_workspace\PiPiXia\app\libs" />
-    </key>
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../sdk" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../First" />
+    <property name="device.picker.selection" value="IJPJAQW499999999" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2687,7 +2670,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -2756,25 +2739,6 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
     </configuration>
-    <configuration name="HttpUtil" type="Application" factoryName="Application" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.yangfan.Util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yangfan.Util.HttpUtil" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="app" />
-      <envs />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -2809,7 +2773,7 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
@@ -2832,19 +2796,30 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
     </configuration>
-    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
     </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Android App.app" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HttpUtil" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -2854,444 +2829,275 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2b2431a5-b784-4430-928e-da8d80e26feb" name="Default" comment="" />
-      <created>1529915670241</created>
+      <changelist id="8e4dcec2-7369-46cd-aa7c-110ee17ff2b7" name="Default" comment="" />
+      <created>1531148652512</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1529915670241</updated>
+      <updated>1531148652512</updated>
     </task>
-    <task id="LOCAL-00001" summary="day630">
-      <created>1530374300361</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1530374300361</updated>
-    </task>
-    <task id="LOCAL-00002" summary="day630">
-      <created>1530374901071</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1530374901071</updated>
-    </task>
-    <task id="LOCAL-00003" summary="day630">
-      <created>1530449440377</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1530449440377</updated>
-    </task>
-    <task id="LOCAL-00004" summary="day0705 Version 1.1  添加了大巴的一些内容">
-      <created>1530773637851</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1530773637851</updated>
-    </task>
-    <task id="LOCAL-00005" summary="day0705 Version 1.2  基本修改好了bus">
-      <created>1530789186200</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1530789186200</updated>
-    </task>
-    <task id="LOCAL-00006" summary="day0706 Version 1.3  bus有问题  唉">
-      <created>1530885098485</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1530885098486</updated>
-    </task>
-    <task id="LOCAL-00007" summary="day0706晚  Version 1.4  bus改好了 只是界面有问题 交给小组成员去弄">
-      <created>1530892711667</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1530892711668</updated>
-    </task>
-    <task id="LOCAL-00008" summary="day0707  截至中午 Version 1.5 bus所有都改好了 只是bus收藏有一点点问题  先留在这里了">
-      <created>1530937734122</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1530937734122</updated>
-    </task>
-<<<<<<< HEAD
-    <option name="localTasksCounter" value="9" />
-=======
-    <task id="LOCAL-00009" summary="day0707  截至中午 Version 1.5 bus所有都改好了 只是bus收藏有一点点问题  先留在这里了">
-      <created>1531040925430</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1531040925430</updated>
-    </task>
-    <task id="LOCAL-00010" summary="day0708  hzy实验  修改去掉搜索不成功时的输出">
-      <created>1531041094112</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1531041094112</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49352053" order="12" side_tool="false" content_ui="tabs" />
-=======
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49784017" order="12" side_tool="false" content_ui="tabs" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7138158" sideWeight="0.449784" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78179824" sideWeight="0.65712744" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7138158" sideWeight="0.55021596" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.48488122" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4725877" sideWeight="0.6792657" order="2" side_tool="false" content_ui="tabs" x="34" y="170" width="1852" height="740" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42986053" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41776314" sideWeight="0.50701946" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12280702" sideWeight="0.3245083" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78179824" sideWeight="0.65712744" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21600877" sideWeight="0.3925486" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4913607" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215311" sideWeight="0.6754917" order="2" side_tool="false" content_ui="tabs" x="34" y="170" width="1852" height="740" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28366113" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14992025" sideWeight="0.5091793" order="3" side_tool="false" content_ui="tabs" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20065789" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="false" weight="0.32991362" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="1273" y="99" width="611" height="864" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5372807" sideWeight="0.4913607" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="StringPreview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-=======
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7302632" sideWeight="0.44600433" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0877193" sideWeight="0.55399567" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51754385" sideWeight="0.5091793" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="false" weight="0.32991362" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="1273" y="99" width="611" height="864" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5372807" sideWeight="0.4913607" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="StringPreview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7368421" sideWeight="0.65712744" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25548247" sideWeight="0.39416847" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49568033" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="HIGHLIGHTERS">
-                <map>
-                  <entry key="MERGE_COMMITS" value="false" />
-                </map>
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="day630" />
-    <MESSAGE value="day0705 Version 1.1  添加了大巴的一些内容" />
-    <MESSAGE value="day0705 Version 1.2  基本修改好了bus" />
-    <MESSAGE value="day0706 Version 1.3  bus有问题  唉" />
-    <MESSAGE value="day0706晚  Version 1.4  bus改好了 只是界面有问题 交给小组成员去弄" />
-    <MESSAGE value="day0707  截至中午 Version 1.5 bus所有都改好了 只是bus收藏有一点点问题  先留在这里了" />
-<<<<<<< HEAD
-    <option name="LAST_COMMIT_MESSAGE" value="day0707  截至中午 Version 1.5 bus所有都改好了 只是bus收藏有一点点问题  先留在这里了" />
-=======
-    <MESSAGE value="day0708  hzy实验  修改去掉搜索不成功时的输出" />
-    <option name="LAST_COMMIT_MESSAGE" value="day0708  hzy实验  修改去掉搜索不成功时的输出" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="31" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-25/android/util/Log.java" />
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-25/android/os/Message.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/androidTestDebug/aidl/com/example/dcp/MainActivityTest.groovy" />
-    <entry file="jar://$PROJECT_DIR$/app/libs/json-lib-2.4-jdk15.jar!/net/sf/json/JsonConfig.class" />
-    <entry file="jar://$PROJECT_DIR$/app/libs/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class" />
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-19/org/json/JSONTokener.java" />
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-19/org/json/JSONArray.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/btn_add_passenger_normal.9.png">
-      <provider editor-type-id="images">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/introduce.xml">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/btn_add_passenger_pressed.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/fj.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shape.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Xmlpull/Xmlpullplane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Xmlpull/xmlpull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/HttpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        <state relative-caret-position="120">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/NetConnectionUtil.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="8460">
+          <caret line="345" column="46" lean-forward="false" selection-start-line="345" selection-start-column="46" selection-end-line="345" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1531232637783" expanded="false" signature="16934:16940" ph="&lt;~&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-sw720dp-land/dimens.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro1.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-sw600dp/dimens.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro2.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/Introduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1470">
+          <caret line="65" column="5" lean-forward="false" selection-start-line="37" selection-start-column="3" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v14/styles.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro3.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/Applications.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Sqlite/MySQLiteOpenHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-<<<<<<< HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-19/android/util/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="158" column="22" lean-forward="false" selection-start-line="158" selection-start-column="22" selection-end-line="158" selection-end-column="22" />
-=======
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-19/android/util/Log.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="284">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/texiao/SwipeDismissListView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/PromptSharedPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5278">
-          <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/itemplane.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/PlaneActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#1924#2109#0" expanded="false" />
+            <element signature="e#2108#2109#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../SDK/platforms/android-19/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="2299" column="0" lean-forward="false" selection-start-line="2299" selection-start-column="0" selection-end-line="2299" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../SDK/platforms/android-19/android.jar!/android/app/Activity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="825" column="0" lean-forward="false" selection-start-line="825" selection-start-column="0" selection-end-line="825" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/special.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="787">
-          <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Util/Dialogs.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/aboutus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        <state relative-caret-position="268">
+          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/items.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listitem.xml">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="4290">
-          <caret line="165" column="38" lean-forward="false" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/more_info.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/aboutus.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/MoreInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-326">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/Introducec.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/MyPagerAdatr.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro1.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro2.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/intro3.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/introduce.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3300,313 +3106,29 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="1846">
-          <caret line="71" column="24" lean-forward="false" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+        <state relative-caret-position="180">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/itembus.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="84" column="20" lean-forward="false" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_plane.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="3432">
-          <caret line="132" column="43" lean-forward="false" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
-<<<<<<< HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-19/java/lang/Override.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/Introduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-19/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="117" column="16" lean-forward="false" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
-          <folding />
-=======
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-19/java/lang/Override.java" />
-    <entry file="file://E:/develop/Android/android-sdk/sources/android-19/java/util/List.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/PlaneActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="183">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#1227#1247#0" expanded="false" />
-            <element signature="e#1319#1339#0" expanded="false" />
-            <element signature="e#1412#1432#0" expanded="false" />
-            <element signature="e#1924#2109#0" expanded="false" />
-            <element signature="e#2108#2109#0" expanded="false" />
-            <element signature="e#2434#3237#0" expanded="false" />
-            <element signature="e#3236#3237#0" expanded="false" />
-            <element signature="e#4099#5093#0" expanded="false" />
-            <element signature="e#5092#5093#0" expanded="false" />
-            <element signature="method#onKeyDown#0;class#PlaneActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/dcp/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1042">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/plane.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Station.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Plane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Bus.java">
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-<<<<<<< HEAD
-=======
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Bus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Station.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yangfan/Entity/Plane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Android/AndroidSDK/platforms/android-19/android.jar!/android/view/View.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="244" column="16" lean-forward="false" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Android/AndroidSDK/platforms/android-19/android.jar!/android/database/Cursor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dcp/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="442">
-          <caret line="68" column="48" lean-forward="true" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        <state relative-caret-position="723">
+          <caret line="351" column="65" lean-forward="true" selection-start-line="351" selection-start-column="65" selection-end-line="351" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2914#14309#0" expanded="true" />
-            <element signature="e#14308#14309#0" expanded="true" />
-            <element signature="e#17300#19268#0" expanded="true" />
-            <element signature="e#19267#19268#0" expanded="true" />
-            <element signature="e#19313#21088#0" expanded="true" />
-            <element signature="e#21087#21088#0" expanded="true" />
-            <element signature="e#21133#23074#0" expanded="true" />
-            <element signature="e#23073#23074#0" expanded="true" />
-            <element signature="e#23433#25063#0" expanded="true" />
-            <element signature="e#25062#25063#0" expanded="true" />
-            <element signature="e#25099#26847#0" expanded="true" />
-            <element signature="e#26846#26847#0" expanded="true" />
-            <element signature="e#26882#28432#0" expanded="true" />
-            <element signature="e#28431#28432#0" expanded="true" />
-            <element signature="e#28467#28946#0" expanded="true" />
-            <element signature="e#28945#28946#0" expanded="true" />
-            <element signature="e#29463#29479#0" expanded="true" />
-            <element signature="e#31957#31973#0" expanded="true" />
-            <element signature="e#36159#36175#0" expanded="true" />
-            <element signature="method#setDateTime#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateDateDisplay#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#38910#39440#0" expanded="true" />
-            <element signature="e#39439#39440#0" expanded="true" />
-            <element signature="method#onCreateDialog#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onPrepareDialog#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#40093#40485#0" expanded="true" />
-            <element signature="e#40484#40485#0" expanded="true" />
-            <element signature="e#44452#44468#0" expanded="true" />
-            <element signature="e#46352#46368#0" expanded="true" />
-            <element signature="e#48169#48185#0" expanded="true" />
-            <element signature="method#NetWorkStatus#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#49951#50577#0" expanded="true" />
-            <element signature="e#50576#50577#0" expanded="true" />
-            <element signature="e#50624#50860#0" expanded="true" />
-            <element signature="e#50859#50860#0" expanded="true" />
-            <element signature="method#onKeyDown#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#51334#51554#0" expanded="true" />
-            <element signature="e#51553#51554#0" expanded="true" />
-            <element signature="e#51601#51800#0" expanded="true" />
-            <element signature="e#51799#51800#0" expanded="true" />
-            <element signature="e#51968#52337#0" expanded="true" />
-            <element signature="e#52336#52337#0" expanded="true" />
-            <element signature="e#52401#52770#0" expanded="true" />
-            <element signature="e#52769#52770#0" expanded="true" />
-            <element signature="e#52832#53201#0" expanded="true" />
-            <element signature="e#53200#53201#0" expanded="true" />
-=======
-        <state relative-caret-position="42">
-          <caret line="379" column="13" lean-forward="false" selection-start-line="379" selection-start-column="13" selection-end-line="379" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2864#14259#0" expanded="true" />
-            <element signature="e#14258#14259#0" expanded="true" />
-            <element signature="e#17250#19218#0" expanded="true" />
-            <element signature="e#19263#21038#0" expanded="true" />
-            <element signature="e#21037#21038#0" expanded="true" />
-            <element signature="e#21083#23024#0" expanded="true" />
-            <element signature="e#23023#23024#0" expanded="true" />
-            <element signature="e#23383#25013#0" expanded="true" />
-            <element signature="e#25012#25013#0" expanded="true" />
-            <element signature="e#25049#26797#0" expanded="true" />
-            <element signature="e#26796#26797#0" expanded="true" />
-            <element signature="e#26832#28382#0" expanded="true" />
-            <element signature="e#28381#28382#0" expanded="true" />
-            <element signature="e#28417#28896#0" expanded="true" />
-            <element signature="e#28895#28896#0" expanded="true" />
-            <element signature="e#29413#29429#0" expanded="true" />
-            <element signature="e#31959#31975#0" expanded="true" />
-            <element signature="e#36183#36199#0" expanded="true" />
-            <element signature="e#38548#39078#0" expanded="true" />
-            <element signature="e#39077#39078#0" expanded="true" />
-            <element signature="e#39731#40123#0" expanded="true" />
-            <element signature="e#40122#40123#0" expanded="true" />
-            <element signature="e#44090#44106#0" expanded="true" />
-            <element signature="e#45990#46006#0" expanded="true" />
-            <element signature="e#47807#47823#0" expanded="true" />
-            <element signature="e#49589#50215#0" expanded="true" />
-            <element signature="e#50214#50215#0" expanded="true" />
-            <element signature="e#50262#50498#0" expanded="true" />
-            <element signature="e#50497#50498#0" expanded="true" />
-            <element signature="e#50623#50624#0" expanded="true" />
-            <element signature="e#50652#50653#0" expanded="true" />
-            <element signature="e#50972#51192#0" expanded="true" />
-            <element signature="e#51191#51192#0" expanded="true" />
-            <element signature="e#51239#51438#0" expanded="true" />
-            <element signature="e#51437#51438#0" expanded="true" />
-            <element signature="e#51606#51975#0" expanded="true" />
-            <element signature="e#51974#51975#0" expanded="true" />
-            <element signature="e#52039#52408#0" expanded="true" />
-            <element signature="e#52407#52408#0" expanded="true" />
-            <element signature="e#52470#52839#0" expanded="true" />
-            <element signature="e#52838#52839#0" expanded="true" />
->>>>>>> 1b2d3e1a9811ee4130069069b185a1f75617e118
+            <marker date="1531232637783" expanded="false" signature="16934:16940" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>

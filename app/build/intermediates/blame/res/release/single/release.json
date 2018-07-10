@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_shape.xml.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\shape.xml"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_main.xml.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_plane.xml.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\activity_plane.xml"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_prompt2.png.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\prompt2.png"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\layout_items.xml.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\items.xml"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_fj.png.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\fj.png"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\menu_plane.xml.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\menu\\plane.xml"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\menu_main.xml.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_btn_add_passenger_pressed.9.png.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\btn_add_passenger_pressed.9.png"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\layout_itembus.xml.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\itembus.xml"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_btn_add_passenger_normal.9.png.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\btn_add_passenger_normal.9.png"
+    },
+    {
+        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\release\\layout_itemplane.xml.flat",
+        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\itemplane.xml"
+    }
+]

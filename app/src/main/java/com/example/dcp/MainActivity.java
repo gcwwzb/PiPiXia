@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -24,10 +25,14 @@ import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -40,8 +45,10 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,8 +67,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 
-public class MainActivity extends Activity {
-    /** nzhegescssssssssssssssssssssssssssssss */
+public class MainActivity extends Activity{
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
@@ -308,7 +314,8 @@ public class MainActivity extends Activity {
     public static Button bt1;        //火车查询
     public static Button bt2;        //飞机查询
     public static Button bt4;        //大巴查询
-    public static Button bt3;        //跳转收藏页面
+    public static ImageButton bt5;        //跳转收藏页面
+    public static Button bt3;         //跳转更多页面
     private int mYear;    //依然是时间方面移植来的
     private int mMonth;
     private int mDay;
@@ -319,14 +326,33 @@ public class MainActivity extends Activity {
     private ListView listview3;        //大巴显示列表
     private ConnectivityManager cwjManager;
     private TextView tv;
-
+    private Button bt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);//取消标题栏
         setContentView(R.layout.activity_main);
+//        setContentView(R.layout.introduce);
+//
+//        //找到viewpager
+//        ViewPager viewpager = (ViewPager) findViewById(R.id.viewPager);
+//        //获取两个页面
+//        LayoutInflater inflater = getLayoutInflater();
+//        View page1 = inflater.inflate(R.layout.intro2, null);
+//        View page2 = inflater.inflate(R.layout.intro3, null);
+//        //加入到集合里
+//        ArrayList<View> pageList = new ArrayList<View>();
+//        pageList.add(page1);
+//        pageList.add(page2);
+//        //建一个适配器
+//        Introduce.MyPagerAdater pagerAdater = new Introduce.MyPagerAdater(pageList);
+//        //设置到viewpager里，到此完成了。
+//        viewpager.setAdapter(pagerAdater);
+//        bt = (Button)page2.findViewById(R.id.bt);
+//        bt.setOnClickListener(new Introduce.btClickListener());
+//
         cwjManager = (ConnectivityManager)    //网络连接状态监测方面的,不懂
-                getSystemService(Context.CONNECTIVITY_SERVICE);
+                 getSystemService(Context.CONNECTIVITY_SERVICE);
         //这段代码放到Activity类中才用this,SQLite方面的
         DatabaseHelper database = new DatabaseHelper(this);
         SQLiteDatabase db = null;
@@ -451,7 +477,8 @@ public class MainActivity extends Activity {
 
         bt1 = (Button) findViewById(R.id.bt1);//火车
         bt2 = (Button) findViewById(R.id.bt2);//飞机
-        bt3 = (Button) findViewById(R.id.btshoucang);//收藏
+        bt3 = (Button) findViewById(R.id.more);//更多
+        bt5 = (ImageButton) findViewById(R.id.save);//收藏
         bt4 = (Button) findViewById(R.id.bt4);//大巴
 
         bt1.setOnClickListener(new OnClickListener() {
@@ -557,8 +584,17 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View arg0) {
-                //跳转收藏页面 三个方法分别执行的是取出火车、飞机和大巴在数据库里存入的内容
-                //取出内容然后把内容赋值给另一个页面的三个list<map<String,object>>
+
+                Intent intent = new Intent(MainActivity.this,MoreInfo.class);
+                startActivity(intent);
+            }
+        });
+        bt5.setOnClickListener(new OnClickListener() {
+            //跳转收藏页面 三个方法分别执行的是取出火车、飞机和大巴在数据库里存入的内容
+            //取出内容然后把内容赋值给另一个页面的三个list<map<String,object>>
+
+            @Override
+            public void onClick(View view) {
                 tv.setText("");
                 querys();
                 querysplane();
@@ -567,6 +603,28 @@ public class MainActivity extends Activity {
                 MainActivity.this.finish();
             }
         });
+    }
+
+    class MyPagerAdater extends PagerAdapter {
+        //view集合
+        ArrayList<View> pageList;
+        public MyPagerAdater(ArrayList<View> pageList) {
+            this.pageList = pageList;
+        }
+        //返回页面
+        public Object instantiateItem(ViewGroup container, int position) {
+            container.addView(pageList.get(position), position);
+            return pageList.get(position);
+        }
+        //这里是返回页面的个数，如当返回0时，则无页面，我们这里返回2个
+        public int getCount() {
+            return pageList.size();
+        }
+        //这里要返回true
+        @Override
+        public boolean isViewFromObject(View arg0, Object arg1) {
+            return arg0 == arg1;
+        }
     }
 
     class MyThread implements Runnable {
@@ -608,13 +666,11 @@ public class MainActivity extends Activity {
                         msg.what = NULL;
                         handler.sendMessage(msg);
                         break;
-                    }else{
-                        Message msg = new Message();
-                        msg.what = TRAIN;
-                        handler.sendMessage(msg);
                     }
                 }
-
+                Message msg = new Message();
+                msg.what = TRAIN;
+                handler.sendMessage(msg);
             } catch (Exception e) {
                 Dialogs.dialog.dismiss();
                 Log.i("网络错误", "执行了网络错误1");
@@ -655,19 +711,17 @@ public class MainActivity extends Activity {
                     map.put("Mode", Mode);
                     map.put("Week", Week);
                     listviews.add(map);
-
                     if ("没有航班".equals(Company.toString())) {
                         Message mes = new Message();
                         mes.what = NULLPLANE;
                         handler.sendMessage(mes);
                         Log.i("aaa", "查询到没有此路线的直达航班");
-                    } else {
-                        Message msg = new Message();
-                        msg.what = PLANE;
-                        handler.sendMessage(msg);
+                        break;
                     }
                 }
-
+                Message msg = new Message();
+                msg.what = PLANE;
+                handler.sendMessage(msg);
             } catch (Exception e) {
                 Dialogs.dialog.dismiss();
                 Log.i("网络错误", "执行了网络错误1");
@@ -697,7 +751,7 @@ public class MainActivity extends Activity {
 
                 /**---------------------------- 解析 ------------------------*/
                 jsonObject = new JSONObject(results);
-                System.out.println("这是jsonObject-----" + jsonObject.toString());
+                //System.out.println("这是jsonObject-----" + jsonObject.toString());
                 /**---------------------------------------------------------------------------*/
                 System.out.println("这是第一个元素status-----" + jsonObject.getString("status"));
                 if (jsonObject.getInt("status") != 0) {
@@ -730,6 +784,14 @@ public class MainActivity extends Activity {
                         map.put("bustype", bustype);
                         map.put("distance", distance);
                         listviews.add(map);
+                        if ("".equals(starttime)) {
+                            //判断车次是不是存在.在这次我用的是发车时间的判断,""的就是没有车次
+                            //返回的what和有车次的肯定不一样.
+                            Message msg = new Message();
+                            msg.what = NULLBUS;
+                            handler.sendMessage(msg);
+                            break;
+                        }
                         Message msg = new Message();
                         msg.what = BUS;
                         handler.sendMessage(msg);
