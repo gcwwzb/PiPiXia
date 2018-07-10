@@ -18,10 +18,15 @@ public final class R {
   public static final class drawable {
     public static final int btn_add_passenger_normal=0x7f030000;
     public static final int btn_add_passenger_pressed=0x7f030001;
+<<<<<<< HEAD
     public static final int fj=0x7f030002;
     public static final int ic_launcher=0x7f030003;
     public static final int prompt2=0x7f030004;
     public static final int shape=0x7f030005;
+=======
+    public static final int pipixia=0x7f030002;
+    public static final int shape=0x7f030003;
+>>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
   }
   public static final class id {
     public static final int ArriveTime=0x7f040000;
