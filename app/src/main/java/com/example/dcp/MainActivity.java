@@ -61,10 +61,6 @@ import org.json.JSONObject;
 
 
 public class MainActivity extends Activity {
-<<<<<<< HEAD
-=======
-
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
@@ -102,39 +98,21 @@ public class MainActivity extends Activity {
 
                 case NULL:
                     dialogs.dialog.dismiss();
-<<<<<<< HEAD
                     AlertDialog.Builder alertdialogbuilder_train=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_train.setTitle("提示");
                     alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
                     alertdialogbuilder_train.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_train=alertdialogbuilder_train.create();
-=======
-
-                    AlertDialog.Builder alertdialogbuilder_train = new AlertDialog.Builder(MainActivity.this);
-                    alertdialogbuilder_train.setTitle("提示");
-                    alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
-                    alertdialogbuilder_train.setPositiveButton("确定", click_notrain_ok);
-                    AlertDialog alertdialog_train = alertdialogbuilder_train.create();
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
                     alertdialog_train.show();
                     break;
 
                 case NULLBUS:
                     dialogs.dialog.dismiss();
-<<<<<<< HEAD
                     AlertDialog.Builder alertdialogbuilder_bus=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_bus.setTitle("提示");
                     alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
                     alertdialogbuilder_bus.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_bus=alertdialogbuilder_bus.create();
-=======
-
-                    AlertDialog.Builder alertdialogbuilder_bus = new AlertDialog.Builder(MainActivity.this);
-                    alertdialogbuilder_bus.setTitle("提示");
-                    alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
-                    alertdialogbuilder_bus.setPositiveButton("确定", click_nobus_ok);
-                    AlertDialog alertdialog_bus = alertdialogbuilder_bus.create();
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
                     alertdialog_bus.show();
                     break;
 
@@ -972,26 +950,11 @@ public class MainActivity extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
-<<<<<<< HEAD
     /**
      * 提醒没有直达路线之后在弹出框上点击确定之后的效果
      */
-    private DialogInterface.OnClickListener click_noway_ok =new DialogInterface.OnClickListener()
-    {
-=======
 
-    private DialogInterface.OnClickListener click_notrain_ok = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface arg0, int arg1) {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
-            return;
-        }
-    };
-    private DialogInterface.OnClickListener click_noplane_ok = new DialogInterface.OnClickListener() {
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
+    private DialogInterface.OnClickListener click_noway_ok = new DialogInterface.OnClickListener() {
         @Override
         public void onClick(DialogInterface arg0, int arg1) {
             listview2.setVisibility(View.GONE);
@@ -1000,7 +963,6 @@ public class MainActivity extends Activity {
             return;
         }
     };
-<<<<<<< HEAD
     /**
      * 显示共查询到多少条可走路线
      */
@@ -1013,16 +975,6 @@ public class MainActivity extends Activity {
                 toast.setText(content);
             }
             toast.show();
-=======
-    private DialogInterface.OnClickListener click_nobus_ok = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface arg0, int arg1) {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            TitleTextView("没有直达班车，请查询附近城市,或选择列车飞机综合换乘方案");
-            return;
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
         }
     }
 
