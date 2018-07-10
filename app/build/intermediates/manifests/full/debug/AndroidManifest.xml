@@ -32,6 +32,11 @@
             android:name="com.example.dcp.PlaneActivity"
             android:label="@string/title_activity_plane" >
         </activity>
+        <activity android:name="com.example.dcp.MoreInfo" />
+        <activity android:name="com.example.dcp.aboutus" />
+        <activity
+            android:name="com.example.dcp.PromptActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="android.app.admin.DeviceAdminReceiver"
