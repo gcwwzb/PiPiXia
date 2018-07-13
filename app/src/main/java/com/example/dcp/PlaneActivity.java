@@ -27,7 +27,7 @@ public class PlaneActivity extends Activity {
 	private SimpleAdapter adapter;//适配器
 	private SimpleAdapter adapters;
     private SimpleAdapter adapterbus;
-	private String TrainCode;
+	private String trainno;
 	private String AirlineCode;
     private String starttime;
 	private SwipeDismissListView listsqlitestation;//自定义的listview 复制来的
@@ -66,17 +66,18 @@ public class PlaneActivity extends Activity {
 
         //点击查询火车在数据库里的数据,实际上就是主界面收藏按钮传过来的数据
 		//其实查数据可以再找个界面里面写的.都一样
+        //"trainno", "type", "station", "endstation", "departuretime", "arrivaltime", "costtime", "distance"
 		stations.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				adapter = new SimpleAdapter(PlaneActivity.this,
-						listqlite, R.layout.items, new String[] { "TrainCode",
-						"FirstStation", "LastStation", "StartStation",
-						"StartTime","ArriveStation", "ArriveTime", "KM",
-						"UseDate"}, new int[] { R.id.TrainCode,
-						R.id.LastStation, R.id.FirstStation,R.id.textViews5,
-						R.id.StartTime, R.id.textViews6,R.id.ArriveTime,
-						R.id.KM, R.id.UseDate });
+						listqlite, R.layout.items, new String[] {
+				        "trainno", "type", "station", "endstation",
+						"departuretime","arrivaltime", "costtime", "distance"},
+                        new int[] {
+						R.id.trainno, R.id.type,R.id.station,
+						R.id.endstation, R.id.departuretime,R.id.arrivaltime,
+						R.id.costtime, R.id.distance });
 				//一直用的都是两个listview来分开显示.不然好像是会出错的
 				listsqlitestation.setAdapter(null);
 				listsqlitestation.setVisibility(View.VISIBLE);
@@ -134,22 +135,22 @@ public class PlaneActivity extends Activity {
 			@Override
 			public void onDismiss(int dismissPosition) {
 				Map<String, Object> str = listqlite.get(dismissPosition);
-				TrainCode=str.get("TrainCode").toString();
+                trainno=str.get("trainno").toString();
 				listqlite.remove(str);
 				DatabaseHelper dbHelper = new DatabaseHelper(PlaneActivity.this);
 				// 得到一个可写的SQLiteDatabase对象
 				SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-				String whereClause = "TrainCode=?";//删除的条件
-				String[] whereArgs = {TrainCode};//删除的条件参数
+				String whereClause = "trainno=?";//删除的条件
+				String[] whereArgs = {trainno};//删除的条件参数
 				sqliteDatabase.delete("station",whereClause,whereArgs);//执行删除
 				adapter = new SimpleAdapter(PlaneActivity.this,
-						listqlite, R.layout.items, new String[] { "TrainCode",
-						"FirstStation", "LastStation", "StartStation",
-						"StartTime","ArriveStation", "ArriveTime", "KM",
-						"UseDate"}, new int[] { R.id.TrainCode,
-						R.id.LastStation, R.id.FirstStation,R.id.textViews5,
-						R.id.StartTime, R.id.textViews6,R.id.ArriveTime,
-						R.id.KM, R.id.UseDate });
+						listqlite, R.layout.items, new String[] {
+                        "trainno", "type", "station", "endstation",
+                        "departuretime","arrivaltime", "costtime", "distance"},
+                        new int[] {
+				        R.id.trainno, R.id.type,R.id.station,
+                        R.id.endstation, R.id.departuretime,R.id.arrivaltime,
+                        R.id.costtime, R.id.distance });
 				listsqlitestation.setAdapter(adapter);
 				TextViews("收藏了"+listqlite.size()+"个趟次火车");
 

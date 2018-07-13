@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Sun Jul 08 23:27:56 CST 2018
+#Sun Jul 08 23:40:52 CST 2018
 0.baseType=DIRECTORY
-0.base=E\:\\workspace\\Android_workspace\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.base=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.path=classes.dex
 0.set=DEX
 count=1

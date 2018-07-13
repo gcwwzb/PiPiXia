@@ -47,14 +47,14 @@ import android.widget.Toast;
 
 import com.yangfan.Entity.Bus;
 import com.yangfan.Entity.Plane;
-import com.yangfan.Entity.Station;
+import com.yangfan.Entity.Station.stationResult;
 import com.yangfan.Entity.Bus.ResultBean;
 import com.yangfan.Util.DatabaseHelper;
 import com.yangfan.Util.Dialogs;
 import com.yangfan.Util.NetConnectionUtil;
 import com.yangfan.Util.HttpUtil;
 import com.yangfan.Xmlpull.Xmlpullplane;
-import com.yangfan.Xmlpull.xmlpull;
+//import com.yangfan.Xmlpull.xmlpull;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -124,7 +124,7 @@ public class MainActivity extends Activity {
                     listview1.setVisibility(View.VISIBLE);
                     listview2.setVisibility(View.GONE);
                     listview3.setVisibility(View.GONE);
-                    adapter = new SimpleAdapter(MainActivity.this, listviews, R.layout.items, new String[]{"TrainCode", "FirstStation", "LastStation", "StartStation", "StartTime", "ArriveStation", "ArriveTime", "KM", "UseDate"}, new int[]{R.id.TrainCode, R.id.LastStation, R.id.FirstStation, R.id.textViews5, R.id.StartTime, R.id.textViews6, R.id.ArriveTime, R.id.KM, R.id.UseDate});
+                    adapter = new SimpleAdapter(MainActivity.this, listviews, R.layout.items, new String[]{"trainno", "type", "station", "endstation", "departuretime", "arrivaltime", "costtime", "distance"}, new int[]{R.id.trainno, R.id.type, R.id.station,R.id.endstation, R.id.departuretime, R.id.arrivaltime, R.id.costtime, R.id.distance});
                     dialogs.dialog.dismiss();
                     /*特效源码！！*/
                     listview1.setLayoutAnimation(getListAnim());
@@ -160,13 +160,16 @@ public class MainActivity extends Activity {
     /**
      * 火车的网址
      */
-    String host = "http://ws.webxml.com.cn";
-    String getPart1 = "/WebServices/TrainTimeWebService.asmx/getStationAndTimeByStationName?StartStation=";
-    String getPart2 = "&ArriveStation=";
-    String getPart3 = "&UserID=";
+//    String host = "http://ws.webxml.com.cn";
+//    String getPart1 = "/WebServices/TrainTimeWebService.asmx/getStationAndTimeByStationName?StartStation=";
+//    String getPart2 = "&ArriveStation=";
+//    String getPart3 = "&UserID=";
+    String hostOfTrain = "http://api.jisuapi.com/train/station2s";
+    String TrainAPPKEY = "575f26104b13e249";// 你的appkey
     /**
      * 飞机的网址
      */
+    String host = "http://ws.webxml.com.cn";
     String getPart4 = "/webservices/DomesticAirline.asmx/getDomesticAirlinesTime?startCity=";
     String getPart5 = "&lastCity=";
     String getPart6 = "&theDate=";
@@ -184,11 +187,12 @@ public class MainActivity extends Activity {
     private String startName;//edittext1  出发城市
     private String arriveName; //edittext2 目的地城市
     private String xmlUrl;    //火车的网址
+    private String UrlTrain;
     private String xmlUrlplane;   //飞机的网址
     private String Urlbus;    //大巴的网址
 
     List<Map<String, Object>> listviews;  //为了适用SimpleAdapter的集合
-    private List<Station> list;        //火车对应的集合
+    //private List<Station> list;        //火车对应的集合
     private List<Plane> listplane;    //飞机的对应集合
     //private List<Bus> listbus;    //大巴的对应集合
     private EditText et1;
@@ -241,24 +245,35 @@ public class MainActivity extends Activity {
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
                 //maps 或者选中item在listviews里面的下标所对应的值,然后取出里面的值
                 Map<String, Object> maps = listviews.get(position);
-                Station station = new Station();
-                station.TrainCode = (String) maps.get("TrainCode");
+                stationResult station = new stationResult();
+                station.setTrainno((String) maps.get("trainno"));
                 //数据库里面查询这个值是不是存在,存在了就不保存了.不存在的保存下来.
                 DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-                Cursor c = sqliteDatabase.rawQuery("select * from station where TrainCode=?;", new String[]{station.TrainCode.toString()});
+                Cursor c = sqliteDatabase.rawQuery("select * from station where trainno=?;", new String[]{station.getTrainno()});
                 if (c.getCount() <= 0) {
-                    station.FirstStation = (String) maps.get("FirstStation");
-                    station.LastStation = (String) maps.get("LastStation");
-                    station.StartStation = (String) maps.get("StartStation");
-                    station.StartTime = (String) maps.get("StartTime");
-                    station.ArriveStation = (String) maps.get("ArriveStation");
-                    station.ArriveTime = (String) maps.get("ArriveTime");
-                    station.KM = (String) maps.get("KM");
-                    station.UseDate = (String) maps.get("UseDate");
+//                    station.FirstStation = (String) maps.get("FirstStation");
+//                    station.LastStation = (String) maps.get("LastStation");
+//                    station.StartStation = (String) maps.get("StartStation");
+//                    station.StartTime = (String) maps.get("StartTime");
+//                    station.ArriveStation = (String) maps.get("ArriveStation");
+//                    station.ArriveTime = (String) maps.get("ArriveTime");
+//                    station.KM = (String) maps.get("KM");
+//                    station.UseDate = (String) maps.get("UseDate");
+
+                    station.setTrainno((String) maps.get("trainno"));
+                    station.setType((String) maps.get("type"));
+                    station.setStation((String) maps.get("station"));
+                    station.setEndstation((String) maps.get("endstation"));
+                    station.setDeparturetime((String) maps.get("departuretime"));
+                    station.setArrivaltime((String) maps.get("arrivaltime"));
+                    station.setCosttime((String) maps.get("costtime"));
+                    station.setDistance((String) maps.get("distance"));
+
+
                     insert(station);
                     //Toast.makeText(MainActivity.this,station.TrainCode+" 列车加入收藏列表", 1).show();
-                    Toast.makeText(MainActivity.this, station.TrainCode + " 列车加入收藏列表", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, station.getTrainno() + " 列车加入收藏列表", Toast.LENGTH_LONG).show();
                     /*-------------------------------------------------------*/
                 } else {
                     //Toast.makeText(MainActivity.this, "该车次已经添加过了", 1).show();
@@ -310,17 +325,17 @@ public class MainActivity extends Activity {
                 //数据库里面查询这个值是不是存在,存在了就不保存了.不存在的保存下来.
                 DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=? and starttime=?;", new String[]{bus.getBustype(),bus.getStarttime()});
+                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=? and starttime=?;", new String[]{bus.getBustype(), bus.getStarttime()});
                 if (css.getCount() <= 0) {
                     bus.setDistance((String) maps.get("distance"));
                     bus.setStartcity((String) maps.get("startcity"));
                     bus.setStartstation((String) maps.get("startstation"));
                     bus.setEndcity((String) maps.get("endcity"));
                     bus.setEndstation((String) maps.get("endstation"));
-                   // bus.setStarttime((String) maps.get("starttime"));
+                    // bus.setStarttime((String) maps.get("starttime"));
                     bus.setPrice((String) maps.get("price"));
                     insertBus(bus);
-                    Toast.makeText(MainActivity.this, bus.getBustype() + bus.getStarttime()  + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, bus.getBustype() + bus.getStarttime() + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
                     /*-------------------------------------------------------*/
                 } else {
                     Toast.makeText(MainActivity.this, "该车次已经添加过了", Toast.LENGTH_SHORT).show();
@@ -359,7 +374,7 @@ public class MainActivity extends Activity {
                     if (NetWorkStatus() == true) {
                         dialogs.dialog.show();//加载中显示的一个提示框加载完成后自己要用代码取消掉
                         /*网址*/
-                        xmlUrl = host + getPart1 + startName + getPart2 + arriveName + getPart3;
+                        //xmlUrl = host + getPart1 + startName + getPart2 + arriveName + getPart3;
                         new Thread(new MyThread()).start();//启动线程.下载内容
                     } else {
                         Toast.makeText(MainActivity.this, "网络有问题", Toast.LENGTH_SHORT).show();
@@ -454,59 +469,122 @@ public class MainActivity extends Activity {
 
     class MyThread implements Runnable {
 
+        //        @Override
+//        public void run() {
+//            try {
+//                //网络连接的方法
+//                InputStream inputStream = NetConnectionUtil.GetInputStream(xmlUrl);
+//                //解析XML文件的方法
+//                xmlpull xmlpull = new xmlpull();
+//                list = xmlpull.getpull(inputStream);
+//
+//                //循环读取解析好的列表集合list<map<String,object>>类型的
+//                for (Station lists : list) {
+//                    Map<String, Object> map = new HashMap<String, Object>();
+//                    String ArriveStation = lists.ArriveStation.toString();
+//                    String ArriveTime = lists.ArriveTime.toString();
+//                    String FirstStation = lists.FirstStation.toString();
+//                    String LastStation = lists.LastStation.toString();
+//                    String StartStation = lists.StartStation.toString();
+//                    String StartTime = lists.StartTime.toString();
+//                    String TrainCode = lists.TrainCode.toString();
+//                    String UseDate = lists.UseDate.toString();
+//                    String KM = lists.KM.toString();
+//                    map.put("ArriveStation", ArriveStation);
+//                    map.put("ArriveTime", ArriveTime);
+//                    map.put("FirstStation", FirstStation);
+//                    map.put("LastStation", LastStation);
+//                    map.put("StartStation", StartStation);
+//                    map.put("StartTime", StartTime);
+//                    map.put("TrainCode", TrainCode);
+//                    map.put("UseDate", UseDate);
+//                    map.put("KM", KM);
+//                    listviews.add(map);
+//                    if ("----".equals(TrainCode)) {
+//                        //判断车次是不是存在.在这次我用的是车次的判断,"----"的就是没有车次
+//                        //返回的what和有车次的肯定不一样.
+//                        Message msg = new Message();
+//                        msg.what = NULL;
+//                        handler.sendMessage(msg);
+//                        break;
+//                    } else {
+//                        Message msg = new Message();
+//                        msg.what = TRAIN;
+//                        handler.sendMessage(msg);
+//                    }
+//                }
+//
+//            } catch (Exception e) {
+//                Dialogs.dialog.dismiss();
+//                Log.i("网络错误", "执行了网络错误1");
+//                Message msg = new Message();
+//                msg.what = NULLS;
+//                handler.sendMessage(msg);
+//                //return;
+//            }
+//        }
         @Override
         public void run() {
+
+            JSONObject jo;
             try {
-                //网络连接的方法
-                InputStream inputStream = NetConnectionUtil.GetInputStream(xmlUrl);
-                //解析XML文件的方法
-                xmlpull xmlpull = new xmlpull();
-                list = xmlpull.getpull(inputStream);
-                //循环读取解析好的列表集合list<map<String,object>>类型的
-                for (Station lists : list) {
-                    Map<String, Object> map = new HashMap<String, Object>();
-                    String ArriveStation = lists.ArriveStation.toString();
-                    String ArriveTime = lists.ArriveTime.toString();
-                    String FirstStation = lists.FirstStation.toString();
-                    String LastStation = lists.LastStation.toString();
-                    String StartStation = lists.StartStation.toString();
-                    String StartTime = lists.StartTime.toString();
-                    String TrainCode = lists.TrainCode.toString();
-                    String UseDate = lists.UseDate.toString();
-                    String KM = lists.KM.toString();
-                    map.put("ArriveStation", ArriveStation);
-                    map.put("ArriveTime", ArriveTime);
-                    map.put("FirstStation", FirstStation);
-                    map.put("LastStation", LastStation);
-                    map.put("StartStation", StartStation);
-                    map.put("StartTime", StartTime);
-                    map.put("TrainCode", TrainCode);
-                    map.put("UseDate", UseDate);
-                    map.put("KM", KM);
-                    listviews.add(map);
-                    if ("----".equals(TrainCode)) {
-                        //判断车次是不是存在.在这次我用的是车次的判断,"----"的就是没有车次
-                        //返回的what和有车次的肯定不一样.
-                        Message msg = new Message();
-                        msg.what = NULL;
-                        handler.sendMessage(msg);
-                        break;
-                    } else {
+                UrlTrain = hostOfTrain + "?appkey=" + TrainAPPKEY + "&start=" + startName + "&end=" + arriveName + "&ishigh=0";
+                //http://api.jisuapi.com/train/station2s?appkey=yourappkey&start=杭州&end=北京&ishigh=0
+                /**---------------------下面几个输出是测试----UrlTrain------results------status---------------------*/
+                System.out.println("这是UrlTrain的内容-----" + UrlTrain);
+                String resultstation = HttpUtil.sendGet(UrlTrain, "utf-8");
+                System.out.println("这是最后要解析的数据-----" + resultstation);
+
+                /**---------------------------- 解析 ------------------------*/
+                jo = new JSONObject(resultstation);
+                System.out.println("这是jsonObject-----" + jo.toString());
+                /**---------------------------------------------------------------------------*/
+                System.out.println("这是第一个元素status-----" + jo.getString("status"));
+                if (jo.getInt("status") != 0) {
+                    System.out.println(jo.getString("msg"));
+                    //下面这三句是在查找不到的时候弹出提示框查询失败。。。
+                    Message msg = new Message();
+                    msg.what = NULL;
+                    handler.sendMessage(msg);
+                } else {
+                    JSONArray jsonArray = jo.getJSONArray("result");
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject obj = jsonArray.getJSONObject(i);
+
+                        String trainno = obj.getString("trainno");
+                        String type = obj.getString("type");
+                        String station = obj.getString("station");
+                        String endstation = obj.getString("endstation");
+                        String departuretime = obj.getString("departuretime");
+                        String arrivaltime = obj.getString("arrivaltime");
+                        String costtime = obj.getString("costtime");
+                        String distance = obj.getString("distance");
+
+                        HashMap<String, Object> map = new HashMap<String, Object>();
+                        map.put("trainno", trainno);
+                        map.put("type", type);
+                        map.put("station", station);
+                        map.put("endstation", endstation);
+                        map.put("departuretime", departuretime);
+                        map.put("arrivaltime", arrivaltime);
+                        map.put("costtime", costtime);
+                        map.put("distance", distance);
+
+                        listviews.add(map);
                         Message msg = new Message();
                         msg.what = TRAIN;
                         handler.sendMessage(msg);
                     }
                 }
-
             } catch (Exception e) {
                 Dialogs.dialog.dismiss();
                 Log.i("网络错误", "执行了网络错误1");
                 Message msg = new Message();
                 msg.what = NULLS;
                 handler.sendMessage(msg);
-                //return;
             }
         }
+
     }
 
     /*----------------------和火车的一样不再解释了----------------------------*/
@@ -714,18 +792,19 @@ public class MainActivity extends Activity {
     /**
      * ------------------------单击item的时候保存这个item所携带的内容到数据库--------------------------
      */
-    public void insert(Station station) {
+    public void insert(stationResult station) {
         ContentValues values = new ContentValues();
         // 向该对象中插入键值对，其中键是列名，值是希望插入到这一列的值，值必须和数据库当中的数据类型一致
-        values.put("TrainCode", station.getTrainCode().toString());
-        values.put("FirstStation", station.getFirstStation().toString());
-        values.put("LastStation", station.getLastStation().toString());
-        values.put("StartStation", station.getStartStation().toString());
-        values.put("StartTime", station.getStartTime().toString());
-        values.put("ArriveStation", station.getArriveStation().toString());
-        values.put("ArriveTime", station.getArriveTime().toString());
-        values.put("KM", station.getKM().toString());
-        values.put("UseDate", station.getUseDate().toString());
+
+        values.put("trainno", station.getTrainno().toString());
+        values.put("type", station.getType().toString());
+        values.put("station", station.getStation().toString());
+        values.put("endstation", station.getEndstation().toString());
+        values.put("departuretime", station.getDeparturetime().toString());
+        values.put("arrivaltime", station.getArrivaltime().toString());
+        values.put("sequenceno", station.getSequenceno().toString());
+        values.put("costtime", station.getCosttime().toString());
+        values.put("distance", station.getDistance().toString());
         // 创建DatabaseHelper对象
         // 得到一个可写的SQLiteDatabase对象
         DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
@@ -790,24 +869,24 @@ public class MainActivity extends Activity {
         if (c.moveToFirst()) {//判断游标是否为空
             for (int i = 0; i < c.getCount(); i++) {
                 Map<String, Object> map = new HashMap<String, Object>();
-                String TrainCode = c.getString(c.getColumnIndex("TrainCode"));
-                String FirstStation = c.getString(c.getColumnIndex("FirstStation"));
-                String LastStation = c.getString(c.getColumnIndex("LastStation"));
-                String StartStation = c.getString(c.getColumnIndex("StartStation"));
-                String StartTime = c.getString(c.getColumnIndex("StartTime"));
-                String ArriveStation = c.getString(c.getColumnIndex("ArriveStation"));
-                String ArriveTime = c.getString(c.getColumnIndex("ArriveTime"));
-                String KM = c.getString(c.getColumnIndex("KM"));
-                String UseDate = c.getString(c.getColumnIndex("UseDate"));
-                map.put("TrainCode", TrainCode);
-                map.put("FirstStation", FirstStation);
-                map.put("LastStation", LastStation);
-                map.put("StartStation", StartStation);
-                map.put("StartTime", StartTime);
-                map.put("ArriveStation", ArriveStation);
-                map.put("ArriveTime", ArriveTime);
-                map.put("KM", KM);
-                map.put("UseDate", UseDate);
+                String trainno = c.getString(c.getColumnIndex("trainno"));
+                String type = c.getString(c.getColumnIndex("type"));
+                String station = c.getString(c.getColumnIndex("station"));
+                String endstation = c.getString(c.getColumnIndex("endstation"));
+                String departuretime = c.getString(c.getColumnIndex("departuretime"));
+                String arrivaltime = c.getString(c.getColumnIndex("arrivaltime"));
+                String sequenceno = c.getString(c.getColumnIndex("sequenceno"));
+                String costtime = c.getString(c.getColumnIndex("costtime"));
+                String distance = c.getString(c.getColumnIndex("distance"));
+                map.put("trainno", trainno);
+                map.put("type", type);
+                map.put("station", station);
+                map.put("endstation", endstation);
+                map.put("departuretime", departuretime);
+                map.put("arrivaltime", arrivaltime);
+                map.put("sequenceno", sequenceno);
+                map.put("costtime", costtime);
+                map.put("distance", distance);
                 PlaneActivity.listqlite.add(map);
                 Log.i("listsqlitestation", map.toString());
                 c.moveToNext();
