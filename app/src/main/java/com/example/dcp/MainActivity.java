@@ -1,5 +1,4 @@
 package com.example.dcp;
-
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -67,22 +66,7 @@ import com.yangfan.Xmlpull.xmlpull;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-
-public class MainActivity extends Activity{
-<<<<<<< HEAD
-
-=======
-=======
 public class MainActivity extends Activity {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
@@ -120,33 +104,21 @@ public class MainActivity extends Activity {
 
                 case NULL:
                     dialogs.dialog.dismiss();
-<<<<<<< HEAD
-
-=======
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
-                    AlertDialog.Builder alertdialogbuilder_train=new AlertDialog.Builder(MainActivity.this);
+                    AlertDialog.Builder alertdialogbuilder_train = new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_train.setTitle("提示");
                     alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
                     alertdialogbuilder_train.setPositiveButton("确定", click_noway_ok);
-                    AlertDialog alertdialog_train=alertdialogbuilder_train.create();
+                    AlertDialog alertdialog_train = alertdialogbuilder_train.create();
                     alertdialog_train.show();
                     break;
 
                 case NULLBUS:
                     dialogs.dialog.dismiss();
-<<<<<<< HEAD
-
-=======
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
-                    AlertDialog.Builder alertdialogbuilder_bus=new AlertDialog.Builder(MainActivity.this);
+                    AlertDialog.Builder alertdialogbuilder_bus = new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_bus.setTitle("提示");
                     alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
                     alertdialogbuilder_bus.setPositiveButton("确定", click_noway_ok);
-                    AlertDialog alertdialog_bus=alertdialogbuilder_bus.create();
-<<<<<<< HEAD
-
-=======
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
+                    AlertDialog alertdialog_bus = alertdialogbuilder_bus.create();
                     alertdialog_bus.show();
                     break;
 
@@ -182,7 +154,7 @@ public class MainActivity extends Activity {
                     /*特效源码！！*/
                     listview3.setLayoutAnimation(getListAnim());
                     listview3.setAdapter(adapterBus);
-                  //  TitleTextView("查询到有" + listviews.size() + "趟大巴");
+                    //  TitleTextView("查询到有" + listviews.size() + "趟大巴");
                     ToastUtil.showToast(MainActivity.this, "查询到有" + listviews.size() + "趟大巴");
                     break;
             }
@@ -242,12 +214,13 @@ public class MainActivity extends Activity {
     private ConnectivityManager cwjManager;
     private TextView tv;
     private Button bt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String PREFS_NAME = "Guide";
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-        if(settings.getBoolean(PREFS_NAME,true)) {
+        if (settings.getBoolean(PREFS_NAME, true)) {
             Intent intent = new Intent(MainActivity.this, Introduce.class);
             startActivity(intent);
         }
@@ -255,7 +228,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         cwjManager = (ConnectivityManager)    //网络连接状态监测方面的,不懂
-                 getSystemService(Context.CONNECTIVITY_SERVICE);
+                getSystemService(Context.CONNECTIVITY_SERVICE);
         //这段代码放到Activity类中才用this,SQLite方面的
         DatabaseHelper database = new DatabaseHelper(this);
         SQLiteDatabase db = null;
@@ -351,17 +324,17 @@ public class MainActivity extends Activity {
                 //数据库里面查询这个值是不是存在,存在了就不保存了.不存在的保存下来.
                 DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
-                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=? and starttime=?;", new String[]{bus.getBustype(),bus.getStarttime()});
+                Cursor css = sqliteDatabase.rawQuery("select * from bus where bustype=? and starttime=?;", new String[]{bus.getBustype(), bus.getStarttime()});
                 if (css.getCount() <= 0) {
                     bus.setDistance((String) maps.get("distance"));
                     bus.setStartcity((String) maps.get("startcity"));
                     bus.setStartstation((String) maps.get("startstation"));
                     bus.setEndcity((String) maps.get("endcity"));
                     bus.setEndstation((String) maps.get("endstation"));
-                   // bus.setStarttime((String) maps.get("starttime"));
+                    // bus.setStarttime((String) maps.get("starttime"));
                     bus.setPrice((String) maps.get("price"));
                     insertBus(bus);
-                    Toast.makeText(MainActivity.this, bus.getBustype() + bus.getStarttime()  + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, bus.getBustype() + bus.getStarttime() + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
                     /*-------------------------------------------------------*/
                 } else {
                     Toast.makeText(MainActivity.this, "该车次已经添加过了", Toast.LENGTH_SHORT).show();
@@ -483,7 +456,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View arg0) {
 
-                Intent intent = new Intent(MainActivity.this,MoreInfo.class);
+                Intent intent = new Intent(MainActivity.this, MoreInfo.class);
                 startActivity(intent);
             }
         });
@@ -506,18 +479,22 @@ public class MainActivity extends Activity {
     class MyPagerAdater extends PagerAdapter {
         //view集合
         ArrayList<View> pageList;
+
         public MyPagerAdater(ArrayList<View> pageList) {
             this.pageList = pageList;
         }
+
         //返回页面
         public Object instantiateItem(ViewGroup container, int position) {
             container.addView(pageList.get(position), position);
             return pageList.get(position);
         }
+
         //这里是返回页面的个数，如当返回0时，则无页面，我们这里返回2个
         public int getCount() {
             return pageList.size();
         }
+
         //这里要返回true
         @Override
         public boolean isViewFromObject(View arg0, Object arg1) {
@@ -1028,46 +1005,36 @@ public class MainActivity extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
-<<<<<<< HEAD
+
 
     /**
      * 提醒没有直达路线之后在弹出框上点击确定之后的效果
      */
-    private DialogInterface.OnClickListener click_noway_ok =new DialogInterface.OnClickListener()
-    {
-=======
-    /**
-     * 提醒没有直达路线之后在弹出框上点击确定之后的效果
-     */
-
     private DialogInterface.OnClickListener click_noway_ok = new DialogInterface.OnClickListener() {
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
-        @Override
-        public void onClick(DialogInterface arg0, int arg1) {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            return;
+            @Override
+
+            public void onClick(DialogInterface arg0, int arg1) {
+                listview2.setVisibility(View.GONE);
+                listview1.setVisibility(View.GONE);
+                listview3.setVisibility(View.GONE);
+                return;
+            }
+        };
+
+
+        /**
+         * 显示共查询到多少条可走路线
+         */
+        public static class ToastUtil {
+            private static Toast toast;
+
+            public static void showToast(Context context, String content) {
+                if (toast == null) {
+                    toast = Toast.makeText(context, content, Toast.LENGTH_SHORT);
+                } else {
+                    toast.setText(content);
+                }
+                toast.show();
+            }
         }
     };
-<<<<<<< HEAD
-
-=======
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
-    /**
-     * 显示共查询到多少条可走路线
-     */
-    public static class ToastUtil {
-        private static Toast toast;
-        public static void showToast(Context context, String content) {
-            if (toast == null) {
-                toast = Toast.makeText(context, content, Toast.LENGTH_SHORT);
-            } else {
-                toast.setText(content);
-            }
-            toast.show();
-        }
-    }
-
-
-}

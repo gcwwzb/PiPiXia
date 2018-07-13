@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="E:\Android\example\PiPiXia\app\src\main\assets"/><source path="E:\Android\example\PiPiXia\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\Android\example\PiPiXia\app\src\debug\assets"/></dataSet></merger>
-=======
-<<<<<<< HEAD
-<merger version="3"><dataSet config="main"><source path="F:\PiPiXia\app\src\main\assets"/><source path="F:\PiPiXia\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\PiPiXia\app\src\debug\assets"/></dataSet></merger>
-=======
-<<<<<<< HEAD
-<merger version="3"><dataSet config="main"><source path="E:\Android\example\PiPiXia\app\src\main\assets"/><source path="E:\Android\example\PiPiXia\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\Android\example\PiPiXia\app\src\debug\assets"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="main"><source path="E:\workspace\Android_workspace\PiPiXia\app\src\main\assets"/><source path="E:\workspace\Android_workspace\PiPiXia\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\workspace\Android_workspace\PiPiXia\app\src\debug\assets"/></dataSet></merger>
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577

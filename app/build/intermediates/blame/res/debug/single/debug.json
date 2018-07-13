@@ -1,45 +1,5 @@
 [
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_itembus.xml.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\layout\\itembus.xml"
-=======
-<<<<<<< HEAD
-        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_aboutus.xml.flat",
-        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\aboutus.xml"
-    },
-    {
-        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_intro2.xml.flat",
-        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\intro2.xml"
-    },
-    {
-        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_intro3.xml.flat",
-        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\intro3.xml"
-    },
-    {
-        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_plane.xml.flat",
-        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\activity_plane.xml"
-    },
-    {
-        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
-        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_special.xml.flat",
-        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\special.xml"
-    },
-    {
-        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_more_info.xml.flat",
-        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\more_info.xml"
-    },
-    {
-        "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_prompt2.png.flat",
-        "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\prompt2.png"
-    },
-    {
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
         "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\menu_plane.xml.flat",
         "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\menu\\plane.xml"
     },
@@ -118,7 +78,6 @@
     {
         "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_items.xml.flat",
         "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\layout\\items.xml"
-<<<<<<< HEAD
     },
     {
         "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_prompt2.png.flat",
@@ -127,57 +86,5 @@
     {
         "merged": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_member2.jpg.flat",
         "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\member2.jpg"
-=======
-=======
-        "merged": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_add_passenger_pressed.9.png.flat",
-        "source": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\btn_add_passenger_pressed.9.png"
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_pipixia.jpg.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\pipixia.jpg"
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_itemplane.xml.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\layout\\itemplane.xml"
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_add_passenger_normal.9.png.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\btn_add_passenger_normal.9.png"
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\menu_plane.xml.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\menu\\plane.xml"
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_shape.xml.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\shape.xml"
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_plane.xml.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\layout\\activity_plane.xml"
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_items.xml.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\layout\\items.xml"
-    },
-    {
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_add_passenger_pressed.9.png.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\drawable-hdpi\\btn_add_passenger_pressed.9.png"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
-        "source": "F:\\PiPiXia\\app\\src\\main\\res\\menu\\main.xml"
-=======
-        "merged": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\layout_itembus.xml.flat",
-        "source": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\src\\main\\res\\layout\\itembus.xml"
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
     }
 ]

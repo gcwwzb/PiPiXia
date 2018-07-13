@@ -1,6 +1,5 @@
 -- Merging decision tree log ---
 manifest
-<<<<<<< HEAD
 ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-45:12
 INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-45:12
 INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-45:12
@@ -8,25 +7,6 @@ INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-45
 INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-45:12
 INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-45:12
 INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-45:12
-=======
-<<<<<<< HEAD
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-=======
-<<<<<<< HEAD
-ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:2:1-49:12
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
 	package
 		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml
@@ -98,7 +78,6 @@ ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:28:9-45
 	android:name
 		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:28:19-43
 activity#com.example.dcp.aboutus
-<<<<<<< HEAD
 ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:29:9-44
 	android:name
 		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:29:19-42
@@ -128,132 +107,3 @@ action#android.intent.action.USER_PRESENT
 ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:41:17-76
 	android:name
 		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:41:25-74
-=======
-ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:36:9-44
-	android:name
-		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:36:19-42
-activity#com.example.dcp.PromptActivity
-ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:37:9-38:80
-	android:theme
-		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:38:19-78
-	android:name
-		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:37:19-49
-receiver#android.app.admin.DeviceAdminReceiver
-ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:39:7-46:20
-	android:label
-		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:41:13-46
-	android:name
-		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:40:13-65
-intent-filter#action:name:android.intent.action.USER_PRESENT+action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:42:13-45:29
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:43:17-79
-	android:name
-		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:43:25-76
-action#android.intent.action.USER_PRESENT
-ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:44:17-77
-	android:name
-		ADDED from E:\Android\example\PiPiXia\app\src\main\AndroidManifest.xml:44:25-74
-=======
-ADDED from E:\workspace\Android_workspace\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from E:\workspace\Android_workspace\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from E:\workspace\Android_workspace\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from E:\workspace\Android_workspace\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from E:\workspace\Android_workspace\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from E:\workspace\Android_workspace\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from E:\workspace\Android_workspace\PiPiXia\app\src\main\AndroidManifest.xml:2:1-44:12
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
-	package
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:3:5-30
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-	android:versionName
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-uses-sdk
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml:7:5-9:41
-	android:targetSdkVersion
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-		INJECTED from F:\PiPiXia\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:11:5-67
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:11:22-64
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:12:5-75
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:12:22-73
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:13:5-78
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:13:22-76
-application
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:16:5-42:19
-	android:label
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:19:9-41
-	android:icon
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:18:9-41
-	android:allowBackup
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:17:9-35
-	android:theme
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:20:9-40
-activity#com.example.dcp.MainActivity
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:21:9-29:20
-	android:label
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:23:13-45
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:22:13-56
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:24:13-28:29
-action#android.intent.action.MAIN
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:25:17-69
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:25:25-66
-category#android.intent.category.LAUNCHER
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:27:17-77
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:27:27-74
-activity#com.example.dcp.PlaneActivity
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:30:9-33:20
-	android:label
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:32:13-57
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:31:13-57
-receiver#android.app.admin.DeviceAdminReceiver
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:34:7-41:20
-	android:label
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:36:13-46
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:35:13-65
-intent-filter#action:name:android.intent.action.USER_PRESENT+action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:37:13-40:29
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:38:17-79
-	android:name
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:38:25-76
-action#android.intent.action.USER_PRESENT
-ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:39:17-77
-	android:name
-<<<<<<< HEAD
-		ADDED from F:\PiPiXia\app\src\main\AndroidManifest.xml:39:25-74
-=======
-		ADDED from E:\workspace\Android_workspace\PiPiXia\app\src\main\AndroidManifest.xml:39:25-74
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577

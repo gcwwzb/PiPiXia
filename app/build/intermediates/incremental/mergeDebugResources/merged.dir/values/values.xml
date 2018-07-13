@@ -3,6 +3,7 @@
     <color name="lightblue">#ADD8E6</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <item name="my_content_view" type="id"/>
     <string name="action_settings">这是什么</string>
     <string name="app_name">皮皮侠</string>
     <string name="hello_world">Hello world!</string>

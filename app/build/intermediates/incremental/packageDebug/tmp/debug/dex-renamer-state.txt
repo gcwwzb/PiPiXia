@@ -1,43 +1,4 @@
-<<<<<<< HEAD
-#Fri Jul 13 21:12:00 CST 2018
+#Fri Jul 13 22:42:00 CST 2018
 base.0=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-=======
-<<<<<<< HEAD
-#Mon Jul 09 00:25:23 CST 2018
-path.3=classes.dex
-path.2=classes.dex
-path.1=classes.dex
-=======
-<<<<<<< HEAD
-#Tue Jul 10 22:10:23 CST 2018
-path.3=classes.dex
-path.2=classes.dex
-path.1=classes.dex
-=======
-#Sun Jul 08 23:27:56 CST 2018
-base.0=E\:\\workspace\\Android_workspace\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
 path.0=classes.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
 renamed.0=classes.dex
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-base.3=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.2=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-base.1=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
-base.0=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-=======
-<<<<<<< HEAD
-base.3=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\63
-base.2=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\65
-base.1=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\62
-base.0=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\64
-=======
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
->>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
