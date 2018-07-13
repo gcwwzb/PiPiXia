@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="E:\Android\example\PiPiXia\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\Android\example\PiPiXia\app\src\debug\shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="F:\PiPiXia\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\PiPiXia\app\src\debug\shaders"/></dataSet></merger>
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1

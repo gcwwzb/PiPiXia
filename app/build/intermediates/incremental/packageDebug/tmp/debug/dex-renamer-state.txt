@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Fri Jul 13 22:42:00 CST 2018
 base.0=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+=======
+#Fri Jul 13 22:36:59 CST 2018
+base.0=F\:\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
 path.0=classes.dex
 renamed.0=classes.dex

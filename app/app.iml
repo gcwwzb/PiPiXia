@@ -86,8 +86,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+<<<<<<< HEAD
+=======
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/build-info" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
@@ -120,6 +123,9 @@
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\PiPiXia\app\libs\nineoldandroids-2.4.0.jar:unspecified@jar" level="project" />
 =======
 <<<<<<< HEAD
     <orderEntry type="library" name="Gradle: __local_aars__:F.\PiPiXia\app\libs\nineoldandroids-2.4.0.jar:unspecified@jar" level="project" />
