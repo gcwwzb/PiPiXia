@@ -69,7 +69,20 @@ import org.json.JSONObject;
 
 
 public class MainActivity extends Activity{
+<<<<<<< HEAD
 
+=======
+=======
+public class MainActivity extends Activity {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
+>>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
+>>>>>>> 442e37c9239c0206957127171e61a314cae04f20
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
@@ -107,7 +120,10 @@ public class MainActivity extends Activity{
 
                 case NULL:
                     dialogs.dialog.dismiss();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
                     AlertDialog.Builder alertdialogbuilder_train=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_train.setTitle("提示");
                     alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
@@ -118,13 +134,19 @@ public class MainActivity extends Activity{
 
                 case NULLBUS:
                     dialogs.dialog.dismiss();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
                     AlertDialog.Builder alertdialogbuilder_bus=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_bus.setTitle("提示");
                     alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
                     alertdialogbuilder_bus.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_bus=alertdialogbuilder_bus.create();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
                     alertdialog_bus.show();
                     break;
 
@@ -1006,12 +1028,20 @@ public class MainActivity extends Activity{
         return super.onKeyDown(keyCode, event);
     }
 
+<<<<<<< HEAD
 
     /**
      * 提醒没有直达路线之后在弹出框上点击确定之后的效果
      */
     private DialogInterface.OnClickListener click_noway_ok =new DialogInterface.OnClickListener()
     {
+=======
+    /**
+     * 提醒没有直达路线之后在弹出框上点击确定之后的效果
+     */
+
+    private DialogInterface.OnClickListener click_noway_ok = new DialogInterface.OnClickListener() {
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
         @Override
         public void onClick(DialogInterface arg0, int arg1) {
             listview2.setVisibility(View.GONE);
@@ -1020,7 +1050,10 @@ public class MainActivity extends Activity{
             return;
         }
     };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
     /**
      * 显示共查询到多少条可走路线
      */
