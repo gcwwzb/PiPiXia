@@ -15,52 +15,48 @@ android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="horizontal">
 
-            <RelativeLayout
-                android:layout_width="269dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="15.16"
-                android:background="#00ff66">
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="15.16"
+            android:background="#00ff66">
 
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="83dp"
-                    android:layout_height="0dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="127dp" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="83dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="127dp" />
 
-            </RelativeLayout>
+        </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="100dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="2.87"
-                android:background="#ffffff">
+        <RelativeLayout
+            android:layout_width="450dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.87"
+            android:background="#ffffff" >
 
-                <ImageButton
-                    android:id="@+id/save"
-                    android:layout_width="50dp"
-                    android:layout_height="fill_parent"
-                    android:layout_alignParentTop="true"
-                    android:layout_toStartOf="@+id/more"
-                    android:background="#00ff66"
-                    android:src="@android:drawable/btn_star" />
-
-                <Button
-                    android:id="@+id/more"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true"
-                    android:background="#00ff66"
-                    android:text="更多"
-                    android:textColor="#000033"
-                    android:textSize="20sp" />
-
-
-            </RelativeLayout>
+        <Button
+            android:id="@+id/more"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:text="更多"
+            android:textColor="#000033"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:background="#ffffff"
+            android:src="@android:drawable/btn_star" />
+    </RelativeLayout>
         </LinearLayout>
 
     </RelativeLayout>
@@ -95,7 +91,8 @@ android:layout_width="fill_parent"
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="#ffffff"></RelativeLayout>
+        android:background="#ffffff">
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,7 +102,8 @@ android:layout_width="fill_parent"
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
-            android:background="#ffffff"></RelativeLayout>
+            android:background="#ffffff">
+        </RelativeLayout>
 
         <Button
             android:id="@+id/bt1"
@@ -119,7 +117,8 @@ android:layout_width="fill_parent"
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
-            android:background="#ffffff"></RelativeLayout>
+            android:background="#ffffff">
+        </RelativeLayout>
 
         <Button
             android:id="@+id/bt4"
@@ -133,7 +132,8 @@ android:layout_width="fill_parent"
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
-            android:background="#ffffff"></RelativeLayout>
+            android:background="#ffffff">
+        </RelativeLayout>
 
         <Button
             android:id="@+id/bt2"
@@ -147,7 +147,8 @@ android:layout_width="fill_parent"
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
-            android:background="#ffffff"></RelativeLayout>
+            android:background="#ffffff">
+        </RelativeLayout>
     </LinearLayout>
 
     <RelativeLayout

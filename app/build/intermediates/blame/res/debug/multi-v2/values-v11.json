@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
                     "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values-v11\\styles.xml",
-=======
-            "outputFile": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
-            "map": [
-                {
-                    "source": "E:\\workspace\\Android_workspace\\PiPiXia\\app\\src\\main\\res\\values-v11\\styles.xml",
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",

@@ -2,9 +2,11 @@ package com.example.dcp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +16,7 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 
-public class Introduce extends Activity{
+public class Introduce extends Activity implements View.OnClickListener{
     Button bt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +38,26 @@ public class Introduce extends Activity{
         //设置到viewpager里，到此完成了。
         viewpager.setAdapter(pagerAdater);
         bt = (Button)page2.findViewById(R.id.bt);
-        bt.setOnClickListener(new btClickListener());
+        bt.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                String PREFS_NAME = "Guide";
+                SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putBoolean(PREFS_NAME,false);
+                editor.commit();
+
+                Intent intent = new Intent(Introduce.this,MainActivity.class);
+                startActivity(intent); // 点击最后一页的button进入主界面
+                finish();
+                Log.d("Intent","Intent");
+            }
+        });
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 
     public class btClickListener implements View.OnClickListener {

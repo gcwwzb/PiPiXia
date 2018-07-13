@@ -19,6 +19,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
@@ -67,15 +68,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 
-<<<<<<< HEAD
 public class MainActivity extends Activity{
-=======
-public class MainActivity extends Activity {
-<<<<<<< HEAD
-=======
 
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
@@ -113,39 +107,24 @@ public class MainActivity extends Activity {
 
                 case NULL:
                     dialogs.dialog.dismiss();
-<<<<<<< HEAD
+
                     AlertDialog.Builder alertdialogbuilder_train=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_train.setTitle("提示");
                     alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
                     alertdialogbuilder_train.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_train=alertdialogbuilder_train.create();
-=======
-
-                    AlertDialog.Builder alertdialogbuilder_train = new AlertDialog.Builder(MainActivity.this);
-                    alertdialogbuilder_train.setTitle("提示");
-                    alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
-                    alertdialogbuilder_train.setPositiveButton("确定", click_notrain_ok);
-                    AlertDialog alertdialog_train = alertdialogbuilder_train.create();
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
                     alertdialog_train.show();
                     break;
 
                 case NULLBUS:
                     dialogs.dialog.dismiss();
-<<<<<<< HEAD
+
                     AlertDialog.Builder alertdialogbuilder_bus=new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_bus.setTitle("提示");
                     alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
                     alertdialogbuilder_bus.setPositiveButton("确定", click_noway_ok);
                     AlertDialog alertdialog_bus=alertdialogbuilder_bus.create();
-=======
 
-                    AlertDialog.Builder alertdialogbuilder_bus = new AlertDialog.Builder(MainActivity.this);
-                    alertdialogbuilder_bus.setTitle("提示");
-                    alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
-                    alertdialogbuilder_bus.setPositiveButton("确定", click_nobus_ok);
-                    AlertDialog alertdialog_bus = alertdialogbuilder_bus.create();
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
                     alertdialog_bus.show();
                     break;
 
@@ -244,27 +223,15 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String PREFS_NAME = "Guide";
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        if(settings.getBoolean(PREFS_NAME,true)) {
+            Intent intent = new Intent(MainActivity.this, Introduce.class);
+            startActivity(intent);
+        }
         requestWindowFeature(Window.FEATURE_NO_TITLE);//取消标题栏
         setContentView(R.layout.activity_main);
-//        setContentView(R.layout.introduce);
-//
-//        //找到viewpager
-//        ViewPager viewpager = (ViewPager) findViewById(R.id.viewPager);
-//        //获取两个页面
-//        LayoutInflater inflater = getLayoutInflater();
-//        View page1 = inflater.inflate(R.layout.intro2, null);
-//        View page2 = inflater.inflate(R.layout.intro3, null);
-//        //加入到集合里
-//        ArrayList<View> pageList = new ArrayList<View>();
-//        pageList.add(page1);
-//        pageList.add(page2);
-//        //建一个适配器
-//        Introduce.MyPagerAdater pagerAdater = new Introduce.MyPagerAdater(pageList);
-//        //设置到viewpager里，到此完成了。
-//        viewpager.setAdapter(pagerAdater);
-//        bt = (Button)page2.findViewById(R.id.bt);
-//        bt.setOnClickListener(new Introduce.btClickListener());
-//
+
         cwjManager = (ConnectivityManager)    //网络连接状态监测方面的,不懂
                  getSystemService(Context.CONNECTIVITY_SERVICE);
         //这段代码放到Activity类中才用this,SQLite方面的
@@ -575,13 +542,6 @@ public class MainActivity extends Activity {
                         msg.what = NULL;
                         handler.sendMessage(msg);
                         break;
-<<<<<<< HEAD
-=======
-                    } else {
-                        Message msg = new Message();
-                        msg.what = TRAIN;
-                        handler.sendMessage(msg);
->>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
                     }
                 }
                 Message msg = new Message();
@@ -1046,35 +1006,21 @@ public class MainActivity extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
-<<<<<<< HEAD
+
     /**
      * 提醒没有直达路线之后在弹出框上点击确定之后的效果
      */
     private DialogInterface.OnClickListener click_noway_ok =new DialogInterface.OnClickListener()
     {
-=======
+        @Override
+        public void onClick(DialogInterface arg0, int arg1) {
+            listview2.setVisibility(View.GONE);
+            listview1.setVisibility(View.GONE);
+            listview3.setVisibility(View.GONE);
+            return;
+        }
+    };
 
-    private DialogInterface.OnClickListener click_notrain_ok = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface arg0, int arg1) {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            TitleTextView("没有直达列车，请查询附近城市,或选择列车飞机综合换乘方案");
-            return;
-        }
-    };
-    private DialogInterface.OnClickListener click_noplane_ok = new DialogInterface.OnClickListener() {
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
-        @Override
-        public void onClick(DialogInterface arg0, int arg1) {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            return;
-        }
-    };
-<<<<<<< HEAD
     /**
      * 显示共查询到多少条可走路线
      */
@@ -1087,16 +1033,6 @@ public class MainActivity extends Activity {
                 toast.setText(content);
             }
             toast.show();
-=======
-    private DialogInterface.OnClickListener click_nobus_ok = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface arg0, int arg1) {
-            listview2.setVisibility(View.GONE);
-            listview1.setVisibility(View.GONE);
-            listview3.setVisibility(View.GONE);
-            TitleTextView("没有直达班车，请查询附近城市,或选择列车飞机综合换乘方案");
-            return;
->>>>>>> 32d90f8e453c9994d4cfecb49d4b8c0f0a27bb03
         }
     }
 
