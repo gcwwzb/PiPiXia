@@ -167,10 +167,6 @@ public class MainActivity extends Activity{
     /**
      * 火车的网址
      */
-//    String host = "http://ws.webxml.com.cn";
-//    String getPart1 = "/WebServices/TrainTimeWebService.asmx/getStationAndTimeByStationName?StartStation=";
-//    String getPart2 = "&ArriveStation=";
-//    String getPart3 = "&UserID=";
     String hostOfTrain = "http://api.jisuapi.com/train/station2s";
     String TrainAPPKEY = "575f26104b13e249";// 你的appkey
     /**
@@ -225,25 +221,6 @@ public class MainActivity extends Activity{
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);//取消标题栏
         setContentView(R.layout.activity_main);
-//        setContentView(R.layout.introduce);
-//
-//        //找到viewpager
-//        ViewPager viewpager = (ViewPager) findViewById(R.id.viewPager);
-//        //获取两个页面
-//        LayoutInflater inflater = getLayoutInflater();
-//        View page1 = inflater.inflate(R.layout.intro2, null);
-//        View page2 = inflater.inflate(R.layout.intro3, null);
-//        //加入到集合里
-//        ArrayList<View> pageList = new ArrayList<View>();
-//        pageList.add(page1);
-//        pageList.add(page2);
-//        //建一个适配器
-//        Introduce.MyPagerAdater pagerAdater = new Introduce.MyPagerAdater(pageList);
-//        //设置到viewpager里，到此完成了。
-//        viewpager.setAdapter(pagerAdater);
-//        bt = (Button)page2.findViewById(R.id.bt);
-//        bt.setOnClickListener(new Introduce.btClickListener());
-//
         cwjManager = (ConnectivityManager)    //网络连接状态监测方面的,不懂
                  getSystemService(Context.CONNECTIVITY_SERVICE);
         //这段代码放到Activity类中才用this,SQLite方面的
@@ -274,21 +251,13 @@ public class MainActivity extends Activity{
                 Map<String, Object> maps = listviews.get(position);
                 stationResult station = new stationResult();
                 station.setTrainno((String) maps.get("trainno"));
+                //station.setTrainno((String) maps.get("type"));
                 //数据库里面查询这个值是不是存在,存在了就不保存了.不存在的保存下来.
                 DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase sqliteDatabase = dbHelper.getWritableDatabase();
                 Cursor c = sqliteDatabase.rawQuery("select * from station where trainno=?;", new String[]{station.getTrainno()});
                 if (c.getCount() <= 0) {
-//                    station.FirstStation = (String) maps.get("FirstStation");
-//                    station.LastStation = (String) maps.get("LastStation");
-//                    station.StartStation = (String) maps.get("StartStation");
-//                    station.StartTime = (String) maps.get("StartTime");
-//                    station.ArriveStation = (String) maps.get("ArriveStation");
-//                    station.ArriveTime = (String) maps.get("ArriveTime");
-//                    station.KM = (String) maps.get("KM");
-//                    station.UseDate = (String) maps.get("UseDate");
-
-                    station.setTrainno((String) maps.get("trainno"));
+                    //station.setTrainno((String) maps.get("trainno"));
                     station.setType((String) maps.get("type"));
                     station.setStation((String) maps.get("station"));
                     station.setEndstation((String) maps.get("endstation"));
@@ -296,14 +265,10 @@ public class MainActivity extends Activity{
                     station.setArrivaltime((String) maps.get("arrivaltime"));
                     station.setCosttime((String) maps.get("costtime"));
                     station.setDistance((String) maps.get("distance"));
-
-
                     insert(station);
-                    //Toast.makeText(MainActivity.this,station.TrainCode+" 列车加入收藏列表", 1).show();
                     Toast.makeText(MainActivity.this, station.getTrainno() + " 列车加入收藏列表", Toast.LENGTH_LONG).show();
                     /*-------------------------------------------------------*/
                 } else {
-                    //Toast.makeText(MainActivity.this, "该车次已经添加过了", 1).show();
                     Toast.makeText(MainActivity.this, "该车次已经添加过了", Toast.LENGTH_LONG).show();
                     return;
                 }
@@ -359,7 +324,6 @@ public class MainActivity extends Activity{
                     bus.setStartstation((String) maps.get("startstation"));
                     bus.setEndcity((String) maps.get("endcity"));
                     bus.setEndstation((String) maps.get("endstation"));
-                    // bus.setStarttime((String) maps.get("starttime"));
                     bus.setPrice((String) maps.get("price"));
                     insertBus(bus);
                     Toast.makeText(MainActivity.this, bus.getBustype() + bus.getStarttime() + " 班车加入收藏列表", Toast.LENGTH_LONG).show();
@@ -401,8 +365,6 @@ public class MainActivity extends Activity{
                     /*------输入框不为空的情况下,该方面的返回值判断当前网络是不是可以连接-------*/
                     if (NetWorkStatus() == true) {
                         dialogs.dialog.show();//加载中显示的一个提示框加载完成后自己要用代码取消掉
-                        /*网址*/
-                        //xmlUrl = host + getPart1 + startName + getPart2 + arriveName + getPart3;
                         new Thread(new MyThread()).start();//启动线程.下载内容
                     } else {
                         Toast.makeText(MainActivity.this, "网络有问题", Toast.LENGTH_SHORT).show();
@@ -815,7 +777,6 @@ public class MainActivity extends Activity{
         values.put("endstation", station.getEndstation().toString());
         values.put("departuretime", station.getDeparturetime().toString());
         values.put("arrivaltime", station.getArrivaltime().toString());
-        values.put("sequenceno", station.getSequenceno().toString());
         values.put("costtime", station.getCosttime().toString());
         values.put("distance", station.getDistance().toString());
         // 创建DatabaseHelper对象
@@ -888,7 +849,6 @@ public class MainActivity extends Activity{
                 String endstation = c.getString(c.getColumnIndex("endstation"));
                 String departuretime = c.getString(c.getColumnIndex("departuretime"));
                 String arrivaltime = c.getString(c.getColumnIndex("arrivaltime"));
-                String sequenceno = c.getString(c.getColumnIndex("sequenceno"));
                 String costtime = c.getString(c.getColumnIndex("costtime"));
                 String distance = c.getString(c.getColumnIndex("distance"));
                 map.put("trainno", trainno);
@@ -897,7 +857,6 @@ public class MainActivity extends Activity{
                 map.put("endstation", endstation);
                 map.put("departuretime", departuretime);
                 map.put("arrivaltime", arrivaltime);
-                map.put("sequenceno", sequenceno);
                 map.put("costtime", costtime);
                 map.put("distance", distance);
                 PlaneActivity.listqlite.add(map);
