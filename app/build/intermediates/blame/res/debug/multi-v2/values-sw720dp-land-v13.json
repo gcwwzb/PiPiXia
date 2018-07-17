@@ -1,10 +1,23 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "outputFile": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
             "outputFile": "F:\\PiPiXia\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
             "map": [
                 {
                     "source": "F:\\PiPiXia\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+<<<<<<< HEAD
+=======
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",

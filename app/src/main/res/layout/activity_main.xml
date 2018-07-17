@@ -16,12 +16,60 @@
             android:layout_height="fill_parent"
             android:orientation="horizontal">
 
+<<<<<<< HEAD
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="15.16"
+            android:background="#00ff66">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="83dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="127dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="450dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.87"
+            android:background="#ffffff" >
+
+        <Button
+            android:id="@+id/more"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:text="更多"
+            android:textColor="#000033"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true" />
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:background="#ffffff"
+            android:src="@android:drawable/btn_star"
+            android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+=======
             <RelativeLayout
                 android:layout_width="269dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="15.16"
                 android:background="#FFFF">
 
+<<<<<<< HEAD
                 <!--<TextView-->
                 <!--android:id="@+id/title"-->
                 <!--android:layout_width="wrap_content"-->
@@ -31,6 +79,8 @@
                 <!--android:layout_centerVertical="true"-->
                 <!--android:layout_marginLeft="30dp" />-->
 
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="83dp"
@@ -56,14 +106,22 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
+<<<<<<< HEAD
                     android:background="#ffffff"
+=======
+                    android:layout_toLeftOf="@+id/more"
+                    android:background="#00ff66"
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                     android:src="@android:drawable/btn_star" />
 
                 <Button
                     android:id="@+id/more"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
+<<<<<<< HEAD
                     android:layout_alignParentEnd="true"
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:background="#ffffff"
@@ -74,6 +132,7 @@
 
             </RelativeLayout>
         </LinearLayout>
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
 
     </RelativeLayout>
 
@@ -107,7 +166,8 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="#ffffff"></RelativeLayout>
+        android:background="#ffffff">
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -117,7 +177,8 @@
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
-            android:background="#ffffff"></RelativeLayout>
+            android:background="#ffffff">
+        </RelativeLayout>
 
         <ImageButton
             android:id="@+id/bt1"
@@ -132,7 +193,8 @@
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
-            android:background="#ffffff"></RelativeLayout>
+            android:background="#ffffff">
+        </RelativeLayout>
 
         <ImageButton
             android:id="@+id/bt4"
@@ -147,7 +209,8 @@
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
-            android:background="#ffffff"></RelativeLayout>
+            android:background="#ffffff">
+        </RelativeLayout>
 
         <ImageButton
             android:id="@+id/bt2"
@@ -164,7 +227,8 @@
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
-            android:background="#ffffff"></RelativeLayout>
+            android:background="#ffffff">
+        </RelativeLayout>
     </LinearLayout>
 
     <RelativeLayout

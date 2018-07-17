@@ -22,16 +22,15 @@ public class aboutus extends Activity {
         setContentView(R.layout.aboutus);
         initNames();
         IntroAdapter adapter = new IntroAdapter(aboutus.this, R.layout.listitem, nameList);
-//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(Recommed.this,android.R.layout.simple_list_item_1,book);
         ListView listView = (ListView) findViewById(R.id.aboutus);
         listView.setAdapter(adapter);
     }
     private void initNames() {
-        Name name1 = new Name("组长——张斌", R.drawable.prompt2);
+        Name name1 = new Name("组长——张斌", R.drawable.member1);
         nameList.add(name1);
-        Name name2 = new Name("组员——黄子祎", R.drawable.prompt2);
+        Name name2 = new Name("组员——黄子祎", R.drawable.member2);
         nameList.add(name2);
-        Name name3 = new Name("组员——李奕辰", R.drawable.prompt2);
+        Name name3 = new Name("组员——李奕辰", R.drawable.member3);
         nameList.add(name3);
     }
 

@@ -28,16 +28,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.dcp.MoreInfo" />
+        <activity android:name="com.example.dcp.aboutus" />
+        <activity android:name="com.example.dcp.Introduce" />
         <activity
             android:name="com.example.dcp.PlaneActivity"
             android:label="@string/title_activity_plane" >
         </activity>
+<<<<<<< HEAD
         <activity android:name="com.example.dcp.MoreInfo" />
         <activity android:name="com.example.dcp.Special" />
         <activity android:name="com.example.dcp.aboutus" />
         <activity
             android:name="com.example.dcp.PromptActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
 
         <receiver
             android:name="android.app.admin.DeviceAdminReceiver"

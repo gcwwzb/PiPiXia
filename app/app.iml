@@ -86,13 +86,19 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+<<<<<<< HEAD
+=======
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/build-info" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
+<<<<<<< HEAD
+=======
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-apk" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-resources" />
@@ -117,6 +123,11 @@
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\PiPiXia\app\libs\nineoldandroids-2.4.0.jar:unspecified@jar" level="project" />
+=======
+<<<<<<< HEAD
     <orderEntry type="library" name="Gradle: __local_aars__:F.\PiPiXia\app\libs\nineoldandroids-2.4.0.jar:unspecified@jar" level="project" />
 =======
 <<<<<<< HEAD
@@ -124,7 +135,9 @@
     <orderEntry type="library" name="Gradle: __local_aars__:E.\workspace\Android_workspace\PiPiXia\app\libs\nineoldandroids-2.4.0.jar:unspecified@jar" level="project" />
 >>>>>>> bf59594399c2f33d602ac17c3268dacc039a0954
 >>>>>>> 442e37c9239c0206957127171e61a314cae04f20
+>>>>>>> 513ee08aea6c2673255747b007a0eca1096f8577
     <orderEntry type="library" name="Gradle: com.android.support:support-v4:19.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:E.\Android\example\PiPiXia\app\libs\nineoldandroids-2.4.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: android-android-19" level="project" />
   </component>
 </module>

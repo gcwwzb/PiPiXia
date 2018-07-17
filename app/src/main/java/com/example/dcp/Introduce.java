@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,16 +40,35 @@ public class Introduce extends Activity implements View.OnClickListener{
         bt = (Button)page2.findViewById(R.id.bt);
         bt.setOnClickListener(new View.OnClickListener(){
             @Override
+<<<<<<< HEAD
             public void onClick(View v) {
+=======
+            public void onClick(View view) {
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                 String PREFS_NAME = "Guide";
                 SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putBoolean(PREFS_NAME,false);
                 editor.commit();
+<<<<<<< HEAD
                 Intent intent = new Intent(Introduce.this,MainActivity.class);
                 startActivity(intent); // 点击最后一页的button进入主界面
             }
         });
+=======
+
+                Intent intent = new Intent(Introduce.this,MainActivity.class);
+                startActivity(intent); // 点击最后一页的button进入主界面
+                finish();
+                Log.d("Intent","Intent");
+            }
+        });
+    }
+
+    @Override
+    public void onClick(View view) {
+
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
     }
 
     @Override
