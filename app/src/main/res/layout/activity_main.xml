@@ -1,9 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="fill_parent"
+    android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff"
+
+    android:background="@drawable/img_bg"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -19,9 +20,8 @@ android:layout_width="fill_parent"
                 android:layout_width="269dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="15.16"
-                android:background="#00ff66">
+                android:background="#FFFF">
 
-<<<<<<< HEAD
                 <!--<TextView-->
                 <!--android:id="@+id/title"-->
                 <!--android:layout_width="wrap_content"-->
@@ -30,7 +30,7 @@ android:layout_width="fill_parent"
                 <!--android:layout_alignParentRight="true"-->
                 <!--android:layout_centerVertical="true"-->
                 <!--android:layout_marginLeft="30dp" />-->
-=======
+
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="83dp"
@@ -40,7 +40,6 @@ android:layout_width="fill_parent"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="127dp" />
->>>>>>> 442e37c9239c0206957127171e61a314cae04f20
 
             </RelativeLayout>
 
@@ -54,9 +53,10 @@ android:layout_width="fill_parent"
                     android:id="@+id/save"
                     android:layout_width="50dp"
                     android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_toStartOf="@+id/more"
-                    android:background="#00ff66"
+                    android:background="#ffffff"
                     android:src="@android:drawable/btn_star" />
 
                 <Button
@@ -64,8 +64,9 @@ android:layout_width="fill_parent"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
-                    android:background="#00ff66"
+                    android:background="#ffffff"
                     android:text="更多"
                     android:textColor="#000033"
                     android:textSize="20sp" />
@@ -118,42 +119,47 @@ android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:background="#ffffff"></RelativeLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/bt1"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:background="@drawable/shape"
-            android:text="火车"
-            android:textSize="20sp" />
+            android:src="@drawable/train_icon" />
+        // android:background="@drawable/shape"
+        android:text="火车"
+        android:textSize="20sp" />
 
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
             android:background="#ffffff"></RelativeLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/bt4"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:background="@drawable/shape"
-            android:text="大巴"
-            android:textSize="20sp" />
+            android:src="@drawable/bus_icon" />
+        // android:background="@drawable/shape"
+        android:text="大巴"
+        android:textSize="20sp" />
 
         <RelativeLayout
             android:layout_width="8dp"
             android:layout_height="fill_parent"
             android:background="#ffffff"></RelativeLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/bt2"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:background="@drawable/shape"
-            android:text="飞机"
-            android:textSize="20sp" />
+
+            android:src="@drawable/plane_icon" />
+        //android:background="#ffffff"
+        //android:background="@drawable/shape"
+        android:text="飞机"
+        android:textSize="20sp" />
 
         <RelativeLayout
             android:layout_width="8dp"

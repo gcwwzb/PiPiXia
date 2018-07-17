@@ -32,6 +32,7 @@
             android:label="@string/title_activity_plane" >
         </activity>
         <activity android:name=".MoreInfo"/>
+        <activity android:name=".Special"/>
         <activity android:name=".aboutus"/>
         <activity android:name=".PromptActivity"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar"/>

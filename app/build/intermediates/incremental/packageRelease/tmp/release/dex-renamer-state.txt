@@ -1,4 +1,0 @@
-#Mon Jul 09 22:25:27 CST 2018
-base.0=E\:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
-path.0=classes.dex
-renamed.0=classes.dex

@@ -33,6 +33,7 @@
             android:label="@string/title_activity_plane" >
         </activity>
         <activity android:name="com.example.dcp.MoreInfo" />
+        <activity android:name="com.example.dcp.Special" />
         <activity android:name="com.example.dcp.aboutus" />
         <activity
             android:name="com.example.dcp.PromptActivity"
