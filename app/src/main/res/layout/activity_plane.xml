@@ -17,14 +17,14 @@
             android:layout_height="fill_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="#00ff66"
+            android:background="#b2c3fa"
             android:text="返回"
             android:textSize="20sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:background="#00ff66"
+            android:background="#b2c3fa"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/back" >
 

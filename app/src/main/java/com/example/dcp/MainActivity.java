@@ -1,5 +1,4 @@
 package com.example.dcp;
-
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -19,6 +18,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
@@ -66,9 +66,19 @@ import com.yangfan.Xmlpull.Xmlpullplane;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+<<<<<<< HEAD
+
+
+public class MainActivity extends Activity {
+=======
+<<<<<<< HEAD
+public class MainActivity extends Activity {
+=======
 
 public class MainActivity extends Activity{
 
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
     private MainActivity activity;
     private static final int SHOW_DATAPICK = 0;   //这4个是时间方面的.我移植来的.能用即可
     private static final int DATE_DIALOG_ID = 1;
@@ -106,21 +116,21 @@ public class MainActivity extends Activity{
 
                 case NULL:
                     dialogs.dialog.dismiss();
-                    AlertDialog.Builder alertdialogbuilder_train=new AlertDialog.Builder(MainActivity.this);
+                    AlertDialog.Builder alertdialogbuilder_train = new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_train.setTitle("提示");
                     alertdialogbuilder_train.setMessage("没有直达列车，请查询附近城市");
                     alertdialogbuilder_train.setPositiveButton("确定", click_noway_ok);
-                    AlertDialog alertdialog_train=alertdialogbuilder_train.create();
+                    AlertDialog alertdialog_train = alertdialogbuilder_train.create();
                     alertdialog_train.show();
                     break;
 
                 case NULLBUS:
                     dialogs.dialog.dismiss();
-                    AlertDialog.Builder alertdialogbuilder_bus=new AlertDialog.Builder(MainActivity.this);
+                    AlertDialog.Builder alertdialogbuilder_bus = new AlertDialog.Builder(MainActivity.this);
                     alertdialogbuilder_bus.setTitle("提示");
                     alertdialogbuilder_bus.setMessage("没有直达班车，请查询附近城市");
                     alertdialogbuilder_bus.setPositiveButton("确定", click_noway_ok);
-                    AlertDialog alertdialog_bus=alertdialogbuilder_bus.create();
+                    AlertDialog alertdialog_bus = alertdialogbuilder_bus.create();
                     alertdialog_bus.show();
                     break;
 
@@ -156,7 +166,7 @@ public class MainActivity extends Activity{
                     /*特效源码！！*/
                     listview3.setLayoutAnimation(getListAnim());
                     listview3.setAdapter(adapterBus);
-                  //  TitleTextView("查询到有" + listviews.size() + "趟大巴");
+                    //  TitleTextView("查询到有" + listviews.size() + "趟大巴");
                     ToastUtil.showToast(MainActivity.this, "查询到有" + listviews.size() + "趟大巴");
                     break;
             }
@@ -200,9 +210,9 @@ public class MainActivity extends Activity{
     //private List<Bus> listbus;    //大巴的对应集合
     private EditText et1;
     private EditText et2;
-    public static Button bt1;        //火车查询
-    public static Button bt2;        //飞机查询
-    public static Button bt4;        //大巴查询
+    public static ImageButton bt1;        //火车查询
+    public static ImageButton bt2;        //飞机查询
+    public static ImageButton bt4;        //大巴查询
     public static ImageButton bt5;        //跳转收藏页面
     public static Button bt3;         //跳转更多页面
     private int mYear;    //依然是时间方面移植来的
@@ -216,13 +226,36 @@ public class MainActivity extends Activity{
     private ConnectivityManager cwjManager;
     private TextView tv;
     private Button bt;
+<<<<<<< HEAD
+    String PREFS_NAME = "Guide";
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
+//        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+//        if (settings.getBoolean(PREFS_NAME, true)) {
+//            Intent intent = new Intent(MainActivity.this, Introduce.class);
+//            startActivity(intent);
+//        }
+=======
+        String PREFS_NAME = "Guide";
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        if (settings.getBoolean(PREFS_NAME, true)) {
+            Intent intent = new Intent(MainActivity.this, Introduce.class);
+            startActivity(intent);
+        }
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
         requestWindowFeature(Window.FEATURE_NO_TITLE);//取消标题栏
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 01a8194a31fbe4cad576a35252422b37fce23104
         cwjManager = (ConnectivityManager)    //网络连接状态监测方面的,不懂
-                 getSystemService(Context.CONNECTIVITY_SERVICE);
+                getSystemService(Context.CONNECTIVITY_SERVICE);
         //这段代码放到Activity类中才用this,SQLite方面的
         DatabaseHelper database = new DatabaseHelper(this);
         SQLiteDatabase db = null;
@@ -338,11 +371,11 @@ public class MainActivity extends Activity{
         et1 = (EditText) findViewById(R.id.editText1);
         et2 = (EditText) findViewById(R.id.editText2);
 
-        bt1 = (Button) findViewById(R.id.bt1);//火车
-        bt2 = (Button) findViewById(R.id.bt2);//飞机
+        bt1 = (ImageButton) findViewById(R.id.bt1);//火车
+        bt2 = (ImageButton) findViewById(R.id.bt2);//飞机
         bt3 = (Button) findViewById(R.id.more);//更多
         bt5 = (ImageButton) findViewById(R.id.save);//收藏
-        bt4 = (Button) findViewById(R.id.bt4);//大巴
+        bt4 = (ImageButton) findViewById(R.id.bt4);//大巴
 
         bt1.setOnClickListener(new OnClickListener() {
 
@@ -397,7 +430,7 @@ public class MainActivity extends Activity{
                     /*------输入框不为空的情况下,该方面的返回值判断当前网络是不是可以连接-------*/
                     if (NetWorkStatus() == true) {
                         Message msg = new Message();
-                        if (bt2.equals((Button) v)) {
+                        if (bt2.equals(v)) {
                             /*和火车不一样的是飞机点击后显示的是时间选取的提示窗用的也是handler*/
                             msg.what = MainActivity.SHOW_DATAPICK;
                         }
@@ -445,8 +478,12 @@ public class MainActivity extends Activity{
 
             @Override
             public void onClick(View arg0) {
-
+<<<<<<< HEAD
                 Intent intent = new Intent(MainActivity.this,MoreInfo.class);
+=======
+
+                Intent intent = new Intent(MainActivity.this, MoreInfo.class);
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                 startActivity(intent);
             }
         });
@@ -469,18 +506,22 @@ public class MainActivity extends Activity{
     class MyPagerAdater extends PagerAdapter {
         //view集合
         ArrayList<View> pageList;
+
         public MyPagerAdater(ArrayList<View> pageList) {
             this.pageList = pageList;
         }
+
         //返回页面
         public Object instantiateItem(ViewGroup container, int position) {
             container.addView(pageList.get(position), position);
             return pageList.get(position);
         }
+
         //这里是返回页面的个数，如当返回0时，则无页面，我们这里返回2个
         public int getCount() {
             return pageList.size();
         }
+
         //这里要返回true
         @Override
         public boolean isViewFromObject(View arg0, Object arg1) {
@@ -496,6 +537,51 @@ public class MainActivity extends Activity{
 
             JSONObject jo;
             try {
+<<<<<<< HEAD
+                //网络连接的方法
+                InputStream inputStream = NetConnectionUtil.GetInputStream(xmlUrl);
+                //解析XML文件的方法
+                xmlpull xmlpull = new xmlpull();
+                list = xmlpull.getpull(inputStream);
+                //循环读取解析好的列表集合list<map<String,object>>类型的
+                for (Station lists : list) {
+                    Map<String, Object> map = new HashMap<String, Object>();
+                    String ArriveStation = lists.ArriveStation.toString();
+                    String ArriveTime = lists.ArriveTime.toString();
+                    String FirstStation = lists.FirstStation.toString();
+                    String LastStation = lists.LastStation.toString();
+                    String StartStation = lists.StartStation.toString();
+                    String StartTime = lists.StartTime.toString();
+                    String TrainCode = lists.TrainCode.toString();
+                    String UseDate = lists.UseDate.toString();
+                    String KM = lists.KM.toString();
+                    map.put("ArriveStation", ArriveStation);
+                    map.put("ArriveTime", ArriveTime);
+                    map.put("FirstStation", FirstStation);
+                    map.put("LastStation", LastStation);
+                    map.put("StartStation", StartStation);
+                    map.put("StartTime", StartTime);
+                    map.put("TrainCode", TrainCode);
+                    map.put("UseDate", UseDate);
+                    map.put("KM", KM);
+                    listviews.add(map);
+                    if ("----".equals(TrainCode)) {
+                        //判断车次是不是存在.在这次我用的是车次的判断,"----"的就是没有车次
+                        //返回的what和有车次的肯定不一样.
+                        Message msg = new Message();
+                        msg.what = NULL;
+                        handler.sendMessage(msg);
+                        break;
+<<<<<<< HEAD
+                    } else {
+                        Message msg = new Message();
+                        msg.what = TRAIN;
+                        handler.sendMessage(msg);
+                    }
+                }
+
+=======
+=======
 
                 UrlTrain = hostOfTrain + "?appkey=" + TrainAPPKEY + "&start=" + startName + "&end=" + arriveName + "&ishigh=0";
                 //http://api.jisuapi.com/train/station2s?appkey=yourappkey&start=杭州&end=北京&ishigh=0
@@ -543,8 +629,10 @@ public class MainActivity extends Activity{
                         Message msg = new Message();
                         msg.what = TRAIN;
                         handler.sendMessage(msg);
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
                     }
                 }
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
             } catch (Exception e) {
                 Dialogs.dialog.dismiss();
                 Log.i("网络错误", "执行了网络错误1");
@@ -585,17 +673,20 @@ public class MainActivity extends Activity{
                     map.put("Mode", Mode);
                     map.put("Week", Week);
                     listviews.add(map);
-                    if ("没有航班".equals(Company.toString())) {
+                    System.out.println(Company.toString());
+                    if ("出发或抵达的城市不被支持".equals(Company.toString()) || "没有航班".equals(Company.toString())) {
                         Message mes = new Message();
                         mes.what = NULLPLANE;
                         handler.sendMessage(mes);
                         Log.i("aaa", "查询到没有此路线的直达航班");
                         break;
+                    }else{
+                        Message msg = new Message();
+                        msg.what = PLANE;
+                        handler.sendMessage(msg);
                     }
                 }
-                Message msg = new Message();
-                msg.what = PLANE;
-                handler.sendMessage(msg);
+
             } catch (Exception e) {
                 Dialogs.dialog.dismiss();
                 Log.i("网络错误", "执行了网络错误1");
@@ -656,7 +747,6 @@ public class MainActivity extends Activity{
                         map.put("starttime", starttime);
                         map.put("price", price);
                         map.put("bustype", bustype);
-
                         listviews.add(map);
                         if ("".equals(starttime)) {
                             //判断车次是不是存在.在这次我用的是发车时间的判断,""的就是没有车次
@@ -665,10 +755,11 @@ public class MainActivity extends Activity{
                             msg.what = NULLBUS;
                             handler.sendMessage(msg);
                             break;
+                        }else {
+                            Message msg = new Message();
+                            msg.what = BUS;
+                            handler.sendMessage(msg);
                         }
-                        Message msg = new Message();
-                        msg.what = BUS;
-                        handler.sendMessage(msg);
                     }
                 }
             } catch (Exception e) {
@@ -1002,11 +1093,13 @@ public class MainActivity extends Activity{
         return super.onKeyDown(keyCode, event);
     }
 
-    /**
-     * 提醒没有直达路线之后在弹出框上点击确定之后的效果
-     */
 
+
+    /**
+     * 提醒没有直达路线时在弹出框上点击确定之后的效果
+     */
     private DialogInterface.OnClickListener click_noway_ok = new DialogInterface.OnClickListener() {
+<<<<<<< HEAD
         @Override
         public void onClick(DialogInterface arg0, int arg1) {
             listview2.setVisibility(View.GONE);
@@ -1016,7 +1109,7 @@ public class MainActivity extends Activity{
         }
     };
     /**
-     * 显示共查询到多少条可走路线
+     * 用toast显示共查询到多少条可走路线
      */
     public static class ToastUtil {
         private static Toast toast;
@@ -1029,6 +1122,33 @@ public class MainActivity extends Activity{
             toast.show();
         }
     }
-
-
 }
+=======
+            @Override
+
+            public void onClick(DialogInterface arg0, int arg1) {
+                listview2.setVisibility(View.GONE);
+                listview1.setVisibility(View.GONE);
+                listview3.setVisibility(View.GONE);
+                return;
+            }
+        };
+
+
+        /**
+         * 显示共查询到多少条可走路线
+         */
+        public static class ToastUtil {
+            private static Toast toast;
+
+            public static void showToast(Context context, String content) {
+                if (toast == null) {
+                    toast = Toast.makeText(context, content, Toast.LENGTH_SHORT);
+                } else {
+                    toast.setText(content);
+                }
+                toast.show();
+            }
+        }
+    };
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc

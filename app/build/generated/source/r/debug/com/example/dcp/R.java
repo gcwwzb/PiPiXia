@@ -18,6 +18,89 @@ public final class R {
   public static final class drawable {
     public static final int btn_add_passenger_normal=0x7f030000;
     public static final int btn_add_passenger_pressed=0x7f030001;
+<<<<<<< HEAD
+    public static final int bus_icon=0x7f030002;
+    public static final int img_bg=0x7f030003;
+    public static final int pipixia=0x7f030004;
+    public static final int plane_icon=0x7f030005;
+    public static final int prompt2=0x7f030006;
+    public static final int shape=0x7f030007;
+    public static final int train_icon=0x7f030008;
+=======
+<<<<<<< HEAD
+    public static final int member1=0x7f030002;
+    public static final int member2=0x7f030003;
+    public static final int member3=0x7f030004;
+    public static final int pipixia=0x7f030005;
+    public static final int prompt2=0x7f030006;
+    public static final int shape=0x7f030007;
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
+  }
+  public static final class id {
+    public static final int ArriveTime=0x7f040000;
+    public static final int FirstStation=0x7f040001;
+    public static final int KM=0x7f040002;
+    public static final int LastStation=0x7f040003;
+    public static final int StartTime=0x7f040004;
+    public static final int TrainCode=0x7f040005;
+    public static final int UseDate=0x7f040006;
+    public static final int aboutus=0x7f040007;
+    public static final int action_settings=0x7f040008;
+    public static final int back=0x7f040009;
+    public static final int bt=0x7f04000a;
+    public static final int bt1=0x7f04000b;
+    public static final int bt2=0x7f04000c;
+    public static final int bt4=0x7f04000d;
+    public static final int bus=0x7f04000e;
+    public static final int bustype=0x7f04000f;
+    public static final int distance=0x7f040010;
+    public static final int editText1=0x7f040011;
+    public static final int editText2=0x7f040012;
+    public static final int endcity=0x7f040013;
+    public static final int endstation=0x7f040014;
+    public static final int image=0x7f040015;
+    public static final int introduce=0x7f040016;
+    public static final int linearLayout1=0x7f040017;
+    public static final int listView1=0x7f040018;
+    public static final int listView2=0x7f040019;
+    public static final int listView3=0x7f04001a;
+    public static final int listsqlite1=0x7f04001b;
+    public static final int listsqlite2=0x7f04001c;
+    public static final int listsqlite3=0x7f04001d;
+    public static final int more=0x7f04001e;
+    public static final int my_content_view=0x7f04001f;
+    public static final int name=0x7f040020;
+    public static final int plane=0x7f040021;
+    public static final int price=0x7f040022;
+    public static final int relative=0x7f040023;
+    public static final int rl1=0x7f040024;
+    public static final int save=0x7f040025;
+    public static final int sctitle=0x7f040026;
+    public static final int special=0x7f040027;
+    public static final int startcity=0x7f040028;
+    public static final int startstation=0x7f040029;
+    public static final int starttime=0x7f04002a;
+    public static final int station=0x7f04002b;
+    public static final int textView11=0x7f04002c;
+    public static final int textView12=0x7f04002d;
+    public static final int textView2=0x7f04002e;
+    public static final int textView21=0x7f04002f;
+    public static final int textView22=0x7f040030;
+    public static final int textView23=0x7f040031;
+    public static final int textView24=0x7f040032;
+    public static final int textView25=0x7f040033;
+    public static final int textView26=0x7f040034;
+    public static final int textView27=0x7f040035;
+    public static final int textView28=0x7f040036;
+    public static final int textView5=0x7f040037;
+    public static final int textView6=0x7f040038;
+    public static final int textView8=0x7f040039;
+    public static final int textView9=0x7f04003a;
+    public static final int textViews5=0x7f04003b;
+    public static final int textViews6=0x7f04003c;
+    public static final int title=0x7f04003d;
+    public static final int viewPager=0x7f04003e;
+=======
     public static final int pipixia=0x7f030002;
     public static final int prompt2=0x7f030003;
     public static final int shape=0x7f030004;
@@ -85,21 +168,21 @@ public final class R {
     public static final int trainno=0x7f04003b;
     public static final int type=0x7f04003c;
     public static final int viewPager=0x7f04003d;
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
   }
   public static final class layout {
     public static final int aboutus=0x7f050000;
     public static final int activity_main=0x7f050001;
     public static final int activity_plane=0x7f050002;
-    public static final int intro1=0x7f050003;
-    public static final int intro2=0x7f050004;
-    public static final int intro3=0x7f050005;
-    public static final int introduce=0x7f050006;
-    public static final int itembus=0x7f050007;
-    public static final int itemplane=0x7f050008;
-    public static final int items=0x7f050009;
-    public static final int listitem=0x7f05000a;
-    public static final int more_info=0x7f05000b;
-    public static final int special=0x7f05000c;
+    public static final int intro2=0x7f050003;
+    public static final int intro3=0x7f050004;
+    public static final int introduce=0x7f050005;
+    public static final int itembus=0x7f050006;
+    public static final int itemplane=0x7f050007;
+    public static final int items=0x7f050008;
+    public static final int listitem=0x7f050009;
+    public static final int more_info=0x7f05000a;
+    public static final int special=0x7f05000b;
   }
   public static final class menu {
     public static final int main=0x7f060000;

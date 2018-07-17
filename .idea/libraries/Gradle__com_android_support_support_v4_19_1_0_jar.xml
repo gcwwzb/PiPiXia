@@ -1,6 +1,22 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:support-v4:19.1.0@jar">
     <CLASSES>
+<<<<<<< HEAD
+      <root url="jar://F:/Android/AndroidSDK/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar!/" />
+=======
+<<<<<<< HEAD
+      <root url="jar://$PROJECT_DIR$/../../SDK/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar!/" />
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../SDK/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+<<<<<<< HEAD
+      <root url="jar://F:/Android/AndroidSDK/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0-sources.jar!/" />
+=======
+      <root url="jar://$PROJECT_DIR$/../../SDK/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0-sources.jar!/" />
+=======
       <root url="jar://E:/develop/Android/android-sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +24,8 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://E:/develop/Android/android-sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0-sources.jar!/" />
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
     </SOURCES>
   </library>
 </component>

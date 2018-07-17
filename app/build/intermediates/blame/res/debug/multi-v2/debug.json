@@ -1,10 +1,23 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "outputFile": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\values-sw720dp-land-v13_values-sw720dp-land-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
             "outputFile": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\values-sw720dp-land-v13_values-sw720dp-land-v13.arsc.flat",
             "map": [
                 {
                     "source": "F:\\PiPiXia\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+<<<<<<< HEAD
+=======
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
@@ -23,10 +36,23 @@
             ]
         },
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "outputFile": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values-v14\\styles.xml",
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
             "outputFile": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\values-v14_values-v14.arsc.flat",
             "map": [
                 {
                     "source": "F:\\PiPiXia\\app\\src\\main\\res\\values-v14\\styles.xml",
+<<<<<<< HEAD
+=======
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                     "from": {
                         "startLines": "7",
                         "startColumns": "4",
@@ -47,10 +73,23 @@
             ]
         },
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "outputFile": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values-v11\\styles.xml",
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
             "outputFile": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\values-v11_values-v11.arsc.flat",
             "map": [
                 {
                     "source": "F:\\PiPiXia\\app\\src\\main\\res\\values-v11\\styles.xml",
+<<<<<<< HEAD
+=======
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
@@ -71,10 +110,37 @@
             ]
         },
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "outputFile": "E:\\Android\\example\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "50",
+                        "endOffsets": "103"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "213",
+                        "endColumns": "44",
+                        "endOffsets": "253"
+                    }
+                },
+                {
+                    "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values\\styles.xml",
+=======
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
             "outputFile": "F:\\PiPiXia\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
             "map": [
                 {
                     "source": "F:\\PiPiXia\\app\\src\\main\\res\\values\\dimens.xml",
+<<<<<<< HEAD
                     "from": {
                         "startLines": "3,4",
                         "startColumns": "4,4",
@@ -141,6 +207,96 @@
                         "startOffsets": "213",
                         "endColumns": "44",
                         "endOffsets": "253"
+=======
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "92,151",
+                        "endColumns": "57,55",
+                        "endOffsets": "145,202"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "99,157",
+                        "endColumns": "57,55",
+                        "endOffsets": "152,208"
+                    }
+                },
+                {
+                    "source": "F:\\PiPiXia\\app\\src\\main\\res\\values\\styles.xml",
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "191,522",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "481,679"
+                    },
+                    "to": {
+                        "startLines": "10,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "464,755",
+                        "endLines": "16,19",
+                        "endColumns": "12,12",
+                        "endOffsets": "750,910"
+                    }
+                },
+                {
+<<<<<<< HEAD
+                    "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values\\strings.xml",
+=======
+                    "source": "F:\\PiPiXia\\app\\src\\main\\res\\values\\strings.xml",
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+                    "from": {
+                        "startLines": "9,4,3,5,6",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "303,93,55,139,189",
+                        "endColumns": "39,44,36,48,58",
+                        "endOffsets": "342,137,91,187,247"
+                    },
+                    "to": {
+                        "startLines": "2,6,7,8,9",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,258,307,348,401",
+                        "endColumns": "43,48,40,52,62",
+                        "endOffsets": "94,302,343,396,459"
+                    }
+                },
+                {
+<<<<<<< HEAD
+                    "source": "E:\\Android\\example\\PiPiXia\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "92,151",
+                        "endColumns": "57,55",
+                        "endOffsets": "145,202"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "99,157",
+                        "endColumns": "57,55",
+                        "endOffsets": "152,208"
+=======
+                    "source": "F:\\PiPiXia\\app\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "50",
+                        "endOffsets": "103"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "213",
+                        "endColumns": "44",
+                        "endOffsets": "253"
+>>>>>>> 7a96b3d64c93e034bec04458109372ae3b7d50b1
+>>>>>>> 33e2f8f54477ee4593ff1f60bf64ef9b73cb2ffc
                     }
                 }
             ]
